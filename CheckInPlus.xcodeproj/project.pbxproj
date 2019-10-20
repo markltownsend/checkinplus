@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DC7CFCD235BF72A00E0ADA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFCC235BF72A00E0ADA6 /* AppDelegate.swift */; };
+		4DC7CFCF235BF72A00E0ADA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFCE235BF72A00E0ADA6 /* SceneDelegate.swift */; };
+		4DC7CFD2235BF72A00E0ADA6 /* CheckInPlus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFD0235BF72A00E0ADA6 /* CheckInPlus.xcdatamodeld */; };
+		4DC7CFD4235BF72A00E0ADA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFD3235BF72A00E0ADA6 /* ContentView.swift */; };
+		4DC7CFD6235BF72C00E0ADA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DC7CFD5235BF72C00E0ADA6 /* Assets.xcassets */; };
+		4DC7CFD9235BF72C00E0ADA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DC7CFD8235BF72C00E0ADA6 /* Preview Assets.xcassets */; };
+		4DC7CFDC235BF72C00E0ADA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC7CFDA235BF72C00E0ADA6 /* LaunchScreen.storyboard */; };
+		4DC7CFE7235BF72C00E0ADA6 /* CheckInPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFE6235BF72C00E0ADA6 /* CheckInPlusTests.swift */; };
+		4DC7CFF2235BF72C00E0ADA6 /* CheckInPlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFF1235BF72C00E0ADA6 /* CheckInPlusUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DC7CFE3235BF72C00E0ADA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DC7CFC8235BF72A00E0ADA6;
+			remoteInfo = CheckInPlus;
+		};
+		4DC7CFEE235BF72C00E0ADA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DC7CFC8235BF72A00E0ADA6;
+			remoteInfo = CheckInPlus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4DC7CFC9235BF72A00E0ADA6 /* CheckInPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckInPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC7CFCC235BF72A00E0ADA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DC7CFCE235BF72A00E0ADA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4DC7CFD1235BF72A00E0ADA6 /* CheckInPlus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CheckInPlus.xcdatamodel; sourceTree = "<group>"; };
+		4DC7CFD3235BF72A00E0ADA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DC7CFD5235BF72C00E0ADA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DC7CFD8235BF72C00E0ADA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4DC7CFDB235BF72C00E0ADA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DC7CFDD235BF72C00E0ADA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC7CFE2235BF72C00E0ADA6 /* CheckInPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckInPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC7CFE6235BF72C00E0ADA6 /* CheckInPlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInPlusTests.swift; sourceTree = "<group>"; };
+		4DC7CFE8235BF72C00E0ADA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC7CFED235BF72C00E0ADA6 /* CheckInPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckInPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC7CFF1235BF72C00E0ADA6 /* CheckInPlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInPlusUITests.swift; sourceTree = "<group>"; };
+		4DC7CFF3235BF72C00E0ADA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DC7CFC6235BF72A00E0ADA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC7CFDF235BF72C00E0ADA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC7CFEA235BF72C00E0ADA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DC7CFC0235BF72A00E0ADA6 = {
+			isa = PBXGroup;
+			children = (
+				4DC7CFCB235BF72A00E0ADA6 /* CheckInPlus */,
+				4DC7CFE5235BF72C00E0ADA6 /* CheckInPlusTests */,
+				4DC7CFF0235BF72C00E0ADA6 /* CheckInPlusUITests */,
+				4DC7CFCA235BF72A00E0ADA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DC7CFCA235BF72A00E0ADA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DC7CFC9235BF72A00E0ADA6 /* CheckInPlus.app */,
+				4DC7CFE2235BF72C00E0ADA6 /* CheckInPlusTests.xctest */,
+				4DC7CFED235BF72C00E0ADA6 /* CheckInPlusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DC7CFCB235BF72A00E0ADA6 /* CheckInPlus */ = {
+			isa = PBXGroup;
+			children = (
+				4DC7CFCC235BF72A00E0ADA6 /* AppDelegate.swift */,
+				4DC7CFCE235BF72A00E0ADA6 /* SceneDelegate.swift */,
+				4DC7CFD3235BF72A00E0ADA6 /* ContentView.swift */,
+				4DC7CFD5235BF72C00E0ADA6 /* Assets.xcassets */,
+				4DC7CFDA235BF72C00E0ADA6 /* LaunchScreen.storyboard */,
+				4DC7CFDD235BF72C00E0ADA6 /* Info.plist */,
+				4DC7CFD0235BF72A00E0ADA6 /* CheckInPlus.xcdatamodeld */,
+				4DC7CFD7235BF72C00E0ADA6 /* Preview Content */,
+			);
+			path = CheckInPlus;
+			sourceTree = "<group>";
+		};
+		4DC7CFD7235BF72C00E0ADA6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4DC7CFD8235BF72C00E0ADA6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4DC7CFE5235BF72C00E0ADA6 /* CheckInPlusTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DC7CFE6235BF72C00E0ADA6 /* CheckInPlusTests.swift */,
+				4DC7CFE8235BF72C00E0ADA6 /* Info.plist */,
+			);
+			path = CheckInPlusTests;
+			sourceTree = "<group>";
+		};
+		4DC7CFF0235BF72C00E0ADA6 /* CheckInPlusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DC7CFF1235BF72C00E0ADA6 /* CheckInPlusUITests.swift */,
+				4DC7CFF3235BF72C00E0ADA6 /* Info.plist */,
+			);
+			path = CheckInPlusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DC7CFC8235BF72A00E0ADA6 /* CheckInPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC7CFF6235BF72C00E0ADA6 /* Build configuration list for PBXNativeTarget "CheckInPlus" */;
+			buildPhases = (
+				4DC7CFC5235BF72A00E0ADA6 /* Sources */,
+				4DC7CFC6235BF72A00E0ADA6 /* Frameworks */,
+				4DC7CFC7235BF72A00E0ADA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CheckInPlus;
+			productName = CheckInPlus;
+			productReference = 4DC7CFC9235BF72A00E0ADA6 /* CheckInPlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DC7CFE1235BF72C00E0ADA6 /* CheckInPlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC7CFF9235BF72C00E0ADA6 /* Build configuration list for PBXNativeTarget "CheckInPlusTests" */;
+			buildPhases = (
+				4DC7CFDE235BF72C00E0ADA6 /* Sources */,
+				4DC7CFDF235BF72C00E0ADA6 /* Frameworks */,
+				4DC7CFE0235BF72C00E0ADA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DC7CFE4235BF72C00E0ADA6 /* PBXTargetDependency */,
+			);
+			name = CheckInPlusTests;
+			productName = CheckInPlusTests;
+			productReference = 4DC7CFE2235BF72C00E0ADA6 /* CheckInPlusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DC7CFEC235BF72C00E0ADA6 /* CheckInPlusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC7CFFC235BF72C00E0ADA6 /* Build configuration list for PBXNativeTarget "CheckInPlusUITests" */;
+			buildPhases = (
+				4DC7CFE9235BF72C00E0ADA6 /* Sources */,
+				4DC7CFEA235BF72C00E0ADA6 /* Frameworks */,
+				4DC7CFEB235BF72C00E0ADA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DC7CFEF235BF72C00E0ADA6 /* PBXTargetDependency */,
+			);
+			name = CheckInPlusUITests;
+			productName = CheckInPlusUITests;
+			productReference = 4DC7CFED235BF72C00E0ADA6 /* CheckInPlusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DC7CFC1235BF72A00E0ADA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Mark Townsend";
+				TargetAttributes = {
+					4DC7CFC8235BF72A00E0ADA6 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					4DC7CFE1235BF72C00E0ADA6 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 4DC7CFC8235BF72A00E0ADA6;
+					};
+					4DC7CFEC235BF72C00E0ADA6 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 4DC7CFC8235BF72A00E0ADA6;
+					};
+				};
+			};
+			buildConfigurationList = 4DC7CFC4235BF72A00E0ADA6 /* Build configuration list for PBXProject "CheckInPlus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DC7CFC0235BF72A00E0ADA6;
+			productRefGroup = 4DC7CFCA235BF72A00E0ADA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DC7CFC8235BF72A00E0ADA6 /* CheckInPlus */,
+				4DC7CFE1235BF72C00E0ADA6 /* CheckInPlusTests */,
+				4DC7CFEC235BF72C00E0ADA6 /* CheckInPlusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DC7CFC7235BF72A00E0ADA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC7CFDC235BF72C00E0ADA6 /* LaunchScreen.storyboard in Resources */,
+				4DC7CFD9235BF72C00E0ADA6 /* Preview Assets.xcassets in Resources */,
+				4DC7CFD6235BF72C00E0ADA6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC7CFE0235BF72C00E0ADA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC7CFEB235BF72C00E0ADA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DC7CFC5235BF72A00E0ADA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC7CFCD235BF72A00E0ADA6 /* AppDelegate.swift in Sources */,
+				4DC7CFD2235BF72A00E0ADA6 /* CheckInPlus.xcdatamodeld in Sources */,
+				4DC7CFD4235BF72A00E0ADA6 /* ContentView.swift in Sources */,
+				4DC7CFCF235BF72A00E0ADA6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC7CFDE235BF72C00E0ADA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC7CFE7235BF72C00E0ADA6 /* CheckInPlusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC7CFE9235BF72C00E0ADA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC7CFF2235BF72C00E0ADA6 /* CheckInPlusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DC7CFE4235BF72C00E0ADA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DC7CFC8235BF72A00E0ADA6 /* CheckInPlus */;
+			targetProxy = 4DC7CFE3235BF72C00E0ADA6 /* PBXContainerItemProxy */;
+		};
+		4DC7CFEF235BF72C00E0ADA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DC7CFC8235BF72A00E0ADA6 /* CheckInPlus */;
+			targetProxy = 4DC7CFEE235BF72C00E0ADA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DC7CFDA235BF72C00E0ADA6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DC7CFDB235BF72C00E0ADA6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DC7CFF4235BF72C00E0ADA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DC7CFF5235BF72C00E0ADA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DC7CFF7235BF72C00E0ADA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CheckInPlus/Preview Content\"";
+				DEVELOPMENT_TEAM = 55AT6EYVPW;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CheckInPlus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.CheckInPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DC7CFF8235BF72C00E0ADA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CheckInPlus/Preview Content\"";
+				DEVELOPMENT_TEAM = 55AT6EYVPW;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CheckInPlus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.CheckInPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4DC7CFFA235BF72C00E0ADA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55AT6EYVPW;
+				INFOPLIST_FILE = CheckInPlusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.CheckInPlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckInPlus.app/CheckInPlus";
+			};
+			name = Debug;
+		};
+		4DC7CFFB235BF72C00E0ADA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55AT6EYVPW;
+				INFOPLIST_FILE = CheckInPlusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.CheckInPlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckInPlus.app/CheckInPlus";
+			};
+			name = Release;
+		};
+		4DC7CFFD235BF72C00E0ADA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55AT6EYVPW;
+				INFOPLIST_FILE = CheckInPlusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.CheckInPlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CheckInPlus;
+			};
+			name = Debug;
+		};
+		4DC7CFFE235BF72C00E0ADA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55AT6EYVPW;
+				INFOPLIST_FILE = CheckInPlusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.CheckInPlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CheckInPlus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DC7CFC4235BF72A00E0ADA6 /* Build configuration list for PBXProject "CheckInPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC7CFF4235BF72C00E0ADA6 /* Debug */,
+				4DC7CFF5235BF72C00E0ADA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC7CFF6235BF72C00E0ADA6 /* Build configuration list for PBXNativeTarget "CheckInPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC7CFF7235BF72C00E0ADA6 /* Debug */,
+				4DC7CFF8235BF72C00E0ADA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC7CFF9235BF72C00E0ADA6 /* Build configuration list for PBXNativeTarget "CheckInPlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC7CFFA235BF72C00E0ADA6 /* Debug */,
+				4DC7CFFB235BF72C00E0ADA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC7CFFC235BF72C00E0ADA6 /* Build configuration list for PBXNativeTarget "CheckInPlusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC7CFFD235BF72C00E0ADA6 /* Debug */,
+				4DC7CFFE235BF72C00E0ADA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4DC7CFD0235BF72A00E0ADA6 /* CheckInPlus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4DC7CFD1235BF72A00E0ADA6 /* CheckInPlus.xcdatamodel */,
+			);
+			currentVersion = 4DC7CFD1235BF72A00E0ADA6 /* CheckInPlus.xcdatamodel */;
+			path = CheckInPlus.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
+}
