@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "5D652555-0D7F-4F3D-B6D8-F356D3CD17B1",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CheckInPlus.xcodeproj",
+        "identifier" : "4DC7D00B235C050700E0ADA6",
+        "name" : "FoursquareAPITests"
+      }
+    }
+  ],
+  "version" : 1
+}

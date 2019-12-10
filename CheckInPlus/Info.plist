@@ -56,5 +56,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>$(EXECUTABLE_NAME) needs to know your location so that it can provide the best list of venues to check into!</string>
 </dict>
 </plist>

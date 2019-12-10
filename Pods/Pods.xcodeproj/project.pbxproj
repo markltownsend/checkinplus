@@ -1,0 +1,1658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0071D103EFD26742D5866775B3816238 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		06F6DE0D6B2437153E41233D811CFA3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1699A2FEA177B8F64D038C9882878003 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		45255517B86A25823F3FD12606D6BC85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		512D0F7F8A0FAF117CAEFD5CCE1FE06E /* Pods-FoursquareAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8F2884CCF8E52BAD3714EB0FAB951B3 /* Pods-FoursquareAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AC137C1EE9F4EE253B38D65A5911169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		70E8EC061630928B3EF3D2C6623F2EBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		72F870DA79DDB1332972AD1DC7FC6712 /* Pods-CheckInPlus-CheckInPlusUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA61981B94F0DD882CF4A4500CE2A465 /* Pods-CheckInPlus-CheckInPlusUITests-dummy.m */; };
+		764E9DB8E4CEE06C9C27B02B5979280E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		80714B2EC69C1A65F54076DE4C834632 /* Pods-FoursquareAPI-FoursquareAPITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 709BB02C7592FB1D6F258402E1A922D2 /* Pods-FoursquareAPI-FoursquareAPITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84982231207B6CD723D2700A7D50AC13 /* Pods-YelpAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDFD77E7BCC7417E36942DAA722DCA2 /* Pods-YelpAPI-dummy.m */; };
+		88D3E9D886CCB9EEE5434B35402D037A /* CheckInPlusKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 1741A56791CCF0C91E45E36257FAB096 /* CheckInPlusKeys.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		92E8415A3BBA2064B58915E612220368 /* Pods-FoursquareAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 563F5A4E66C9F70D0C69DBF72AB8C245 /* Pods-FoursquareAPI-dummy.m */; };
+		9B4FF05D5B3C419BEFD70F5A543C670B /* Pods-CheckInPlusTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D0089D460A5C91323AFC75B22DB332D /* Pods-CheckInPlusTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A20286B4E8B8B26E483A9809B17BACF1 /* Pods-CheckInPlus-CheckInPlusUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1634B18C4308F81D152F3A4EFF241819 /* Pods-CheckInPlus-CheckInPlusUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9CC1D71341CB84630B8B0D698BFDC49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B0F76812D8231BA54940535954D9D48A /* Keys-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E39949E071BEE08157FDDAAA8617249 /* Keys-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA756CF30BF86ED551D7E7C0897D6CC7 /* Pods-YelpAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30402A1ADE67B105BA9172C5AAAFF739 /* Pods-YelpAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB150C8604430CF84EE3F5F16BBEF006 /* Pods-FoursquareAPI-FoursquareAPITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E48A51D14C8842BECA0DE2FD5F014C42 /* Pods-FoursquareAPI-FoursquareAPITests-dummy.m */; };
+		BE5CEFA3EE2FF44895B29A8AB640AD33 /* Pods-CheckInPlusTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB26605F751D7FDE90C433D7944721F /* Pods-CheckInPlusTests-dummy.m */; };
+		C441C2BC18B83D0C36ADF4D28974728E /* Keys-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB132BE4F0553955EC21ADA50181D8 /* Keys-dummy.m */; };
+		C86D207AF712B13F3C44545BB3903A8D /* CheckInPlusKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = B047574458899CB985892631570CE5FB /* CheckInPlusKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFB684CC98D34518494435498C372187 /* Pods-CheckInPlus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A54791B91F8B6238C966BBBA3D6B5B23 /* Pods-CheckInPlus-dummy.m */; };
+		D9A8BEF6A71D531E57A36D781381487D /* Pods-YelpAPI-YelpAPITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FEF4F4E686E524C57C720907EE2C7C3 /* Pods-YelpAPI-YelpAPITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBDB8D2E902C5BC0F76422AAD04E95B2 /* Pods-CheckInPlus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 415B2266B2F1EA1466B0AEE6D1243245 /* Pods-CheckInPlus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F22650E99F547AC22F551C60560CC246 /* Pods-YelpAPI-YelpAPITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C821D549FA0C8170EFE6497E5C274A4 /* Pods-YelpAPI-YelpAPITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E6FCBFF0BCCE24F7463C3E41C8BC412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CE75F0DCD94A1A113665B974F74795F;
+			remoteInfo = Keys;
+		};
+		8D6E12F416302C83E19052E844DD9BE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CE75F0DCD94A1A113665B974F74795F;
+			remoteInfo = Keys;
+		};
+		BE2616491552B49791C20EF6345C2D78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF208A0174CEA8882075AA9F90D47AE8;
+			remoteInfo = "Pods-CheckInPlus";
+		};
+		E3D0EF8EAB799EED318ED1407846F2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CE75F0DCD94A1A113665B974F74795F;
+			remoteInfo = Keys;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		072354C5A9D59B4A6AD9450C18C547C4 /* Pods-CheckInPlus-CheckInPlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckInPlus-CheckInPlusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		08193162FEACDA4C46DB7ECEE792ACD9 /* Pods-CheckInPlus-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckInPlus-Info.plist"; sourceTree = "<group>"; };
+		0B0AACE62C1D9DB5662E69E00DBABAE9 /* Pods-FoursquareAPI-FoursquareAPITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FoursquareAPI-FoursquareAPITests.modulemap"; sourceTree = "<group>"; };
+		0B9DDC9F0DFAA97769A0E31CED64FCFD /* Pods-YelpAPI-YelpAPITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YelpAPI-YelpAPITests.modulemap"; sourceTree = "<group>"; };
+		0D02BF5E0116BF65399C4CE389A243C2 /* Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig"; sourceTree = "<group>"; };
+		153F5D79C34A24F748290D11DAB646C3 /* Keys-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Keys-prefix.pch"; sourceTree = "<group>"; };
+		1634B18C4308F81D152F3A4EFF241819 /* Pods-CheckInPlus-CheckInPlusUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CheckInPlus-CheckInPlusUITests-umbrella.h"; sourceTree = "<group>"; };
+		1741A56791CCF0C91E45E36257FAB096 /* CheckInPlusKeys.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CheckInPlusKeys.m; sourceTree = "<group>"; };
+		1DFF1DB52DCC22741215CA8589978F12 /* Pods-YelpAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YelpAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		1E26D7D70040BCCFCDA71154B6DA47E7 /* Keys-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Keys-Info.plist"; sourceTree = "<group>"; };
+		1F13C8EA9701E060C7F2017DF74EB5D7 /* Pods-YelpAPI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YelpAPI-acknowledgements.plist"; sourceTree = "<group>"; };
+		2E263071B25FA2776C497F7345B0F0ED /* Pods-YelpAPI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YelpAPI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		30402A1ADE67B105BA9172C5AAAFF739 /* Pods-YelpAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YelpAPI-umbrella.h"; sourceTree = "<group>"; };
+		3120B8D9500E0FA45F584F680D7CD6F2 /* Pods_CheckInPlus_CheckInPlusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CheckInPlus_CheckInPlusUITests.framework; path = "Pods-CheckInPlus-CheckInPlusUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		38CBF653AF5B922F04D2FED4B887E7A5 /* Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C4F444EE097F2F4276A1DF2E1C35EEF /* Pods-CheckInPlus-CheckInPlusUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CheckInPlus-CheckInPlusUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3D0089D460A5C91323AFC75B22DB332D /* Pods-CheckInPlusTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CheckInPlusTests-umbrella.h"; sourceTree = "<group>"; };
+		3D738D3CD6EBC5D48A947D8844A089B2 /* Pods-FoursquareAPI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoursquareAPI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		415B2266B2F1EA1466B0AEE6D1243245 /* Pods-CheckInPlus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CheckInPlus-umbrella.h"; sourceTree = "<group>"; };
+		45302DC405900A3E1BF36E1F79A25DDB /* Pods_YelpAPI_YelpAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YelpAPI_YelpAPITests.framework; path = "Pods-YelpAPI-YelpAPITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DB1D1DC1EA4298E96AC711CA4CAC0D5 /* Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E78D412D5301831DC3FA57C677EC8CD /* Pods-CheckInPlusTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CheckInPlusTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4FE47415992B2AA106D0B145D9B262B7 /* Pods-YelpAPI-YelpAPITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YelpAPI-YelpAPITests-Info.plist"; sourceTree = "<group>"; };
+		563F5A4E66C9F70D0C69DBF72AB8C245 /* Pods-FoursquareAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FoursquareAPI-dummy.m"; sourceTree = "<group>"; };
+		5AFB35D39383869120CEBCF9E5CD29DE /* Pods_FoursquareAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FoursquareAPI.framework; path = "Pods-FoursquareAPI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		614CD5694A4D57DE486EF0F7C2D03FF7 /* Pods-CheckInPlusTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckInPlusTests-Info.plist"; sourceTree = "<group>"; };
+		63CBEFCD67FE473F61836D2077FB8E80 /* Pods-FoursquareAPI-FoursquareAPITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoursquareAPI-FoursquareAPITests-frameworks.sh"; sourceTree = "<group>"; };
+		6443DD7CB6594A0A31B856ED00F3D59E /* Pods-YelpAPI-YelpAPITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YelpAPI-YelpAPITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		690648BFEB228AD79089F056AD793A30 /* Pods-FoursquareAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoursquareAPI.release.xcconfig"; sourceTree = "<group>"; };
+		6FEF4F4E686E524C57C720907EE2C7C3 /* Pods-YelpAPI-YelpAPITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YelpAPI-YelpAPITests-umbrella.h"; sourceTree = "<group>"; };
+		709BB02C7592FB1D6F258402E1A922D2 /* Pods-FoursquareAPI-FoursquareAPITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FoursquareAPI-FoursquareAPITests-umbrella.h"; sourceTree = "<group>"; };
+		70A7C493861EAE1FBCDB7C9A5433BEB6 /* Pods-CheckInPlus-CheckInPlusUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckInPlus-CheckInPlusUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7174491D2CCF83550B231380A18BBFAC /* Pods-CheckInPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckInPlusTests.release.xcconfig"; sourceTree = "<group>"; };
+		779AB17C0CB0F149EA804C4D266D27AB /* Pods-CheckInPlus-CheckInPlusUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckInPlus-CheckInPlusUITests-Info.plist"; sourceTree = "<group>"; };
+		7F801988CF526FE0526F6407F347D45C /* Pods-FoursquareAPI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoursquareAPI-acknowledgements.plist"; sourceTree = "<group>"; };
+		8A27AA210E201225364738B6A9980849 /* Keys.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Keys.modulemap; sourceTree = "<group>"; };
+		8E39949E071BEE08157FDDAAA8617249 /* Keys-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Keys-umbrella.h"; sourceTree = "<group>"; };
+		8EC89E9D24868799F4624F1F5EA4EAD1 /* Pods-FoursquareAPI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoursquareAPI-Info.plist"; sourceTree = "<group>"; };
+		8FB26605F751D7FDE90C433D7944721F /* Pods-CheckInPlusTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CheckInPlusTests-dummy.m"; sourceTree = "<group>"; };
+		92F208773EC45B8E3C9C25A1E9764652 /* Pods_CheckInPlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CheckInPlusTests.framework; path = "Pods-CheckInPlusTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC895ED6A26479E9A0435E88914C519 /* Pods-CheckInPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckInPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BDB132BE4F0553955EC21ADA50181D8 /* Keys-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Keys-dummy.m"; sourceTree = "<group>"; };
+		9C821D549FA0C8170EFE6497E5C274A4 /* Pods-YelpAPI-YelpAPITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YelpAPI-YelpAPITests-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1D97ADAC05C7A157941845486ECEE55 /* Pods-FoursquareAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoursquareAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		A252D8F347BB38439C0E5B61A2CBB726 /* Pods-CheckInPlus-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckInPlus-acknowledgements.plist"; sourceTree = "<group>"; };
+		A54791B91F8B6238C966BBBA3D6B5B23 /* Pods-CheckInPlus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CheckInPlus-dummy.m"; sourceTree = "<group>"; };
+		A657CFBE4F3587C72A3A0D2C5DE936DD /* Pods-CheckInPlus-CheckInPlusUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CheckInPlus-CheckInPlusUITests.modulemap"; sourceTree = "<group>"; };
+		AFE76AA657C0367BCDC850D6AC9D17C0 /* Pods-CheckInPlus-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CheckInPlus-frameworks.sh"; sourceTree = "<group>"; };
+		B047574458899CB985892631570CE5FB /* CheckInPlusKeys.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CheckInPlusKeys.h; sourceTree = "<group>"; };
+		B055A3D282C691EFAD2F6D8B29213AD5 /* Pods-FoursquareAPI-FoursquareAPITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoursquareAPI-FoursquareAPITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BA61981B94F0DD882CF4A4500CE2A465 /* Pods-CheckInPlus-CheckInPlusUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CheckInPlus-CheckInPlusUITests-dummy.m"; sourceTree = "<group>"; };
+		BD6865251C7E90990238E7217EAA6BE6 /* Pods-CheckInPlusTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CheckInPlusTests.modulemap"; sourceTree = "<group>"; };
+		C510D61127E768C6638AD92FD0F4A18E /* Pods-CheckInPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckInPlus.debug.xcconfig"; sourceTree = "<group>"; };
+		C5A4A4EEBD008B6099614BB751A79DC2 /* Pods-YelpAPI-YelpAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YelpAPI-YelpAPITests.release.xcconfig"; sourceTree = "<group>"; };
+		C9B5B036F8B7DA2E840ED8B69E0F2458 /* Pods-CheckInPlus-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CheckInPlus-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D35456C15CB2167E83B0AEFE1438D3FB /* Pods-YelpAPI-YelpAPITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YelpAPI-YelpAPITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D3A68A3274B8D2424D34EF6C4162FF06 /* Pods-YelpAPI-YelpAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YelpAPI-YelpAPITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC35D17A6A8C8A3DAE09AC0EDDF4F5D7 /* Pods-YelpAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YelpAPI.release.xcconfig"; sourceTree = "<group>"; };
+		DCDFD77E7BCC7417E36942DAA722DCA2 /* Pods-YelpAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YelpAPI-dummy.m"; sourceTree = "<group>"; };
+		DF068627C5AF3E0FBC3C56A3300AC104 /* Pods-CheckInPlusTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckInPlusTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E004C447C91C1B5A98A5625A0B71C5A6 /* Pods-FoursquareAPI-FoursquareAPITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoursquareAPI-FoursquareAPITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E15A2A19850D0D540AA8A87472A65890 /* Pods-FoursquareAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FoursquareAPI.modulemap"; sourceTree = "<group>"; };
+		E3280C031D373242269F3981A206FDA1 /* Keys.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
+		E45EF34E64D92A353D8C0EBCBEB75BAE /* Pods-YelpAPI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YelpAPI-Info.plist"; sourceTree = "<group>"; };
+		E48A51D14C8842BECA0DE2FD5F014C42 /* Pods-FoursquareAPI-FoursquareAPITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FoursquareAPI-FoursquareAPITests-dummy.m"; sourceTree = "<group>"; };
+		E73C820710F341DFB06105C08D105816 /* Pods-FoursquareAPI-FoursquareAPITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoursquareAPI-FoursquareAPITests-Info.plist"; sourceTree = "<group>"; };
+		E8CACB8744373C1818777FFB8F84C67E /* Keys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Keys.framework; path = Keys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F2884CCF8E52BAD3714EB0FAB951B3 /* Pods-FoursquareAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FoursquareAPI-umbrella.h"; sourceTree = "<group>"; };
+		EC14D8D9F76F3EEF001F1BC660C3AF18 /* Pods-YelpAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YelpAPI.modulemap"; sourceTree = "<group>"; };
+		ED1E937443E0458E57B2778A58FB9F1D /* Pods-CheckInPlus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CheckInPlus.modulemap"; sourceTree = "<group>"; };
+		EDE2051257B603AEAC54DE9271AC0CB7 /* Pods_CheckInPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CheckInPlus.framework; path = "Pods-CheckInPlus.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFD1C80CF85E03C774D2801A2DD99E2A /* Pods_YelpAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YelpAPI.framework; path = "Pods-YelpAPI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D9C549700F30907AF17BBF263E95E6 /* Pods_FoursquareAPI_FoursquareAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FoursquareAPI_FoursquareAPITests.framework; path = "Pods-FoursquareAPI-FoursquareAPITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6F961FA58C4138311D353BAC172BA81 /* Keys.podspec.json */ = {isa = PBXFileReference; includeInIndex = 1; path = Keys.podspec.json; sourceTree = "<group>"; };
+		FFE5ABB2F36973D41D1F6C3BAF86D63E /* Pods-CheckInPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckInPlus.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DE41E1E683DFF86E56F5049A156EECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AC137C1EE9F4EE253B38D65A5911169 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D3E1A84ACAAB0B2BB604BB3562B0A88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45255517B86A25823F3FD12606D6BC85 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64B90B8B118F6B7880BA9C61DDA57ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F6DE0D6B2437153E41233D811CFA3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		922F925E12B3BC3FA3849031926595A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1699A2FEA177B8F64D038C9882878003 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF735BB439F090FF84C79557AB4BF4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CC1D71341CB84630B8B0D698BFDC49 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3C76E698737C5C0EA8A35373F4CD41D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70E8EC061630928B3EF3D2C6623F2EBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F03C0FEB9818A9A4B06C8FAF4F9E7769 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0071D103EFD26742D5866775B3816238 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F284CBAA7811FAFED81B0497646E7E19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764E9DB8E4CEE06C9C27B02B5979280E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31B7F81185245EFFFEAC4B3242B66E0E /* Pods-CheckInPlusTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD6865251C7E90990238E7217EAA6BE6 /* Pods-CheckInPlusTests.modulemap */,
+				4E78D412D5301831DC3FA57C677EC8CD /* Pods-CheckInPlusTests-acknowledgements.markdown */,
+				DF068627C5AF3E0FBC3C56A3300AC104 /* Pods-CheckInPlusTests-acknowledgements.plist */,
+				8FB26605F751D7FDE90C433D7944721F /* Pods-CheckInPlusTests-dummy.m */,
+				614CD5694A4D57DE486EF0F7C2D03FF7 /* Pods-CheckInPlusTests-Info.plist */,
+				3D0089D460A5C91323AFC75B22DB332D /* Pods-CheckInPlusTests-umbrella.h */,
+				9BC895ED6A26479E9A0435E88914C519 /* Pods-CheckInPlusTests.debug.xcconfig */,
+				7174491D2CCF83550B231380A18BBFAC /* Pods-CheckInPlusTests.release.xcconfig */,
+			);
+			name = "Pods-CheckInPlusTests";
+			path = "Target Support Files/Pods-CheckInPlusTests";
+			sourceTree = "<group>";
+		};
+		6F7C8F68E3B6E9580DB42F65A2FF202E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F6F961FA58C4138311D353BAC172BA81 /* Keys.podspec.json */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		918C67CEDF38AB6FC9603B3803A92E0F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E31401E72D4DBE8DB03EB3EEE0F5B00E /* Keys */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		99B68AF24E43D5AB4B56FFD037DCFEC4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3CAC605BC203F13C43CDE54771E1FFE /* Pods-CheckInPlus */,
+				E3ECD68DB86B0CDB6C49D72C87A41831 /* Pods-CheckInPlus-CheckInPlusUITests */,
+				31B7F81185245EFFFEAC4B3242B66E0E /* Pods-CheckInPlusTests */,
+				EC9BBDBC74DCBD91EF05ADB796536769 /* Pods-FoursquareAPI */,
+				E4D3E72B21B8AC204D60C9839FC88BA5 /* Pods-FoursquareAPI-FoursquareAPITests */,
+				9F4FA1EB7F730C4BE3B906025C624087 /* Pods-YelpAPI */,
+				AF02DC40C51979ADBC21F5BD7EE7C131 /* Pods-YelpAPI-YelpAPITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9F4FA1EB7F730C4BE3B906025C624087 /* Pods-YelpAPI */ = {
+			isa = PBXGroup;
+			children = (
+				EC14D8D9F76F3EEF001F1BC660C3AF18 /* Pods-YelpAPI.modulemap */,
+				2E263071B25FA2776C497F7345B0F0ED /* Pods-YelpAPI-acknowledgements.markdown */,
+				1F13C8EA9701E060C7F2017DF74EB5D7 /* Pods-YelpAPI-acknowledgements.plist */,
+				DCDFD77E7BCC7417E36942DAA722DCA2 /* Pods-YelpAPI-dummy.m */,
+				E45EF34E64D92A353D8C0EBCBEB75BAE /* Pods-YelpAPI-Info.plist */,
+				30402A1ADE67B105BA9172C5AAAFF739 /* Pods-YelpAPI-umbrella.h */,
+				1DFF1DB52DCC22741215CA8589978F12 /* Pods-YelpAPI.debug.xcconfig */,
+				DC35D17A6A8C8A3DAE09AC0EDDF4F5D7 /* Pods-YelpAPI.release.xcconfig */,
+			);
+			name = "Pods-YelpAPI";
+			path = "Target Support Files/Pods-YelpAPI";
+			sourceTree = "<group>";
+		};
+		AF02DC40C51979ADBC21F5BD7EE7C131 /* Pods-YelpAPI-YelpAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B9DDC9F0DFAA97769A0E31CED64FCFD /* Pods-YelpAPI-YelpAPITests.modulemap */,
+				6443DD7CB6594A0A31B856ED00F3D59E /* Pods-YelpAPI-YelpAPITests-acknowledgements.markdown */,
+				D35456C15CB2167E83B0AEFE1438D3FB /* Pods-YelpAPI-YelpAPITests-acknowledgements.plist */,
+				9C821D549FA0C8170EFE6497E5C274A4 /* Pods-YelpAPI-YelpAPITests-dummy.m */,
+				4FE47415992B2AA106D0B145D9B262B7 /* Pods-YelpAPI-YelpAPITests-Info.plist */,
+				6FEF4F4E686E524C57C720907EE2C7C3 /* Pods-YelpAPI-YelpAPITests-umbrella.h */,
+				D3A68A3274B8D2424D34EF6C4162FF06 /* Pods-YelpAPI-YelpAPITests.debug.xcconfig */,
+				C5A4A4EEBD008B6099614BB751A79DC2 /* Pods-YelpAPI-YelpAPITests.release.xcconfig */,
+			);
+			name = "Pods-YelpAPI-YelpAPITests";
+			path = "Target Support Files/Pods-YelpAPI-YelpAPITests";
+			sourceTree = "<group>";
+		};
+		AF2C127FCC61C8C17448B47AA0F18513 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A27AA210E201225364738B6A9980849 /* Keys.modulemap */,
+				E3280C031D373242269F3981A206FDA1 /* Keys.xcconfig */,
+				9BDB132BE4F0553955EC21ADA50181D8 /* Keys-dummy.m */,
+				1E26D7D70040BCCFCDA71154B6DA47E7 /* Keys-Info.plist */,
+				153F5D79C34A24F748290D11DAB646C3 /* Keys-prefix.pch */,
+				8E39949E071BEE08157FDDAAA8617249 /* Keys-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Keys";
+			sourceTree = "<group>";
+		};
+		BA9A245B784662D092F38C61DECCD682 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8CACB8744373C1818777FFB8F84C67E /* Keys.framework */,
+				EDE2051257B603AEAC54DE9271AC0CB7 /* Pods_CheckInPlus.framework */,
+				3120B8D9500E0FA45F584F680D7CD6F2 /* Pods_CheckInPlus_CheckInPlusUITests.framework */,
+				92F208773EC45B8E3C9C25A1E9764652 /* Pods_CheckInPlusTests.framework */,
+				5AFB35D39383869120CEBCF9E5CD29DE /* Pods_FoursquareAPI.framework */,
+				F5D9C549700F30907AF17BBF263E95E6 /* Pods_FoursquareAPI_FoursquareAPITests.framework */,
+				EFD1C80CF85E03C774D2801A2DD99E2A /* Pods_YelpAPI.framework */,
+				45302DC405900A3E1BF36E1F79A25DDB /* Pods_YelpAPI_YelpAPITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				918C67CEDF38AB6FC9603B3803A92E0F /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				BA9A245B784662D092F38C61DECCD682 /* Products */,
+				99B68AF24E43D5AB4B56FFD037DCFEC4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E31401E72D4DBE8DB03EB3EEE0F5B00E /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				B047574458899CB985892631570CE5FB /* CheckInPlusKeys.h */,
+				1741A56791CCF0C91E45E36257FAB096 /* CheckInPlusKeys.m */,
+				6F7C8F68E3B6E9580DB42F65A2FF202E /* Pod */,
+				AF2C127FCC61C8C17448B47AA0F18513 /* Support Files */,
+			);
+			name = Keys;
+			path = CocoaPodsKeys;
+			sourceTree = "<group>";
+		};
+		E3CAC605BC203F13C43CDE54771E1FFE /* Pods-CheckInPlus */ = {
+			isa = PBXGroup;
+			children = (
+				ED1E937443E0458E57B2778A58FB9F1D /* Pods-CheckInPlus.modulemap */,
+				C9B5B036F8B7DA2E840ED8B69E0F2458 /* Pods-CheckInPlus-acknowledgements.markdown */,
+				A252D8F347BB38439C0E5B61A2CBB726 /* Pods-CheckInPlus-acknowledgements.plist */,
+				A54791B91F8B6238C966BBBA3D6B5B23 /* Pods-CheckInPlus-dummy.m */,
+				AFE76AA657C0367BCDC850D6AC9D17C0 /* Pods-CheckInPlus-frameworks.sh */,
+				08193162FEACDA4C46DB7ECEE792ACD9 /* Pods-CheckInPlus-Info.plist */,
+				415B2266B2F1EA1466B0AEE6D1243245 /* Pods-CheckInPlus-umbrella.h */,
+				C510D61127E768C6638AD92FD0F4A18E /* Pods-CheckInPlus.debug.xcconfig */,
+				FFE5ABB2F36973D41D1F6C3BAF86D63E /* Pods-CheckInPlus.release.xcconfig */,
+			);
+			name = "Pods-CheckInPlus";
+			path = "Target Support Files/Pods-CheckInPlus";
+			sourceTree = "<group>";
+		};
+		E3ECD68DB86B0CDB6C49D72C87A41831 /* Pods-CheckInPlus-CheckInPlusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A657CFBE4F3587C72A3A0D2C5DE936DD /* Pods-CheckInPlus-CheckInPlusUITests.modulemap */,
+				3C4F444EE097F2F4276A1DF2E1C35EEF /* Pods-CheckInPlus-CheckInPlusUITests-acknowledgements.markdown */,
+				70A7C493861EAE1FBCDB7C9A5433BEB6 /* Pods-CheckInPlus-CheckInPlusUITests-acknowledgements.plist */,
+				BA61981B94F0DD882CF4A4500CE2A465 /* Pods-CheckInPlus-CheckInPlusUITests-dummy.m */,
+				779AB17C0CB0F149EA804C4D266D27AB /* Pods-CheckInPlus-CheckInPlusUITests-Info.plist */,
+				1634B18C4308F81D152F3A4EFF241819 /* Pods-CheckInPlus-CheckInPlusUITests-umbrella.h */,
+				38CBF653AF5B922F04D2FED4B887E7A5 /* Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig */,
+				072354C5A9D59B4A6AD9450C18C547C4 /* Pods-CheckInPlus-CheckInPlusUITests.release.xcconfig */,
+			);
+			name = "Pods-CheckInPlus-CheckInPlusUITests";
+			path = "Target Support Files/Pods-CheckInPlus-CheckInPlusUITests";
+			sourceTree = "<group>";
+		};
+		E4D3E72B21B8AC204D60C9839FC88BA5 /* Pods-FoursquareAPI-FoursquareAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AACE62C1D9DB5662E69E00DBABAE9 /* Pods-FoursquareAPI-FoursquareAPITests.modulemap */,
+				B055A3D282C691EFAD2F6D8B29213AD5 /* Pods-FoursquareAPI-FoursquareAPITests-acknowledgements.markdown */,
+				E004C447C91C1B5A98A5625A0B71C5A6 /* Pods-FoursquareAPI-FoursquareAPITests-acknowledgements.plist */,
+				E48A51D14C8842BECA0DE2FD5F014C42 /* Pods-FoursquareAPI-FoursquareAPITests-dummy.m */,
+				63CBEFCD67FE473F61836D2077FB8E80 /* Pods-FoursquareAPI-FoursquareAPITests-frameworks.sh */,
+				E73C820710F341DFB06105C08D105816 /* Pods-FoursquareAPI-FoursquareAPITests-Info.plist */,
+				709BB02C7592FB1D6F258402E1A922D2 /* Pods-FoursquareAPI-FoursquareAPITests-umbrella.h */,
+				4DB1D1DC1EA4298E96AC711CA4CAC0D5 /* Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig */,
+				0D02BF5E0116BF65399C4CE389A243C2 /* Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig */,
+			);
+			name = "Pods-FoursquareAPI-FoursquareAPITests";
+			path = "Target Support Files/Pods-FoursquareAPI-FoursquareAPITests";
+			sourceTree = "<group>";
+		};
+		EC9BBDBC74DCBD91EF05ADB796536769 /* Pods-FoursquareAPI */ = {
+			isa = PBXGroup;
+			children = (
+				E15A2A19850D0D540AA8A87472A65890 /* Pods-FoursquareAPI.modulemap */,
+				3D738D3CD6EBC5D48A947D8844A089B2 /* Pods-FoursquareAPI-acknowledgements.markdown */,
+				7F801988CF526FE0526F6407F347D45C /* Pods-FoursquareAPI-acknowledgements.plist */,
+				563F5A4E66C9F70D0C69DBF72AB8C245 /* Pods-FoursquareAPI-dummy.m */,
+				8EC89E9D24868799F4624F1F5EA4EAD1 /* Pods-FoursquareAPI-Info.plist */,
+				E8F2884CCF8E52BAD3714EB0FAB951B3 /* Pods-FoursquareAPI-umbrella.h */,
+				A1D97ADAC05C7A157941845486ECEE55 /* Pods-FoursquareAPI.debug.xcconfig */,
+				690648BFEB228AD79089F056AD793A30 /* Pods-FoursquareAPI.release.xcconfig */,
+			);
+			name = "Pods-FoursquareAPI";
+			path = "Target Support Files/Pods-FoursquareAPI";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		03D09B204579DFE14DDFAF9BB7CCD1DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512D0F7F8A0FAF117CAEFD5CCE1FE06E /* Pods-FoursquareAPI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07FB02B22A60A00A105A59FAA91B7D77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA756CF30BF86ED551D7E7C0897D6CC7 /* Pods-YelpAPI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A8109BF98C2DA78282083D8A98D83CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20286B4E8B8B26E483A9809B17BACF1 /* Pods-CheckInPlus-CheckInPlusUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2237224377A5E54BCD3F2A23554264C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80714B2EC69C1A65F54076DE4C834632 /* Pods-FoursquareAPI-FoursquareAPITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F0A96FFC70E596438B958122583090 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDB8D2E902C5BC0F76422AAD04E95B2 /* Pods-CheckInPlus-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF9ADF95717DC72C18334CEE8869AF78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4FF05D5B3C419BEFD70F5A543C670B /* Pods-CheckInPlusTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEEA7124180FD0B5F763301265F90FA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A8BEF6A71D531E57A36D781381487D /* Pods-YelpAPI-YelpAPITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFBFD4B57D4D3D8F5AC87DE5CDF91AC4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86D207AF712B13F3C44545BB3903A8D /* CheckInPlusKeys.h in Headers */,
+				B0F76812D8231BA54940535954D9D48A /* Keys-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		32687857171D507FBC03B0EFE011D2FE /* Pods-FoursquareAPI-FoursquareAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E37AF0F9A9813070FE55F0EFB954BFF /* Build configuration list for PBXNativeTarget "Pods-FoursquareAPI-FoursquareAPITests" */;
+			buildPhases = (
+				2237224377A5E54BCD3F2A23554264C1 /* Headers */,
+				CA0791C3D678AFDD157E483FCFEE4ED7 /* Sources */,
+				D3C76E698737C5C0EA8A35373F4CD41D /* Frameworks */,
+				1D67E5A2FBE68961C7FFB69952FB4964 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46BF675353F5006B04B8764996EEC4C2 /* PBXTargetDependency */,
+			);
+			name = "Pods-FoursquareAPI-FoursquareAPITests";
+			productName = "Pods-FoursquareAPI-FoursquareAPITests";
+			productReference = F5D9C549700F30907AF17BBF263E95E6 /* Pods_FoursquareAPI_FoursquareAPITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5CE75F0DCD94A1A113665B974F74795F /* Keys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 795CB2150073E63FDFE236FC26037B45 /* Build configuration list for PBXNativeTarget "Keys" */;
+			buildPhases = (
+				FFBFD4B57D4D3D8F5AC87DE5CDF91AC4 /* Headers */,
+				2A864AA44D4D2CC6A8C0001B5AE4D218 /* Sources */,
+				922F925E12B3BC3FA3849031926595A0 /* Frameworks */,
+				578B49FAC5467E628C7F79081E2652E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keys;
+			productName = Keys;
+			productReference = E8CACB8744373C1818777FFB8F84C67E /* Keys.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A0318F856C3166A43A77DB107DF0C0C /* Pods-FoursquareAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1BC0EE3647648AB2AB91DBCC5018BFC /* Build configuration list for PBXNativeTarget "Pods-FoursquareAPI" */;
+			buildPhases = (
+				03D09B204579DFE14DDFAF9BB7CCD1DC /* Headers */,
+				9017D755E6526B4FA50A4815AF5DC2B2 /* Sources */,
+				AF735BB439F090FF84C79557AB4BF4DB /* Frameworks */,
+				F7A47810D601CED3F3646E1ADEDB76E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1B86DC6C306A24721AC7AE5B2C96AC1 /* PBXTargetDependency */,
+			);
+			name = "Pods-FoursquareAPI";
+			productName = "Pods-FoursquareAPI";
+			productReference = 5AFB35D39383869120CEBCF9E5CD29DE /* Pods_FoursquareAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		94CD377521B420876F19A16ED4759D26 /* Pods-YelpAPI-YelpAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4935042F1E3F88A352777A77734EFDAC /* Build configuration list for PBXNativeTarget "Pods-YelpAPI-YelpAPITests" */;
+			buildPhases = (
+				DEEA7124180FD0B5F763301265F90FA3 /* Headers */,
+				C4A32E5044E19B1C16868658AB90F68B /* Sources */,
+				64B90B8B118F6B7880BA9C61DDA57ECA /* Frameworks */,
+				10EE858926542BAC49912E666A30C23E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-YelpAPI-YelpAPITests";
+			productName = "Pods-YelpAPI-YelpAPITests";
+			productReference = 45302DC405900A3E1BF36E1F79A25DDB /* Pods_YelpAPI_YelpAPITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1F2E9F676BFD8C237C9B9D6D1CC9784 /* Pods-YelpAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56979645704B9F0BE481E0FFE14F9EC6 /* Build configuration list for PBXNativeTarget "Pods-YelpAPI" */;
+			buildPhases = (
+				07FB02B22A60A00A105A59FAA91B7D77 /* Headers */,
+				E5D6AA559A56E58BCB4387D135B0975E /* Sources */,
+				F284CBAA7811FAFED81B0497646E7E19 /* Frameworks */,
+				ECC6DC429640995107049919F06E7B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-YelpAPI";
+			productName = "Pods-YelpAPI";
+			productReference = EFD1C80CF85E03C774D2801A2DD99E2A /* Pods_YelpAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BAA81AFC7E8BCBB7B4445F2A933E3819 /* Pods-CheckInPlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A6549BE479475FF97D9702C862BDC1A /* Build configuration list for PBXNativeTarget "Pods-CheckInPlusTests" */;
+			buildPhases = (
+				CF9ADF95717DC72C18334CEE8869AF78 /* Headers */,
+				504D13A313E2E3B9FE72E4297FB1E3AB /* Sources */,
+				F03C0FEB9818A9A4B06C8FAF4F9E7769 /* Frameworks */,
+				6A7A19FCD0E797456CEA350CB5A28BEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04B0A3FE8ECA0EE02296F1EA3BBE9D90 /* PBXTargetDependency */,
+			);
+			name = "Pods-CheckInPlusTests";
+			productName = "Pods-CheckInPlusTests";
+			productReference = 92F208773EC45B8E3C9C25A1E9764652 /* Pods_CheckInPlusTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE46EFDD4A493BDE97B2BD4A8C837C62 /* Pods-CheckInPlus-CheckInPlusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06E2DDFD8FA3425DB73DF5FF365A48F5 /* Build configuration list for PBXNativeTarget "Pods-CheckInPlus-CheckInPlusUITests" */;
+			buildPhases = (
+				1A8109BF98C2DA78282083D8A98D83CC /* Headers */,
+				D70CC1DE5A05FB99447F07CF93F9B2EE /* Sources */,
+				5D3E1A84ACAAB0B2BB604BB3562B0A88 /* Frameworks */,
+				F8DF41A2D726A94257BC08E0357B21A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CheckInPlus-CheckInPlusUITests";
+			productName = "Pods-CheckInPlus-CheckInPlusUITests";
+			productReference = 3120B8D9500E0FA45F584F680D7CD6F2 /* Pods_CheckInPlus_CheckInPlusUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF208A0174CEA8882075AA9F90D47AE8 /* Pods-CheckInPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A29D0CCA3457F6FE62BE225CEC2646A1 /* Build configuration list for PBXNativeTarget "Pods-CheckInPlus" */;
+			buildPhases = (
+				44F0A96FFC70E596438B958122583090 /* Headers */,
+				BB5BD23F61817D6D467C54E02035DC1E /* Sources */,
+				3DE41E1E683DFF86E56F5049A156EECF /* Frameworks */,
+				44D4182F91DBD89DE907A91A143B6EE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DEE89ED0ECDDD91F7AF6F6ABD5FFA93 /* PBXTargetDependency */,
+			);
+			name = "Pods-CheckInPlus";
+			productName = "Pods-CheckInPlus";
+			productReference = EDE2051257B603AEAC54DE9271AC0CB7 /* Pods_CheckInPlus.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = BA9A245B784662D092F38C61DECCD682 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CE75F0DCD94A1A113665B974F74795F /* Keys */,
+				DF208A0174CEA8882075AA9F90D47AE8 /* Pods-CheckInPlus */,
+				CE46EFDD4A493BDE97B2BD4A8C837C62 /* Pods-CheckInPlus-CheckInPlusUITests */,
+				BAA81AFC7E8BCBB7B4445F2A933E3819 /* Pods-CheckInPlusTests */,
+				8A0318F856C3166A43A77DB107DF0C0C /* Pods-FoursquareAPI */,
+				32687857171D507FBC03B0EFE011D2FE /* Pods-FoursquareAPI-FoursquareAPITests */,
+				A1F2E9F676BFD8C237C9B9D6D1CC9784 /* Pods-YelpAPI */,
+				94CD377521B420876F19A16ED4759D26 /* Pods-YelpAPI-YelpAPITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10EE858926542BAC49912E666A30C23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D67E5A2FBE68961C7FFB69952FB4964 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D4182F91DBD89DE907A91A143B6EE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578B49FAC5467E628C7F79081E2652E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A7A19FCD0E797456CEA350CB5A28BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC6DC429640995107049919F06E7B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7A47810D601CED3F3646E1ADEDB76E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DF41A2D726A94257BC08E0357B21A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A864AA44D4D2CC6A8C0001B5AE4D218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D3E9D886CCB9EEE5434B35402D037A /* CheckInPlusKeys.m in Sources */,
+				C441C2BC18B83D0C36ADF4D28974728E /* Keys-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504D13A313E2E3B9FE72E4297FB1E3AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5CEFA3EE2FF44895B29A8AB640AD33 /* Pods-CheckInPlusTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9017D755E6526B4FA50A4815AF5DC2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E8415A3BBA2064B58915E612220368 /* Pods-FoursquareAPI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5BD23F61817D6D467C54E02035DC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB684CC98D34518494435498C372187 /* Pods-CheckInPlus-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A32E5044E19B1C16868658AB90F68B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22650E99F547AC22F551C60560CC246 /* Pods-YelpAPI-YelpAPITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA0791C3D678AFDD157E483FCFEE4ED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB150C8604430CF84EE3F5F16BBEF006 /* Pods-FoursquareAPI-FoursquareAPITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D70CC1DE5A05FB99447F07CF93F9B2EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F870DA79DDB1332972AD1DC7FC6712 /* Pods-CheckInPlus-CheckInPlusUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D6AA559A56E58BCB4387D135B0975E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84982231207B6CD723D2700A7D50AC13 /* Pods-YelpAPI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04B0A3FE8ECA0EE02296F1EA3BBE9D90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CheckInPlus";
+			target = DF208A0174CEA8882075AA9F90D47AE8 /* Pods-CheckInPlus */;
+			targetProxy = BE2616491552B49791C20EF6345C2D78 /* PBXContainerItemProxy */;
+		};
+		46BF675353F5006B04B8764996EEC4C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Keys;
+			target = 5CE75F0DCD94A1A113665B974F74795F /* Keys */;
+			targetProxy = 8D6E12F416302C83E19052E844DD9BE6 /* PBXContainerItemProxy */;
+		};
+		7DEE89ED0ECDDD91F7AF6F6ABD5FFA93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Keys;
+			target = 5CE75F0DCD94A1A113665B974F74795F /* Keys */;
+			targetProxy = E3D0EF8EAB799EED318ED1407846F2AF /* PBXContainerItemProxy */;
+		};
+		F1B86DC6C306A24721AC7AE5B2C96AC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Keys;
+			target = 5CE75F0DCD94A1A113665B974F74795F /* Keys */;
+			targetProxy = 6E6FCBFF0BCCE24F7463C3E41C8BC412 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1F94796D68C18E3124F4DACDDC9223F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC895ED6A26479E9A0435E88914C519 /* Pods-CheckInPlusTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CheckInPlusTests/Pods-CheckInPlusTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CheckInPlusTests/Pods-CheckInPlusTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2D3A6CF9EA72B2839639771088FEFE59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 072354C5A9D59B4A6AD9450C18C547C4 /* Pods-CheckInPlus-CheckInPlusUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		47E5A6E43698FAED8FCE4B37A019802B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFE5ABB2F36973D41D1F6C3BAF86D63E /* Pods-CheckInPlus.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CheckInPlus/Pods-CheckInPlus-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CheckInPlus/Pods-CheckInPlus.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D84475EE73C481FD7502948E1BF127F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC35D17A6A8C8A3DAE09AC0EDDF4F5D7 /* Pods-YelpAPI.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YelpAPI/Pods-YelpAPI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YelpAPI/Pods-YelpAPI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		66F70AA78F58247C487134EF36DA7B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 690648BFEB228AD79089F056AD793A30 /* Pods-FoursquareAPI.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FoursquareAPI/Pods-FoursquareAPI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FoursquareAPI/Pods-FoursquareAPI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		779EF1D727D60A5A1059657827F7C6AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3A68A3274B8D2424D34EF6C4162FF06 /* Pods-YelpAPI-YelpAPITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YelpAPI-YelpAPITests/Pods-YelpAPI-YelpAPITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YelpAPI-YelpAPITests/Pods-YelpAPI-YelpAPITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		795C2B7E8558D93BA3E41BC957BB8413 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7174491D2CCF83550B231380A18BBFAC /* Pods-CheckInPlusTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CheckInPlusTests/Pods-CheckInPlusTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CheckInPlusTests/Pods-CheckInPlusTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C48A44E6010465E65558020799C4693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3280C031D373242269F3981A206FDA1 /* Keys.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Keys/Keys-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Keys/Keys-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Keys/Keys.modulemap";
+				PRODUCT_MODULE_NAME = Keys;
+				PRODUCT_NAME = Keys;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B076956C4C0D522ACA3FA0337882918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D02BF5E0116BF65399C4CE389A243C2 /* Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FoursquareAPI-FoursquareAPITests/Pods-FoursquareAPI-FoursquareAPITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FoursquareAPI-FoursquareAPITests/Pods-FoursquareAPI-FoursquareAPITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		93F68157D42EA3EAF07221BF5DD7E847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DFF1DB52DCC22741215CA8589978F12 /* Pods-YelpAPI.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YelpAPI/Pods-YelpAPI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YelpAPI/Pods-YelpAPI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BAC0AA33E11E27490B6529F57A7C4584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3280C031D373242269F3981A206FDA1 /* Keys.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Keys/Keys-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Keys/Keys-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Keys/Keys.modulemap";
+				PRODUCT_MODULE_NAME = Keys;
+				PRODUCT_NAME = Keys;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C2B4B0E3D934CEADCD9721B88985DE47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38CBF653AF5B922F04D2FED4B887E7A5 /* Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C9E14EE076FD061109B38D264D134150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1D97ADAC05C7A157941845486ECEE55 /* Pods-FoursquareAPI.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FoursquareAPI/Pods-FoursquareAPI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FoursquareAPI/Pods-FoursquareAPI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D6A2EF3936FD2E4B59BB59CBA5581981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5A4A4EEBD008B6099614BB751A79DC2 /* Pods-YelpAPI-YelpAPITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YelpAPI-YelpAPITests/Pods-YelpAPI-YelpAPITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YelpAPI-YelpAPITests/Pods-YelpAPI-YelpAPITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E0F5DEF3C3A72DCEAEB152E08DA78FBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DB1D1DC1EA4298E96AC711CA4CAC0D5 /* Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FoursquareAPI-FoursquareAPITests/Pods-FoursquareAPI-FoursquareAPITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FoursquareAPI-FoursquareAPITests/Pods-FoursquareAPI-FoursquareAPITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E3322633882AD7E420648DF843C2C326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C510D61127E768C6638AD92FD0F4A18E /* Pods-CheckInPlus.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CheckInPlus/Pods-CheckInPlus-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CheckInPlus/Pods-CheckInPlus.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F090CD07A80273D5A73C8EA19224ADDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06E2DDFD8FA3425DB73DF5FF365A48F5 /* Build configuration list for PBXNativeTarget "Pods-CheckInPlus-CheckInPlusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B4B0E3D934CEADCD9721B88985DE47 /* Debug */,
+				2D3A6CF9EA72B2839639771088FEFE59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				131356BE54884448CA49C07BEDF4BB2A /* Debug */,
+				F090CD07A80273D5A73C8EA19224ADDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4935042F1E3F88A352777A77734EFDAC /* Build configuration list for PBXNativeTarget "Pods-YelpAPI-YelpAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779EF1D727D60A5A1059657827F7C6AB /* Debug */,
+				D6A2EF3936FD2E4B59BB59CBA5581981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56979645704B9F0BE481E0FFE14F9EC6 /* Build configuration list for PBXNativeTarget "Pods-YelpAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93F68157D42EA3EAF07221BF5DD7E847 /* Debug */,
+				5D84475EE73C481FD7502948E1BF127F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E37AF0F9A9813070FE55F0EFB954BFF /* Build configuration list for PBXNativeTarget "Pods-FoursquareAPI-FoursquareAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0F5DEF3C3A72DCEAEB152E08DA78FBF /* Debug */,
+				8B076956C4C0D522ACA3FA0337882918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A6549BE479475FF97D9702C862BDC1A /* Build configuration list for PBXNativeTarget "Pods-CheckInPlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F94796D68C18E3124F4DACDDC9223F1 /* Debug */,
+				795C2B7E8558D93BA3E41BC957BB8413 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		795CB2150073E63FDFE236FC26037B45 /* Build configuration list for PBXNativeTarget "Keys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC0AA33E11E27490B6529F57A7C4584 /* Debug */,
+				7C48A44E6010465E65558020799C4693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A29D0CCA3457F6FE62BE225CEC2646A1 /* Build configuration list for PBXNativeTarget "Pods-CheckInPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3322633882AD7E420648DF843C2C326 /* Debug */,
+				47E5A6E43698FAED8FCE4B37A019802B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1BC0EE3647648AB2AB91DBCC5018BFC /* Build configuration list for PBXNativeTarget "Pods-FoursquareAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E14EE076FD061109B38D264D134150 /* Debug */,
+				66F70AA78F58247C487134EF36DA7B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
