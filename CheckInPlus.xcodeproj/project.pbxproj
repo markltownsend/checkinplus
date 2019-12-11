@@ -26,6 +26,11 @@
 		4D0267B02398504600B063DC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267AF2398504600B063DC /* Router.swift */; };
 		4D0267B22398560100B063DC /* FoursquareAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267B12398560100B063DC /* FoursquareAPIManager.swift */; };
 		4D0267B42398581100B063DC /* HTTPURLResponse+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267B32398581100B063DC /* HTTPURLResponse+Extension.swift */; };
+		4D1A7F6A239F1D3E00ADFB14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */; };
+		4D4AC85723A01A140019866E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85623A01A140019866E /* LoginViewController.swift */; };
+		4D4AC85923A01EA50019866E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4AC85823A01EA50019866E /* LoginView.xib */; };
+		4D4AC85B23A028300019866E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85A23A028300019866E /* Constants.swift */; };
+		4D4AC85E23A037400019866E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85D23A037400019866E /* SettingsView.swift */; };
 		4D9D354E239EC23E0052E728 /* CheckInVenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D354D239EC23E0052E728 /* CheckInVenueViewModel.swift */; };
 		4D9D3551239EC7F70052E728 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D3550239EC7F70052E728 /* LocationManager.swift */; };
 		4DC7CFCD235BF72A00E0ADA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFCC235BF72A00E0ADA6 /* AppDelegate.swift */; };
@@ -183,6 +188,12 @@
 		4D0267AF2398504600B063DC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4D0267B12398560100B063DC /* FoursquareAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIManager.swift; sourceTree = "<group>"; };
 		4D0267B32398581100B063DC /* HTTPURLResponse+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Extension.swift"; sourceTree = "<group>"; };
+		4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		4D4AC85623A01A140019866E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4D4AC85823A01EA50019866E /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		4D4AC85A23A028300019866E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4D4AC85C23A02C2C0019866E /* CheckInPlus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheckInPlus.entitlements; sourceTree = "<group>"; };
+		4D4AC85D23A037400019866E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4D9D354D239EC23E0052E728 /* CheckInVenueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVenueViewModel.swift; sourceTree = "<group>"; };
 		4D9D3550239EC7F70052E728 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		4DC7CFC9235BF72A00E0ADA6 /* CheckInPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckInPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -356,6 +367,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4D1A7F6B239F1D4E00ADFB14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D4AC85C23A02C2C0019866E /* CheckInPlus.entitlements */,
+				4DC7CFD5235BF72C00E0ADA6 /* Assets.xcassets */,
+				4DC7CFDD235BF72C00E0ADA6 /* Info.plist */,
+				4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4D9D354B239EC21C0052E728 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,6 +390,9 @@
 			isa = PBXGroup;
 			children = (
 				4DC7CFD3235BF72A00E0ADA6 /* CheckInVenueListView.swift */,
+				4D4AC85623A01A140019866E /* LoginViewController.swift */,
+				4D4AC85823A01EA50019866E /* LoginView.xib */,
+				4D4AC85D23A037400019866E /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -375,6 +400,7 @@
 		4D9D354F239EC7E30052E728 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4D4AC85A23A028300019866E /* Constants.swift */,
 				4D9D3550239EC7F70052E728 /* LocationManager.swift */,
 			);
 			path = Utils;
@@ -417,14 +443,13 @@
 		4DC7CFCB235BF72A00E0ADA6 /* CheckInPlus */ = {
 			isa = PBXGroup;
 			children = (
+				4D1A7F6B239F1D4E00ADFB14 /* Resources */,
 				4D9D354F239EC7E30052E728 /* Utils */,
 				4D9D354C239EC2250052E728 /* Views */,
 				4D9D354B239EC21C0052E728 /* ViewModels */,
 				4DC7CFCC235BF72A00E0ADA6 /* AppDelegate.swift */,
 				4DC7CFCE235BF72A00E0ADA6 /* SceneDelegate.swift */,
-				4DC7CFD5235BF72C00E0ADA6 /* Assets.xcassets */,
 				4DC7CFDA235BF72C00E0ADA6 /* LaunchScreen.storyboard */,
-				4DC7CFDD235BF72C00E0ADA6 /* Info.plist */,
 				4DC7CFD0235BF72A00E0ADA6 /* CheckInPlus.xcdatamodeld */,
 				4DC7CFD7235BF72C00E0ADA6 /* Preview Content */,
 			);
@@ -634,6 +659,7 @@
 				4DC7CFE9235BF72C00E0ADA6 /* Sources */,
 				4DC7CFEA235BF72C00E0ADA6 /* Frameworks */,
 				4DC7CFEB235BF72C00E0ADA6 /* Resources */,
+				FF189475BD31DD1ADB31F5A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -817,7 +843,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DC7CFDC235BF72C00E0ADA6 /* LaunchScreen.storyboard in Resources */,
+				4D1A7F6A239F1D3E00ADFB14 /* Localizable.strings in Resources */,
 				4DC7CFD9235BF72C00E0ADA6 /* Preview Assets.xcassets in Resources */,
+				4D4AC85923A01EA50019866E /* LoginView.xib in Resources */,
 				4DC7CFD6235BF72C00E0ADA6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1055,6 +1083,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FF189475BD31DD1ADB31F5A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1085,12 +1130,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D4AC85723A01A140019866E /* LoginViewController.swift in Sources */,
 				4DC7CFCD235BF72A00E0ADA6 /* AppDelegate.swift in Sources */,
 				4DC7CFD2235BF72A00E0ADA6 /* CheckInPlus.xcdatamodeld in Sources */,
+				4D4AC85E23A037400019866E /* SettingsView.swift in Sources */,
 				4D9D3551239EC7F70052E728 /* LocationManager.swift in Sources */,
 				4DC7CFD4235BF72A00E0ADA6 /* CheckInVenueListView.swift in Sources */,
 				4DC7CFCF235BF72A00E0ADA6 /* SceneDelegate.swift in Sources */,
 				4D9D354E239EC23E0052E728 /* CheckInVenueViewModel.swift in Sources */,
+				4D4AC85B23A028300019866E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1445,11 +1493,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CheckInPlus/Resources/CheckInPlus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CheckInPlus/Preview Content\"";
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CheckInPlus/Info.plist;
+				INFOPLIST_FILE = CheckInPlus/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1468,11 +1517,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CheckInPlus/Resources/CheckInPlus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CheckInPlus/Preview Content\"";
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CheckInPlus/Info.plist;
+				INFOPLIST_FILE = CheckInPlus/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

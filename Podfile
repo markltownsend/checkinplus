@@ -24,6 +24,7 @@ target 'CheckInPlus' do
   use_frameworks!
 
   # Pods for CheckInPlus
+  pod 'KeychainAccess'
 
   target 'CheckInPlusTests' do
     inherit! :search_paths
@@ -41,6 +42,7 @@ target 'FoursquareAPI' do
   use_frameworks!
 
   # Pods for FoursquareAPI
+  pod 'FSOAuth'
 
   target 'FoursquareAPITests' do
     # Pods for testing

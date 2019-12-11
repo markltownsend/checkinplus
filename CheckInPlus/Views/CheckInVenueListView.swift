@@ -9,10 +9,18 @@
 import SwiftUI
 
 struct CheckInVenueListView: View {
-    @ObservedObject var viewModel: CheckInVenueViewModel
+    @ObservedObject private var viewModel: CheckInVenueViewModel
+    @State private var settingsShowing = false
 
     init() {
         self.viewModel = CheckInVenueViewModel()
+    }
+
+    var settingsButton: some View {
+        Button(action: { self.settingsShowing = true}) {
+            Image(systemName: "gear")
+                .padding(EdgeInsets(top: 40, leading: 40, bottom: 40, trailing: 10))
+        }
     }
 
     var body: some View {
@@ -20,6 +28,10 @@ struct CheckInVenueListView: View {
             List(viewModel.venues) { venue in
                 Text(venue.name)
             }.navigationBarTitle(Text("Venues"))
+            .navigationBarItems(trailing: settingsButton)
+            .sheet(isPresented: $settingsShowing) {
+                SettingsView(showModal: self.$settingsShowing)
+            }
         }.onAppear() {
             self.viewModel.loadData()
         }

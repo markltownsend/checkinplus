@@ -8,6 +8,8 @@
 
 import UIKit
 import SwiftUI
+import AuthenticationServices
+import KeychainAccess
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -33,6 +35,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
         }
+
+        showLogin()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -69,3 +73,30 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+// MARK: - Utility Functions
+private extension SceneDelegate {
+    func showLogin() {
+        let appleIDProvider = ASAuthorizationAppleIDProvider()
+
+        appleIDProvider.getCredentialState(forUserID: Keychain.currentUserIdentifier ?? "") { (credentialState, error) in
+            switch credentialState {
+            case .authorized:
+                // Apple ID valid
+                break
+            case .revoked:
+                // Apple ID credential revoked
+                break
+            case .notFound:
+                DispatchQueue.main.async {
+                    let loginViewController = LoginViewController()
+                    loginViewController.modalPresentationStyle = .formSheet
+                    loginViewController.isModalInPresentation = true
+                    self.window?.rootViewController?.present(loginViewController, animated: true, completion: nil)
+                }
+            default:
+                break
+            }
+        }
+
+    }
+}
