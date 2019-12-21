@@ -10,6 +10,10 @@ plugin 'cocoapods-keys', {
   ]
 }
 
+plugin 'cocoapods-binary'
+
+all_binary!
+
 #plugin 'cocoapods-keys', {
 #  :project => "CheckInPlus",
 #  :target => "YelpAPI",

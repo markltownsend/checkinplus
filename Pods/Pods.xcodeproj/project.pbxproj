@@ -6,26 +6,41 @@
 	objectVersion = 51;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		615C831BCE925ED486B225B87E44926D /* KeychainAccess */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 77F42D2A8C914C856BDE506C99B2A163 /* Build configuration list for PBXAggregateTarget "KeychainAccess" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = KeychainAccess;
+		};
+		BC1DD57C17F14256D230CD023F45C974 /* FSOAuth */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 059A1D0C7350F783BAE2A2A148241518 /* Build configuration list for PBXAggregateTarget "FSOAuth" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = FSOAuth;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		0071D103EFD26742D5866775B3816238 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		0441B3E976E5F55E22731AECFF0DBA88 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F31CC34A9F2FD05D7800A6570D54A /* Keychain.swift */; };
 		06F6DE0D6B2437153E41233D811CFA3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		1699A2FEA177B8F64D038C9882878003 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		24990336BE152C72D782DC36AE4A0E98 /* Pods-FoursquareAPI-FoursquareAPITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C839D162B5C72FA90B4E250A6FF889 /* Pods-FoursquareAPI-FoursquareAPITests-dummy.m */; };
-		3FCCD9667C7CB8B7225B1E2D768A9523 /* FSOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 7594B503CEF56F8B28140AF278094AEE /* FSOAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4010879BD3EFB9C9B2699F860C32B023 /* Pods-FoursquareAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA50C1DD336A16E04371C8D0247BCEE3 /* Pods-FoursquareAPI-dummy.m */; };
-		4AEB48FE18565A59266480250E7C3FEA /* KeychainAccess-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 315ADF16CF913F9F02B14ECABDBEC8F8 /* KeychainAccess-dummy.m */; };
 		5078200791FB26C33E089D47613EFC0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		64E6CED955D32860A98C5041377095D6 /* Pods-CheckInPlus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 936BED696F8B8089DC4F67FCC3B3B042 /* Pods-CheckInPlus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		764E9DB8E4CEE06C9C27B02B5979280E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		7959E9FEE73967306B055DB37F3A7365 /* FSOAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA926D81AB20A6FBB95810EEC86CB2D3 /* FSOAuth-dummy.m */; };
 		84982231207B6CD723D2700A7D50AC13 /* Pods-YelpAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 605BDB3AE8AB9B945D4F21913DEA9CEE /* Pods-YelpAPI-dummy.m */; };
 		88D3E9D886CCB9EEE5434B35402D037A /* CheckInPlusKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 1741A56791CCF0C91E45E36257FAB096 /* CheckInPlusKeys.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8B244360602DF2EADF823304105CBBE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		91E68096FD29CE69072C6267790B1775 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		9A2DFC026F80214A1591FEC4DA825A53 /* Pods-CheckInPlus-CheckInPlusUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3724FFDB5F6ABD35A71E56A3D998DD6B /* Pods-CheckInPlus-CheckInPlusUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B4FF05D5B3C419BEFD70F5A543C670B /* Pods-CheckInPlusTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78ECE397820704FD85FB379D572B4F60 /* Pods-CheckInPlusTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9EC4DC3F4A764364051BE6DB7FD72161 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A3DEF89040264E0DAE61E0300F68AEEB /* Pods-FoursquareAPI-FoursquareAPITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4FEABA791E2821422F0AD5A9613F96 /* Pods-FoursquareAPI-FoursquareAPITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0F76812D8231BA54940535954D9D48A /* Keys-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E39949E071BEE08157FDDAAA8617249 /* Keys-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B418D6F414B50128D0F8E31F33DA0098 /* Pods-FoursquareAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03AA39114AD60DAD4AE15116C4B4AD56 /* Pods-FoursquareAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,11 +50,8 @@
 		C441C2BC18B83D0C36ADF4D28974728E /* Keys-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB132BE4F0553955EC21ADA50181D8 /* Keys-dummy.m */; };
 		C86D207AF712B13F3C44545BB3903A8D /* CheckInPlusKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = B047574458899CB985892631570CE5FB /* CheckInPlusKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9A8BEF6A71D531E57A36D781381487D /* Pods-YelpAPI-YelpAPITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A71D625F0A8AF030378748DF4EA85FAF /* Pods-YelpAPI-YelpAPITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC28E0569C25E81ED56E9F71B3AD6B84 /* FSOAuth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA0740317EAB06F022240ADC3E979EEF /* FSOAuth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E09916A2FA06414D4829C3F629797608 /* Pods-CheckInPlus-CheckInPlusUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C996EDFE4BD832117C085E9DEA9847A3 /* Pods-CheckInPlus-CheckInPlusUITests-dummy.m */; };
 		EAD8DAE7854E7BC080DDC847A4EC8363 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		EEADFC5C1C5EC6E3E20506B8E069931D /* KeychainAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC54F67BEF524F13CA36687643CC2656 /* KeychainAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F188A707FA2EFE5464784651922CDE3F /* FSOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4639C378C1140BEA8929045E7A0BAB /* FSOAuth.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F22650E99F547AC22F551C60560CC246 /* Pods-YelpAPI-YelpAPITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEA157A229AB774FCA6B65E931791C1 /* Pods-YelpAPI-YelpAPITests-dummy.m */; };
 		F2A79AC7E489DC85034E64E55749FD80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -115,23 +127,17 @@
 		0090F28F28FB50876482E086F2558261 /* Pods-FoursquareAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoursquareAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		03AA39114AD60DAD4AE15116C4B4AD56 /* Pods-FoursquareAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FoursquareAPI-umbrella.h"; sourceTree = "<group>"; };
 		0868E0BF4BC1A8617450A6A5E8F21A3E /* Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig"; sourceTree = "<group>"; };
-		0F9A8D7A1B12FDBF32D0EE27B187F26A /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
 		106844F491F9DF365839243E5D017426 /* Pods-YelpAPI-YelpAPITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YelpAPI-YelpAPITests-Info.plist"; sourceTree = "<group>"; };
-		13DD00086DF4CFF33B4A17CF82561AF6 /* FSOAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSOAuth-prefix.pch"; sourceTree = "<group>"; };
 		14520F5BCE20F1619AF9DF44067A18CC /* Pods-CheckInPlusTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CheckInPlusTests.modulemap"; sourceTree = "<group>"; };
 		14AB2BC2DD6C0057D328D4D659CAFFD2 /* Pods-YelpAPI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YelpAPI-Info.plist"; sourceTree = "<group>"; };
-		151F31CC34A9F2FD05D7800A6570D54A /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
 		153F5D79C34A24F748290D11DAB646C3 /* Keys-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Keys-prefix.pch"; sourceTree = "<group>"; };
-		1549FFBC6BC931810EC8DC36E90621A6 /* KeychainAccess.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.xcconfig; sourceTree = "<group>"; };
 		1741A56791CCF0C91E45E36257FAB096 /* CheckInPlusKeys.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CheckInPlusKeys.m; sourceTree = "<group>"; };
 		1C2F2430CC86A0B7E24F1D027F9038CA /* Pods-CheckInPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckInPlus.release.xcconfig"; sourceTree = "<group>"; };
 		1E26D7D70040BCCFCDA71154B6DA47E7 /* Keys-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Keys-Info.plist"; sourceTree = "<group>"; };
 		22B3EBD8C847537B2837B326713042B8 /* Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		246D6B4C1B7D9464BEA91307D3DBD291 /* Pods-CheckInPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckInPlus.debug.xcconfig"; sourceTree = "<group>"; };
-		254C49F8523199A2A0E6FD383C528AFA /* FSOAuth-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FSOAuth-Info.plist"; sourceTree = "<group>"; };
 		291CCAC519B6F70A6906DE3F58E31634 /* Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig"; sourceTree = "<group>"; };
 		3120B8D9500E0FA45F584F680D7CD6F2 /* Pods_CheckInPlus_CheckInPlusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CheckInPlus_CheckInPlusUITests.framework; path = "Pods-CheckInPlus-CheckInPlusUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		315ADF16CF913F9F02B14ECABDBEC8F8 /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		32CD437E4B4F8311917B636A405C0B1F /* Pods-CheckInPlusTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckInPlusTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		336FFCA0FA0B23BB880070D6518A63D4 /* Pods-CheckInPlus-CheckInPlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckInPlus-CheckInPlusUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,7 +145,6 @@
 		3C4F9794A4DF054F25A26DF673FA793C /* Pods-YelpAPI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YelpAPI-acknowledgements.markdown"; sourceTree = "<group>"; };
 		44376AA2BE62A6FD31C06F1EA8691D9D /* Pods-CheckInPlus-CheckInPlusUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CheckInPlus-CheckInPlusUITests.modulemap"; sourceTree = "<group>"; };
 		45302DC405900A3E1BF36E1F79A25DDB /* Pods_YelpAPI_YelpAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YelpAPI_YelpAPITests.framework; path = "Pods-YelpAPI-YelpAPITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C4639C378C1140BEA8929045E7A0BAB /* FSOAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FSOAuth.m; sourceTree = "<group>"; };
 		4E1408D89EC687B5263C448054A32223 /* Pods-CheckInPlus-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckInPlus-Info.plist"; sourceTree = "<group>"; };
 		514B0EB317E4B5117AE7EC7F873824A0 /* Pods-YelpAPI-YelpAPITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YelpAPI-YelpAPITests.modulemap"; sourceTree = "<group>"; };
 		58BF5538ABC65D59BDB884B3C9E20F1E /* Pods-FoursquareAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoursquareAPI.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,25 +154,22 @@
 		605BDB3AE8AB9B945D4F21913DEA9CEE /* Pods-YelpAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YelpAPI-dummy.m"; sourceTree = "<group>"; };
 		68328E8B6BAD5B2EAE6FF9CC03C4FA80 /* Pods-CheckInPlusTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckInPlusTests-Info.plist"; sourceTree = "<group>"; };
 		6F732D0D796B557168FB3488F2908000 /* Pods-CheckInPlusTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CheckInPlusTests-dummy.m"; sourceTree = "<group>"; };
-		7594B503CEF56F8B28140AF278094AEE /* FSOAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSOAuth.h; sourceTree = "<group>"; };
 		75A14DDA329EC9C9072560236DD3A9E9 /* Pods-CheckInPlus-CheckInPlusUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CheckInPlus-CheckInPlusUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		75D4575F63D687024385ACA6A56FB12D /* Pods-CheckInPlus-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CheckInPlus-acknowledgements.markdown"; sourceTree = "<group>"; };
 		78ECE397820704FD85FB379D572B4F60 /* Pods-CheckInPlusTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CheckInPlusTests-umbrella.h"; sourceTree = "<group>"; };
 		87CE3EDDD0B47342FCED68D19DEA1077 /* Pods-CheckInPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckInPlusTests.release.xcconfig"; sourceTree = "<group>"; };
+		88310BB93E4BCB493AFD1C218276E67E /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = ../_Prebuild/GeneratedFrameworks/KeychainAccess/KeychainAccess.framework; sourceTree = "<group>"; };
+		88CD67E028700B362A460C173964E144 /* FSOAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSOAuth.framework; path = ../_Prebuild/GeneratedFrameworks/FSOAuth/FSOAuth.framework; sourceTree = "<group>"; };
 		8A27AA210E201225364738B6A9980849 /* Keys.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Keys.modulemap; sourceTree = "<group>"; };
 		8E39949E071BEE08157FDDAAA8617249 /* Keys-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Keys-umbrella.h"; sourceTree = "<group>"; };
 		92F208773EC45B8E3C9C25A1E9764652 /* Pods_CheckInPlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CheckInPlusTests.framework; path = "Pods-CheckInPlusTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		936481C6FA7DF6A203C65AAAA1B7FFC9 /* Pods-FoursquareAPI-FoursquareAPITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FoursquareAPI-FoursquareAPITests.modulemap"; sourceTree = "<group>"; };
 		936BED696F8B8089DC4F67FCC3B3B042 /* Pods-CheckInPlus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CheckInPlus-umbrella.h"; sourceTree = "<group>"; };
 		951028D38347B8B7E6DC48A9079D7D5B /* Pods-FoursquareAPI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoursquareAPI-Info.plist"; sourceTree = "<group>"; };
-		9838F3DCA2C6D40EE8B19B8070101E24 /* FSOAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSOAuth.framework; path = FSOAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		99C85FDE27D6FA06453721A80221CAA8 /* KeychainAccess-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeychainAccess-Info.plist"; sourceTree = "<group>"; };
 		9BDB132BE4F0553955EC21ADA50181D8 /* Keys-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Keys-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A71D625F0A8AF030378748DF4EA85FAF /* Pods-YelpAPI-YelpAPITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YelpAPI-YelpAPITests-umbrella.h"; sourceTree = "<group>"; };
 		A898027FB2883BB84FC001854C1FAAF7 /* Pods-YelpAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YelpAPI.modulemap"; sourceTree = "<group>"; };
-		AC54F67BEF524F13CA36687643CC2656 /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
-		AE5B1305380F7DAC09F98F84342DF79A /* FSOAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSOAuth.xcconfig; sourceTree = "<group>"; };
 		AFB2456E03710D741D0352252315103E /* Pods-CheckInPlus-CheckInPlusUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckInPlus-CheckInPlusUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B047574458899CB985892631570CE5FB /* CheckInPlusKeys.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CheckInPlusKeys.h; sourceTree = "<group>"; };
 		B7EB0E4E14E1E25068A0B88C292C88B5 /* Pods-CheckInPlus-CheckInPlusUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckInPlus-CheckInPlusUITests-Info.plist"; sourceTree = "<group>"; };
@@ -179,24 +181,22 @@
 		C5FBCB2DC9B0BC4C7B7F6C1259849CFB /* Pods-CheckInPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckInPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C5FF00D263ED531262CE1014E1045C2D /* Pods-FoursquareAPI-FoursquareAPITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoursquareAPI-FoursquareAPITests-frameworks.sh"; sourceTree = "<group>"; };
 		C996EDFE4BD832117C085E9DEA9847A3 /* Pods-CheckInPlus-CheckInPlusUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CheckInPlus-CheckInPlusUITests-dummy.m"; sourceTree = "<group>"; };
+		CA21F37A077140BB0D159981D96E4D19 /* FSOAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSOAuth.xcconfig; sourceTree = "<group>"; };
 		CC8B1DAEE34FC1A21652509B7DEC0BFE /* Pods-YelpAPI-YelpAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YelpAPI-YelpAPITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE05C30E1FBC6D8A777130193FDBC3C2 /* Pods-YelpAPI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YelpAPI-acknowledgements.plist"; sourceTree = "<group>"; };
 		D2628E593B04E29ACB1960CC787C154A /* Pods-YelpAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YelpAPI-umbrella.h"; sourceTree = "<group>"; };
 		D289F2D900D893F4206B7BC402BD9F95 /* Pods-FoursquareAPI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoursquareAPI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D40928BB63B55881BDC19A0FC1F51FFB /* KeychainAccess.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.xcconfig; sourceTree = "<group>"; };
 		D776FEF2E259B2100F0BEA81BDFA87F3 /* Pods-FoursquareAPI-FoursquareAPITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoursquareAPI-FoursquareAPITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		D8E6E2E50B55E5E927944FB82F888B53 /* Pods-CheckInPlus-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CheckInPlus-frameworks.sh"; sourceTree = "<group>"; };
 		D8E8F9927BE39538CBA66351E32C753B /* Pods-FoursquareAPI-FoursquareAPITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoursquareAPI-FoursquareAPITests-Info.plist"; sourceTree = "<group>"; };
-		D9452E76246CAB0227F0F41FAD0FC352 /* FSOAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FSOAuth.modulemap; sourceTree = "<group>"; };
 		D98739888C8DD11A4C87FFA5F0D84C25 /* Pods-FoursquareAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FoursquareAPI.modulemap"; sourceTree = "<group>"; };
-		DA0740317EAB06F022240ADC3E979EEF /* FSOAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSOAuth-umbrella.h"; sourceTree = "<group>"; };
 		DEC710912EB218D2098FA4EA3A0B239C /* Pods-YelpAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YelpAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		E1EAC85A78B001AE422DC2D07BDD8941 /* Pods-YelpAPI-YelpAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YelpAPI-YelpAPITests.release.xcconfig"; sourceTree = "<group>"; };
 		E3280C031D373242269F3981A206FDA1 /* Keys.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
 		E381870F03C6EE74FE53C731A450B67C /* Pods-FoursquareAPI-FoursquareAPITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoursquareAPI-FoursquareAPITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E8CACB8744373C1818777FFB8F84C67E /* Keys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Keys.framework; path = Keys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8EE7F078656FABB8F6821D10FF994BB /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainAccess.framework; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A0EBC0E430D093C6CE3971954EA1DC /* Pods-YelpAPI-YelpAPITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YelpAPI-YelpAPITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E9EB1851B692D0A04C3C52E7249FA629 /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
 		EA50C1DD336A16E04371C8D0247BCEE3 /* Pods-FoursquareAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FoursquareAPI-dummy.m"; sourceTree = "<group>"; };
 		EDBEBA966F0B73FB27D005EE9A9DF69B /* Pods-FoursquareAPI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoursquareAPI-acknowledgements.plist"; sourceTree = "<group>"; };
 		EDE2051257B603AEAC54DE9271AC0CB7 /* Pods_CheckInPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CheckInPlus.framework; path = "Pods-CheckInPlus.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,7 +204,6 @@
 		F5D9C549700F30907AF17BBF263E95E6 /* Pods_FoursquareAPI_FoursquareAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FoursquareAPI_FoursquareAPITests.framework; path = "Pods-FoursquareAPI-FoursquareAPITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C1362DB2B5FFD737EC925178975063 /* Pods-CheckInPlus-CheckInPlusUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CheckInPlus-CheckInPlusUITests-frameworks.sh"; sourceTree = "<group>"; };
 		F6F961FA58C4138311D353BAC172BA81 /* Keys.podspec.json */ = {isa = PBXFileReference; includeInIndex = 1; path = Keys.podspec.json; sourceTree = "<group>"; };
-		FA926D81AB20A6FBB95810EEC86CB2D3 /* FSOAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSOAuth-dummy.m"; sourceTree = "<group>"; };
 		FEC8A77C7468DD36FCA676979D3925A6 /* Pods-YelpAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YelpAPI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,27 +224,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6202823BEF53688F8934F0C9FE1D0B3C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B244360602DF2EADF823304105CBBE5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		64B90B8B118F6B7880BA9C61DDA57ECA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				06F6DE0D6B2437153E41233D811CFA3B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7668D0A8468B5894E555ECAA4EC50BC1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9EC4DC3F4A764364051BE6DB7FD72161 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,20 +275,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AAB8934AC6DB0F231BFD9DD3C4A68C8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D9452E76246CAB0227F0F41FAD0FC352 /* FSOAuth.modulemap */,
-				AE5B1305380F7DAC09F98F84342DF79A /* FSOAuth.xcconfig */,
-				FA926D81AB20A6FBB95810EEC86CB2D3 /* FSOAuth-dummy.m */,
-				254C49F8523199A2A0E6FD383C528AFA /* FSOAuth-Info.plist */,
-				13DD00086DF4CFF33B4A17CF82561AF6 /* FSOAuth-prefix.pch */,
-				DA0740317EAB06F022240ADC3E979EEF /* FSOAuth-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FSOAuth";
-			sourceTree = "<group>";
-		};
 		0EF3413DE73300AC3CEBD13237407D0D /* Pods-CheckInPlus */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,16 +324,6 @@
 			path = "Target Support Files/Pods-FoursquareAPI";
 			sourceTree = "<group>";
 		};
-		35789571134004EEABDD24882043D83E /* KeychainAccess */ = {
-			isa = PBXGroup;
-			children = (
-				151F31CC34A9F2FD05D7800A6570D54A /* Keychain.swift */,
-				F63FB4E5EAFC622108AAA00E5FD91507 /* Support Files */,
-			);
-			name = KeychainAccess;
-			path = KeychainAccess;
-			sourceTree = "<group>";
-		};
 		40D58E85E2462B88DD0814FFD9D8BF5B /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,13 +338,22 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4880ADF7624D0D9E5442ABC109955A00 /* Pods */ = {
+		51017F7ECED0077B1A8D92E6A051C133 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CBF085225B3282D7E144DE7146A4D1DC /* FSOAuth */,
-				35789571134004EEABDD24882043D83E /* KeychainAccess */,
+				88CD67E028700B362A460C173964E144 /* FSOAuth.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C5C22FAA7BA2640E432176C254D3FF1 /* FSOAuth */ = {
+			isa = PBXGroup;
+			children = (
+				51017F7ECED0077B1A8D92E6A051C133 /* Frameworks */,
+				E02A47EA6A7E767ABEAAA865E18535D6 /* Support Files */,
+			);
+			name = FSOAuth;
+			path = FSOAuth;
 			sourceTree = "<group>";
 		};
 		5C85B0C8C62BEB3FCD635A67082A5420 /* Pods-FoursquareAPI-FoursquareAPITests */ = {
@@ -405,12 +373,40 @@
 			path = "Target Support Files/Pods-FoursquareAPI-FoursquareAPITests";
 			sourceTree = "<group>";
 		};
+		6E6E1195426E9E66A5B5200962D27CD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C22FAA7BA2640E432176C254D3FF1 /* FSOAuth */,
+				6EE56CF01B62EEEF83F8632E0C11689E /* KeychainAccess */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6EE56CF01B62EEEF83F8632E0C11689E /* KeychainAccess */ = {
+			isa = PBXGroup;
+			children = (
+				D607C600340AFED102FDF3EF7FD95708 /* Frameworks */,
+				70D1B6E0BC7AF1D524CB192BFD66BD30 /* Support Files */,
+			);
+			name = KeychainAccess;
+			path = KeychainAccess;
+			sourceTree = "<group>";
+		};
 		6F7C8F68E3B6E9580DB42F65A2FF202E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
 				F6F961FA58C4138311D353BAC172BA81 /* Keys.podspec.json */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		70D1B6E0BC7AF1D524CB192BFD66BD30 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D40928BB63B55881BDC19A0FC1F51FFB /* KeychainAccess.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeychainAccess";
 			sourceTree = "<group>";
 		};
 		84AF36CC001FD349B6F21C2C02BCD9D8 /* Pods-YelpAPI-YelpAPITests */ = {
@@ -454,23 +450,6 @@
 			path = "Target Support Files/Pods-CheckInPlus-CheckInPlusUITests";
 			sourceTree = "<group>";
 		};
-		AC705B9B191B9B8CD6C3DFE8AA7F74F4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9838F3DCA2C6D40EE8B19B8070101E24 /* FSOAuth.framework */,
-				E8EE7F078656FABB8F6821D10FF994BB /* KeychainAccess.framework */,
-				E8CACB8744373C1818777FFB8F84C67E /* Keys.framework */,
-				EDE2051257B603AEAC54DE9271AC0CB7 /* Pods_CheckInPlus.framework */,
-				3120B8D9500E0FA45F584F680D7CD6F2 /* Pods_CheckInPlus_CheckInPlusUITests.framework */,
-				92F208773EC45B8E3C9C25A1E9764652 /* Pods_CheckInPlusTests.framework */,
-				5AFB35D39383869120CEBCF9E5CD29DE /* Pods_FoursquareAPI.framework */,
-				F5D9C549700F30907AF17BBF263E95E6 /* Pods_FoursquareAPI_FoursquareAPITests.framework */,
-				EFD1C80CF85E03C774D2801A2DD99E2A /* Pods_YelpAPI.framework */,
-				45302DC405900A3E1BF36E1F79A25DDB /* Pods_YelpAPI_YelpAPITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		AF2C127FCC61C8C17448B47AA0F18513 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,6 +464,21 @@
 			path = "../Target Support Files/Keys";
 			sourceTree = "<group>";
 		};
+		BA9A245B784662D092F38C61DECCD682 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8CACB8744373C1818777FFB8F84C67E /* Keys.framework */,
+				EDE2051257B603AEAC54DE9271AC0CB7 /* Pods_CheckInPlus.framework */,
+				3120B8D9500E0FA45F584F680D7CD6F2 /* Pods_CheckInPlus_CheckInPlusUITests.framework */,
+				92F208773EC45B8E3C9C25A1E9764652 /* Pods_CheckInPlusTests.framework */,
+				5AFB35D39383869120CEBCF9E5CD29DE /* Pods_FoursquareAPI.framework */,
+				F5D9C549700F30907AF17BBF263E95E6 /* Pods_FoursquareAPI_FoursquareAPITests.framework */,
+				EFD1C80CF85E03C774D2801A2DD99E2A /* Pods_YelpAPI.framework */,
+				45302DC405900A3E1BF36E1F79A25DDB /* Pods_YelpAPI_YelpAPITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,25 +487,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CBF085225B3282D7E144DE7146A4D1DC /* FSOAuth */ = {
-			isa = PBXGroup;
-			children = (
-				7594B503CEF56F8B28140AF278094AEE /* FSOAuth.h */,
-				4C4639C378C1140BEA8929045E7A0BAB /* FSOAuth.m */,
-				0AAB8934AC6DB0F231BFD9DD3C4A68C8 /* Support Files */,
-			);
-			name = FSOAuth;
-			path = FSOAuth;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				918C67CEDF38AB6FC9603B3803A92E0F /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				4880ADF7624D0D9E5442ABC109955A00 /* Pods */,
-				AC705B9B191B9B8CD6C3DFE8AA7F74F4 /* Products */,
+				6E6E1195426E9E66A5B5200962D27CD8 /* Pods */,
+				BA9A245B784662D092F38C61DECCD682 /* Products */,
 				40D58E85E2462B88DD0814FFD9D8BF5B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -522,6 +505,23 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D607C600340AFED102FDF3EF7FD95708 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88310BB93E4BCB493AFD1C218276E67E /* KeychainAccess.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E02A47EA6A7E767ABEAAA865E18535D6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA21F37A077140BB0D159981D96E4D19 /* FSOAuth.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FSOAuth";
 			sourceTree = "<group>";
 		};
 		E31401E72D4DBE8DB03EB3EEE0F5B00E /* Keys */ = {
@@ -552,45 +552,14 @@
 			path = "Target Support Files/Pods-CheckInPlusTests";
 			sourceTree = "<group>";
 		};
-		F63FB4E5EAFC622108AAA00E5FD91507 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E9EB1851B692D0A04C3C52E7249FA629 /* KeychainAccess.modulemap */,
-				1549FFBC6BC931810EC8DC36E90621A6 /* KeychainAccess.xcconfig */,
-				315ADF16CF913F9F02B14ECABDBEC8F8 /* KeychainAccess-dummy.m */,
-				99C85FDE27D6FA06453721A80221CAA8 /* KeychainAccess-Info.plist */,
-				0F9A8D7A1B12FDBF32D0EE27B187F26A /* KeychainAccess-prefix.pch */,
-				AC54F67BEF524F13CA36687643CC2656 /* KeychainAccess-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/KeychainAccess";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0377804EAEDA2F25DBF3324F5426C140 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC28E0569C25E81ED56E9F71B3AD6B84 /* FSOAuth-umbrella.h in Headers */,
-				3FCCD9667C7CB8B7225B1E2D768A9523 /* FSOAuth.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		07FB02B22A60A00A105A59FAA91B7D77 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BA756CF30BF86ED551D7E7C0897D6CC7 /* Pods-YelpAPI-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		39CC3E71CEA7805FCA03E3A1CC052EEA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EEADFC5C1C5EC6E3E20506B8E069931D /* KeychainAccess-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,24 +661,6 @@
 			productReference = E8CACB8744373C1818777FFB8F84C67E /* Keys.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		615C831BCE925ED486B225B87E44926D /* KeychainAccess */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4BEE926243448802ACA6F07A75D9C025 /* Build configuration list for PBXNativeTarget "KeychainAccess" */;
-			buildPhases = (
-				39CC3E71CEA7805FCA03E3A1CC052EEA /* Headers */,
-				C4DE4004EE1661FE4BC4E6C40415F599 /* Sources */,
-				7668D0A8468B5894E555ECAA4EC50BC1 /* Frameworks */,
-				AE292B4411627ABE21EB769134C1E8BB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KeychainAccess;
-			productName = KeychainAccess;
-			productReference = E8EE7F078656FABB8F6821D10FF994BB /* KeychainAccess.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		8A0318F856C3166A43A77DB107DF0C0C /* Pods-FoursquareAPI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F081A5D7875D7543854654E18BEC7C85 /* Build configuration list for PBXNativeTarget "Pods-FoursquareAPI" */;
@@ -785,24 +736,6 @@
 			productReference = 92F208773EC45B8E3C9C25A1E9764652 /* Pods_CheckInPlusTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BC1DD57C17F14256D230CD023F45C974 /* FSOAuth */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2F313B525E0778DB58EE5B2E86320189 /* Build configuration list for PBXNativeTarget "FSOAuth" */;
-			buildPhases = (
-				0377804EAEDA2F25DBF3324F5426C140 /* Headers */,
-				B0A7800801435F45E92C79AC29B75ECE /* Sources */,
-				6202823BEF53688F8934F0C9FE1D0B3C /* Frameworks */,
-				B4039B808EECCDF3268FAAAAC349EF0E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FSOAuth;
-			productName = FSOAuth;
-			productReference = 9838F3DCA2C6D40EE8B19B8070101E24 /* FSOAuth.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		CE46EFDD4A493BDE97B2BD4A8C837C62 /* Pods-CheckInPlus-CheckInPlusUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB4162A3101356F2514946A20A37E0F4 /* Build configuration list for PBXNativeTarget "Pods-CheckInPlus-CheckInPlusUITests" */;
@@ -861,7 +794,7 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = AC705B9B191B9B8CD6C3DFE8AA7F74F4 /* Products */;
+			productRefGroup = BA9A245B784662D092F38C61DECCD682 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -929,20 +862,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE292B4411627ABE21EB769134C1E8BB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B4039B808EECCDF3268FAAAAC349EF0E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		ECC6DC429640995107049919F06E7B70 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -978,29 +897,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0A7800801435F45E92C79AC29B75ECE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7959E9FEE73967306B055DB37F3A7365 /* FSOAuth-dummy.m in Sources */,
-				F188A707FA2EFE5464784651922CDE3F /* FSOAuth.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C4A32E5044E19B1C16868658AB90F68B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F22650E99F547AC22F551C60560CC246 /* Pods-YelpAPI-YelpAPITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C4DE4004EE1661FE4BC4E6C40415F599 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0441B3E976E5F55E22731AECFF0DBA88 /* Keychain.swift in Sources */,
-				4AEB48FE18565A59266480250E7C3FEA /* KeychainAccess-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1096,6 +997,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0DC55D720CEF1076C618F25969B74A49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA21F37A077140BB0D159981D96E4D19 /* FSOAuth.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1276,40 +1193,22 @@
 			};
 			name = Release;
 		};
-		45293695F003AF5DCBA69464D33BD875 /* Debug */ = {
+		515D432B246A208C70AC492357BFFD5E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1549FFBC6BC931810EC8DC36E90621A6 /* KeychainAccess.xcconfig */;
+			baseConfigurationReference = CA21F37A077140BB0D159981D96E4D19 /* FSOAuth.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KeychainAccess/KeychainAccess-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
-				PRODUCT_MODULE_NAME = KeychainAccess;
-				PRODUCT_NAME = KeychainAccess;
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		5D84475EE73C481FD7502948E1BF127F /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1615,41 +1514,6 @@
 			};
 			name = Debug;
 		};
-		A2B8E42701800ED6D3D310A950FCB297 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE5B1305380F7DAC09F98F84342DF79A /* FSOAuth.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FSOAuth/FSOAuth-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FSOAuth/FSOAuth-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/FSOAuth/FSOAuth.modulemap";
-				PRODUCT_MODULE_NAME = FSOAuth;
-				PRODUCT_NAME = FSOAuth;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		A62CDFBDEE93C81E7FDA5FA9060AFFA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 336FFCA0FA0B23BB880070D6518A63D4 /* Pods-CheckInPlus-CheckInPlusUITests.release.xcconfig */;
@@ -1801,6 +1665,39 @@
 			};
 			name = Debug;
 		};
+		CEFCD0090D4B5CC17D36D1D892122E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D40928BB63B55881BDC19A0FC1F51FFB /* KeychainAccess.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5F156F4FC060193AAF38FA6D482B78B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D40928BB63B55881BDC19A0FC1F51FFB /* KeychainAccess.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		D6A2EF3936FD2E4B59BB59CBA5581981 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1EAC85A78B001AE422DC2D07BDD8941 /* Pods-YelpAPI-YelpAPITests.release.xcconfig */;
@@ -1900,86 +1797,14 @@
 			};
 			name = Release;
 		};
-		F5D71B141893BF49F525079BB0304E43 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE5B1305380F7DAC09F98F84342DF79A /* FSOAuth.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FSOAuth/FSOAuth-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FSOAuth/FSOAuth-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/FSOAuth/FSOAuth.modulemap";
-				PRODUCT_MODULE_NAME = FSOAuth;
-				PRODUCT_NAME = FSOAuth;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FF3EC215E8144B4CBE1F2C8440716AA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1549FFBC6BC931810EC8DC36E90621A6 /* KeychainAccess.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KeychainAccess/KeychainAccess-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
-				PRODUCT_MODULE_NAME = KeychainAccess;
-				PRODUCT_NAME = KeychainAccess;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F313B525E0778DB58EE5B2E86320189 /* Build configuration list for PBXNativeTarget "FSOAuth" */ = {
+		059A1D0C7350F783BAE2A2A148241518 /* Build configuration list for PBXAggregateTarget "FSOAuth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2B8E42701800ED6D3D310A950FCB297 /* Debug */,
-				F5D71B141893BF49F525079BB0304E43 /* Release */,
+				0DC55D720CEF1076C618F25969B74A49 /* Debug */,
+				515D432B246A208C70AC492357BFFD5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2011,15 +1836,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BEE926243448802ACA6F07A75D9C025 /* Build configuration list for PBXNativeTarget "KeychainAccess" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				45293695F003AF5DCBA69464D33BD875 /* Debug */,
-				FF3EC215E8144B4CBE1F2C8440716AA6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		56979645704B9F0BE481E0FFE14F9EC6 /* Build configuration list for PBXNativeTarget "Pods-YelpAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2043,6 +1859,15 @@
 			buildConfigurations = (
 				1F94796D68C18E3124F4DACDDC9223F1 /* Debug */,
 				795C2B7E8558D93BA3E41BC957BB8413 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77F42D2A8C914C856BDE506C99B2A163 /* Build configuration list for PBXAggregateTarget "KeychainAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F156F4FC060193AAF38FA6D482B78B /* Debug */,
+				CEFCD0090D4B5CC17D36D1D892122E0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
