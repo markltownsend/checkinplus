@@ -15,7 +15,7 @@
 		4D0267912398419800B063DC /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267902398419800B063DC /* NetworkLayerTests.swift */; };
 		4D0267932398419800B063DC /* NetworkLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D0267832398419800B063DC /* NetworkLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D0267962398419800B063DC /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0267812398419800B063DC /* NetworkLayer.framework */; };
-		4D0267972398419800B063DC /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0267812398419800B063DC /* NetworkLayer.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4D0267972398419800B063DC /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0267812398419800B063DC /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4D02679E239841A800B063DC /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0267812398419800B063DC /* NetworkLayer.framework */; };
 		4D0267A42398421300B063DC /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267A32398421300B063DC /* EndPointType.swift */; };
 		4D0267A62398426E00B063DC /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267A52398426E00B063DC /* HTTPMethod.swift */; };
@@ -26,11 +26,13 @@
 		4D0267B02398504600B063DC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267AF2398504600B063DC /* Router.swift */; };
 		4D0267B22398560100B063DC /* FoursquareAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267B12398560100B063DC /* FoursquareAPIManager.swift */; };
 		4D0267B42398581100B063DC /* HTTPURLResponse+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267B32398581100B063DC /* HTTPURLResponse+Extension.swift */; };
+		4D0A43EE23A6FD97001F6334 /* FoursquareAPIManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A43ED23A6FD97001F6334 /* FoursquareAPIManagerExtension.swift */; };
 		4D1A7F6A239F1D3E00ADFB14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */; };
 		4D4AC85723A01A140019866E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85623A01A140019866E /* LoginViewController.swift */; };
 		4D4AC85923A01EA50019866E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4AC85823A01EA50019866E /* LoginView.xib */; };
 		4D4AC85B23A028300019866E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85A23A028300019866E /* Constants.swift */; };
 		4D4AC85E23A037400019866E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85D23A037400019866E /* SettingsView.swift */; };
+		4D6F3F8723A2B63C003C5658 /* FoursquareAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6F3F8623A2B63C003C5658 /* FoursquareAPI.swift */; };
 		4D9D354E239EC23E0052E728 /* CheckInVenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D354D239EC23E0052E728 /* CheckInVenueViewModel.swift */; };
 		4D9D3551239EC7F70052E728 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D3550239EC7F70052E728 /* LocationManager.swift */; };
 		4DC7CFCD235BF72A00E0ADA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFCC235BF72A00E0ADA6 /* AppDelegate.swift */; };
@@ -46,12 +48,12 @@
 		4DC7D014235C050700E0ADA6 /* FoursquareAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7D013235C050700E0ADA6 /* FoursquareAPITests.swift */; };
 		4DC7D016235C050700E0ADA6 /* FoursquareAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC7D006235C050700E0ADA6 /* FoursquareAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DC7D019235C050700E0ADA6 /* FoursquareAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7D004235C050600E0ADA6 /* FoursquareAPI.framework */; };
-		4DC7D01A235C050700E0ADA6 /* FoursquareAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7D004235C050600E0ADA6 /* FoursquareAPI.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DC7D01A235C050700E0ADA6 /* FoursquareAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7D004235C050600E0ADA6 /* FoursquareAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DC7D030235C051600E0ADA6 /* YelpAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7D027235C051600E0ADA6 /* YelpAPI.framework */; };
 		4DC7D037235C051600E0ADA6 /* YelpAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7D036235C051600E0ADA6 /* YelpAPITests.swift */; };
 		4DC7D039235C051600E0ADA6 /* YelpAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC7D029235C051600E0ADA6 /* YelpAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DC7D03C235C051600E0ADA6 /* YelpAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7D027235C051600E0ADA6 /* YelpAPI.framework */; };
-		4DC7D03D235C051600E0ADA6 /* YelpAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7D027235C051600E0ADA6 /* YelpAPI.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DC7D03D235C051600E0ADA6 /* YelpAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7D027235C051600E0ADA6 /* YelpAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3E65E9167409566AE18F2CD /* Pods_CheckInPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F267B53FE8DD58F7A987746 /* Pods_CheckInPlus.framework */; };
 		B6BBCAFA35E8FAF837ED3303 /* Pods_FoursquareAPI_FoursquareAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DCA8C1CF2814CC78906486 /* Pods_FoursquareAPI_FoursquareAPITests.framework */; };
 		C307A62898DDA6A9B35BF10D /* Pods_CheckInPlusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4C4B1677A9AA402FB4DD1D /* Pods_CheckInPlusTests.framework */; };
@@ -188,12 +190,15 @@
 		4D0267AF2398504600B063DC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4D0267B12398560100B063DC /* FoursquareAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIManager.swift; sourceTree = "<group>"; };
 		4D0267B32398581100B063DC /* HTTPURLResponse+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Extension.swift"; sourceTree = "<group>"; };
+		4D0A43ED23A6FD97001F6334 /* FoursquareAPIManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIManagerExtension.swift; sourceTree = "<group>"; };
 		4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4D4AC85623A01A140019866E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4D4AC85823A01EA50019866E /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		4D4AC85A23A028300019866E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		4D4AC85C23A02C2C0019866E /* CheckInPlus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheckInPlus.entitlements; sourceTree = "<group>"; };
 		4D4AC85D23A037400019866E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4D52393023A54A960070683C /* CheckInPlus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheckInPlus.entitlements; sourceTree = "<group>"; };
+		4D5A11F523A3FADA0019C454 /* FoursquareAPI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = FoursquareAPI.xctestplan; path = /Users/mark/Dropbox/Projects/CheckInPlus/FoursquareAPI/FoursquareAPI.xctestplan; sourceTree = "<absolute>"; };
+		4D6F3F8623A2B63C003C5658 /* FoursquareAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPI.swift; sourceTree = "<group>"; };
 		4D9D354D239EC23E0052E728 /* CheckInVenueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVenueViewModel.swift; sourceTree = "<group>"; };
 		4D9D3550239EC7F70052E728 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		4DC7CFC9235BF72A00E0ADA6 /* CheckInPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckInPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -370,7 +375,6 @@
 		4D1A7F6B239F1D4E00ADFB14 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4D4AC85C23A02C2C0019866E /* CheckInPlus.entitlements */,
 				4DC7CFD5235BF72C00E0ADA6 /* Assets.xcassets */,
 				4DC7CFDD235BF72C00E0ADA6 /* Info.plist */,
 				4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */,
@@ -402,6 +406,7 @@
 			children = (
 				4D4AC85A23A028300019866E /* Constants.swift */,
 				4D9D3550239EC7F70052E728 /* LocationManager.swift */,
+				4D0A43ED23A6FD97001F6334 /* FoursquareAPIManagerExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -443,6 +448,7 @@
 		4DC7CFCB235BF72A00E0ADA6 /* CheckInPlus */ = {
 			isa = PBXGroup;
 			children = (
+				4D52393023A54A960070683C /* CheckInPlus.entitlements */,
 				4D1A7F6B239F1D4E00ADFB14 /* Resources */,
 				4D9D354F239EC7E30052E728 /* Utils */,
 				4D9D354C239EC2250052E728 /* Views */,
@@ -485,11 +491,13 @@
 		4DC7D005235C050700E0ADA6 /* FoursquareAPI */ = {
 			isa = PBXGroup;
 			children = (
+				4D5A11F523A3FADA0019C454 /* FoursquareAPI.xctestplan */,
 				4D0267B523985AD200B063DC /* Model */,
 				4DC7D006235C050700E0ADA6 /* FoursquareAPI.h */,
 				4DC7D007235C050700E0ADA6 /* Info.plist */,
 				4D0267762398181E00B063DC /* FoursquareEndPoint.swift */,
 				4D0267B12398560100B063DC /* FoursquareAPIManager.swift */,
+				4D6F3F8623A2B63C003C5658 /* FoursquareAPI.swift */,
 			);
 			path = FoursquareAPI;
 			sourceTree = "<group>";
@@ -758,7 +766,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Mark Townsend";
 				TargetAttributes = {
 					4D0267802398419800B063DC = {
@@ -1133,6 +1141,7 @@
 				4D4AC85723A01A140019866E /* LoginViewController.swift in Sources */,
 				4DC7CFCD235BF72A00E0ADA6 /* AppDelegate.swift in Sources */,
 				4DC7CFD2235BF72A00E0ADA6 /* CheckInPlus.xcdatamodeld in Sources */,
+				4D0A43EE23A6FD97001F6334 /* FoursquareAPIManagerExtension.swift in Sources */,
 				4D4AC85E23A037400019866E /* SettingsView.swift in Sources */,
 				4D9D3551239EC7F70052E728 /* LocationManager.swift in Sources */,
 				4DC7CFD4235BF72A00E0ADA6 /* CheckInVenueListView.swift in Sources */,
@@ -1163,6 +1172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D02677B23983A0D00B063DC /* Venue.swift in Sources */,
+				4D6F3F8723A2B63C003C5658 /* FoursquareAPI.swift in Sources */,
 				4D0267772398181E00B063DC /* FoursquareEndPoint.swift in Sources */,
 				4D0267B22398560100B063DC /* FoursquareAPIManager.swift in Sources */,
 			);
@@ -1423,7 +1433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1477,7 +1487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1493,7 +1503,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CheckInPlus/Resources/CheckInPlus.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CheckInPlus/CheckInPlus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CheckInPlus/Preview Content\"";
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
@@ -1517,7 +1527,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CheckInPlus/Resources/CheckInPlus.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CheckInPlus/CheckInPlus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CheckInPlus/Preview Content\"";
 				DEVELOPMENT_TEAM = 55AT6EYVPW;

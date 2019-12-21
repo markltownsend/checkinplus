@@ -10,11 +10,12 @@ import UIKit
 import SwiftUI
 import AuthenticationServices
 import KeychainAccess
+import FoursquareAPI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    let fqManager = FoursquareAPIManager()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -70,14 +71,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
-
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        if userActivity.activityType == NSUserActivityTypeBrowsingWeb {
+            fqManager.generateAuthToken(with: userActivity.webpageURL!, callbackURI: Constants.callbackURI) { (authToken, error) in
+                if let token = authToken {
+                    self.fqManager.saveAuthToken(token)
+                } else {
+                    print("No auth token")
+                }
+            }
+        }
+    }
 }
 
 // MARK: - Utility Functions
 private extension SceneDelegate {
     func showLogin() {
         let appleIDProvider = ASAuthorizationAppleIDProvider()
-
         appleIDProvider.getCredentialState(forUserID: Keychain.currentUserIdentifier ?? "") { (credentialState, error) in
             switch credentialState {
             case .authorized:
@@ -97,6 +107,5 @@ private extension SceneDelegate {
                 break
             }
         }
-
     }
 }

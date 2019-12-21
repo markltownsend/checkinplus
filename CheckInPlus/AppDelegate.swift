@@ -8,17 +8,29 @@
 
 import UIKit
 import CoreData
+import FoursquareAPI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var fqManager = FoursquareAPIManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+
+        fqManager.generateAuthToken(with: url, callbackURI: Constants.callbackURI) { [weak self] (authToken, error) in
+            if let token = authToken {
+                self?.fqManager.saveAuthToken(token)
+            }
+        }
+
+        return true
+    }
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 import os
 
-public extension Notification.Name {
+extension Notification.Name {
     static let CurrentLocationDidUpdateNotification = Notification.Name("CurrentLocatioNDidUpdateNotification")
 }
 
@@ -65,6 +65,7 @@ extension LocationManager: CLLocationManagerDelegate {
         os_log("Updating locations")
 
         currentLocation = (location.coordinate.latitude, location.coordinate.longitude)
+        locManager.stopUpdatingLocation()
     }
 }
 

@@ -9,4 +9,7 @@
 import Foundation
 
 struct Constants {
+    static var callbackURI: String {
+        "https://checkinplus.mynetgear.com"
+    }
 }

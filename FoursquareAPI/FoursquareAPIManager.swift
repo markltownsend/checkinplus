@@ -8,12 +8,67 @@
 
 import Foundation
 import NetworkLayer
+import FSOAuth
+import Keys
 
-public struct FoursquareAPIManager {
+public enum AuthorizeUserError: Error {
+    case foursquareOAuthNotSupported
+    case invalideCallback
+    case fouresquareNotInstalled
+    case invalidClientID
+}
+
+public struct FoursquareAPIManager:FoursquareAPI {
+
     let router = Router<FoursquareApi>()
 
     public init() { }
-    
+
+    public func authorizeUser(_ callBackURI: String) throws {
+        let status = FSOAuth.authorizeUser(usingClientId: CheckInPlusKeys().foursquareClientID,
+                              nativeURICallbackString: callBackURI,
+                              universalURICallbackString: "",
+                              allowShowingAppStore: true)
+        switch status {
+        case .success:
+            print("Success!")
+        case .errorFoursquareOAuthNotSupported:
+            print("OauthNotSupported")
+            throw AuthorizeUserError.foursquareOAuthNotSupported
+        case .errorInvalidCallback:
+            print("Invalid Call Back")
+            throw AuthorizeUserError.invalideCallback
+        case .errorFoursquareNotInstalled:
+            print("FoursquareNotInstalled")
+            throw AuthorizeUserError.fouresquareNotInstalled
+        case .errorInvalidClientID:
+            print("Invalid Cliend ID")
+            throw AuthorizeUserError.invalidClientID
+        default:
+            print("None of those things happened")
+        }
+    }
+
+    public func generateAuthToken(with url: URL, callbackURI: String, completion: @escaping (_ authToken: String?, _ error: Error?) -> ()) {
+        var fsoauthError: FSOAuthErrorCode = .none
+        if let accessCode = FSOAuth.accessCode(forFSOAuthURL: url, error: &fsoauthError) {
+            FSOAuth.requestAccessToken(forCode: accessCode,
+                                       clientId: CheckInPlusKeys().foursquareClientID,
+                                       callbackURIString: callbackURI,
+                                       clientSecret: CheckInPlusKeys().foursquareClientSecret) { (authToken, completed, errorCode) in
+
+                                        if completed {
+                                            if errorCode == .none {
+                                                completion(authToken, nil)
+                                            } else {
+                                                completion(nil, nil)
+                                            }
+                                        }
+
+            }
+        }
+    }
+
     public func getCheckInVenues(latitude:Double, longitude:Double, completion: @escaping (_ venues: [Venue]?, _ error: String?)->()) {
         router.request(.checkInSearch(latitude: latitude, longitude: longitude)) { (data, response, error) in
 

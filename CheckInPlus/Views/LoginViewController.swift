@@ -26,12 +26,17 @@ final class LoginViewController: UIViewController {
     }
 }
 
+// MARK: - ASAuthorizationcontrollerDelegate
 extension LoginViewController: ASAuthorizationControllerDelegate {
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+
         if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
 
             let userIdentifier = appleIDCredential.user
             keychain[Keychain.userIdentifierKey] = userIdentifier
+        } else if let passwordCredential = authorization.credential as? ASPasswordCredential {
+
+            print("Get credential from keychain for \(passwordCredential.user)")
         }
         dismiss(animated: true, completion: nil)
     }
@@ -43,12 +48,14 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
     }
 }
 
+// MARK: - ASAuthorizationControllerPresentationContextProviding
 extension LoginViewController: ASAuthorizationControllerPresentationContextProviding {
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
         return self.view.window!
     }
 }
 
+// MARK: - Private Functions
 private extension LoginViewController {
     func setupSigninWithAppleID() {
         let authButton = ASAuthorizationAppleIDButton()
@@ -63,7 +70,7 @@ private extension LoginViewController {
     func authButtonPressed() {
         let appleIDProvider = ASAuthorizationAppleIDProvider()
         let request = appleIDProvider.createRequest()
-        request.requestedScopes = [.fullName, .email]
+        request.requestedScopes = [.fullName]
 
         let authorizationController = ASAuthorizationController(authorizationRequests: [request])
         authorizationController.delegate = self
@@ -72,8 +79,10 @@ private extension LoginViewController {
     }
 
     func performExistingAccountSetupFlow() {
-        let request = ASAuthorizationAppleIDProvider().createRequest()
-        let authController = ASAuthorizationController(authorizationRequests: [request])
+        let requests = [ASAuthorizationAppleIDProvider().createRequest(),
+                        ASAuthorizationPasswordProvider().createRequest()]
+
+        let authController = ASAuthorizationController(authorizationRequests: requests)
         authController.delegate = self
         authController.presentationContextProvider = self
         authController.performRequests()
