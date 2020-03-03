@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,13 +26,15 @@
 		4D0267B02398504600B063DC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267AF2398504600B063DC /* Router.swift */; };
 		4D0267B22398560100B063DC /* FoursquareAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267B12398560100B063DC /* FoursquareAPIManager.swift */; };
 		4D0267B42398581100B063DC /* HTTPURLResponse+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267B32398581100B063DC /* HTTPURLResponse+Extension.swift */; };
-		4D0A43EE23A6FD97001F6334 /* FoursquareAPIManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A43ED23A6FD97001F6334 /* FoursquareAPIManagerExtension.swift */; };
 		4D1A7F6A239F1D3E00ADFB14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */; };
+		4D44AD3D23EA8F9900FDC594 /* KeychainExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44AD3C23EA8F9900FDC594 /* KeychainExtension.swift */; };
 		4D4AC85723A01A140019866E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85623A01A140019866E /* LoginViewController.swift */; };
 		4D4AC85923A01EA50019866E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4AC85823A01EA50019866E /* LoginView.xib */; };
 		4D4AC85B23A028300019866E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85A23A028300019866E /* Constants.swift */; };
 		4D4AC85E23A037400019866E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85D23A037400019866E /* SettingsView.swift */; };
 		4D6F3F8723A2B63C003C5658 /* FoursquareAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6F3F8623A2B63C003C5658 /* FoursquareAPI.swift */; };
+		4D718DD423B1DB780087EFE4 /* FoursquareAPI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D718DD323B1DB780087EFE4 /* FoursquareAPI.xcassets */; };
+		4D777CDD240B88C10017EFCA /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D777CDC240B88C10017EFCA /* TextView.swift */; };
 		4D9D354E239EC23E0052E728 /* CheckInVenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D354D239EC23E0052E728 /* CheckInVenueViewModel.swift */; };
 		4D9D3551239EC7F70052E728 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D3550239EC7F70052E728 /* LocationManager.swift */; };
 		4DC7CFCD235BF72A00E0ADA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFCC235BF72A00E0ADA6 /* AppDelegate.swift */; };
@@ -54,6 +56,8 @@
 		4DC7D039235C051600E0ADA6 /* YelpAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC7D029235C051600E0ADA6 /* YelpAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DC7D03C235C051600E0ADA6 /* YelpAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7D027235C051600E0ADA6 /* YelpAPI.framework */; };
 		4DC7D03D235C051600E0ADA6 /* YelpAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7D027235C051600E0ADA6 /* YelpAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4DC91ED723BEE4CF00E99C81 /* CheckinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC91ED623BEE4CF00E99C81 /* CheckinView.swift */; };
+		4DDAEC2B23FE6AF700282A76 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4DDAEC2A23FE6AF700282A76 /* URLImage */; };
 		B3E65E9167409566AE18F2CD /* Pods_CheckInPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F267B53FE8DD58F7A987746 /* Pods_CheckInPlus.framework */; };
 		B6BBCAFA35E8FAF837ED3303 /* Pods_FoursquareAPI_FoursquareAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DCA8C1CF2814CC78906486 /* Pods_FoursquareAPI_FoursquareAPITests.framework */; };
 		C307A62898DDA6A9B35BF10D /* Pods_CheckInPlusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4C4B1677A9AA402FB4DD1D /* Pods_CheckInPlusTests.framework */; };
@@ -190,8 +194,8 @@
 		4D0267AF2398504600B063DC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4D0267B12398560100B063DC /* FoursquareAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIManager.swift; sourceTree = "<group>"; };
 		4D0267B32398581100B063DC /* HTTPURLResponse+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Extension.swift"; sourceTree = "<group>"; };
-		4D0A43ED23A6FD97001F6334 /* FoursquareAPIManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIManagerExtension.swift; sourceTree = "<group>"; };
 		4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		4D44AD3C23EA8F9900FDC594 /* KeychainExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainExtension.swift; sourceTree = "<group>"; };
 		4D4AC85623A01A140019866E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4D4AC85823A01EA50019866E /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		4D4AC85A23A028300019866E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -199,6 +203,8 @@
 		4D52393023A54A960070683C /* CheckInPlus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheckInPlus.entitlements; sourceTree = "<group>"; };
 		4D5A11F523A3FADA0019C454 /* FoursquareAPI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = FoursquareAPI.xctestplan; path = /Users/mark/Dropbox/Projects/CheckInPlus/FoursquareAPI/FoursquareAPI.xctestplan; sourceTree = "<absolute>"; };
 		4D6F3F8623A2B63C003C5658 /* FoursquareAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPI.swift; sourceTree = "<group>"; };
+		4D718DD323B1DB780087EFE4 /* FoursquareAPI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FoursquareAPI.xcassets; sourceTree = "<group>"; };
+		4D777CDC240B88C10017EFCA /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		4D9D354D239EC23E0052E728 /* CheckInVenueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVenueViewModel.swift; sourceTree = "<group>"; };
 		4D9D3550239EC7F70052E728 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		4DC7CFC9235BF72A00E0ADA6 /* CheckInPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckInPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,6 +234,7 @@
 		4DC7D02F235C051600E0ADA6 /* YelpAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelpAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC7D036235C051600E0ADA6 /* YelpAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAPITests.swift; sourceTree = "<group>"; };
 		4DC7D038235C051600E0ADA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC91ED623BEE4CF00E99C81 /* CheckinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinView.swift; sourceTree = "<group>"; };
 		6F267B53FE8DD58F7A987746 /* Pods_CheckInPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckInPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E4E80384C3C24FA6F48D24 /* Pods-CheckInPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckInPlusTests.debug.xcconfig"; path = "Target Support Files/Pods-CheckInPlusTests/Pods-CheckInPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		72AAE6E5258DA259766D0C1D /* Pods-YelpAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpAPI.debug.xcconfig"; path = "Target Support Files/Pods-YelpAPI/Pods-YelpAPI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -266,6 +273,7 @@
 				4DC7D019235C050700E0ADA6 /* FoursquareAPI.framework in Frameworks */,
 				4D0267962398419800B063DC /* NetworkLayer.framework in Frameworks */,
 				4DC7D03C235C051600E0ADA6 /* YelpAPI.framework in Frameworks */,
+				4DDAEC2B23FE6AF700282A76 /* URLImage in Frameworks */,
 				B3E65E9167409566AE18F2CD /* Pods_CheckInPlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +390,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		4D718DD223B1DB5D0087EFE4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D718DD323B1DB780087EFE4 /* FoursquareAPI.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4D9D354B239EC21C0052E728 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +413,8 @@
 				4D4AC85623A01A140019866E /* LoginViewController.swift */,
 				4D4AC85823A01EA50019866E /* LoginView.xib */,
 				4D4AC85D23A037400019866E /* SettingsView.swift */,
+				4DC91ED623BEE4CF00E99C81 /* CheckinView.swift */,
+				4D777CDC240B88C10017EFCA /* TextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -406,7 +424,6 @@
 			children = (
 				4D4AC85A23A028300019866E /* Constants.swift */,
 				4D9D3550239EC7F70052E728 /* LocationManager.swift */,
-				4D0A43ED23A6FD97001F6334 /* FoursquareAPIManagerExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -491,6 +508,7 @@
 		4DC7D005235C050700E0ADA6 /* FoursquareAPI */ = {
 			isa = PBXGroup;
 			children = (
+				4D718DD223B1DB5D0087EFE4 /* Resources */,
 				4D5A11F523A3FADA0019C454 /* FoursquareAPI.xctestplan */,
 				4D0267B523985AD200B063DC /* Model */,
 				4DC7D006235C050700E0ADA6 /* FoursquareAPI.h */,
@@ -498,6 +516,7 @@
 				4D0267762398181E00B063DC /* FoursquareEndPoint.swift */,
 				4D0267B12398560100B063DC /* FoursquareAPIManager.swift */,
 				4D6F3F8623A2B63C003C5658 /* FoursquareAPI.swift */,
+				4D44AD3C23EA8F9900FDC594 /* KeychainExtension.swift */,
 			);
 			path = FoursquareAPI;
 			sourceTree = "<group>";
@@ -636,6 +655,9 @@
 				4D0267952398419800B063DC /* PBXTargetDependency */,
 			);
 			name = CheckInPlus;
+			packageProductDependencies = (
+				4DDAEC2A23FE6AF700282A76 /* URLImage */,
+			);
 			productName = CheckInPlus;
 			productReference = 4DC7CFC9235BF72A00E0ADA6 /* CheckInPlus.app */;
 			productType = "com.apple.product-type.application";
@@ -667,7 +689,7 @@
 				4DC7CFE9235BF72C00E0ADA6 /* Sources */,
 				4DC7CFEA235BF72C00E0ADA6 /* Frameworks */,
 				4DC7CFEB235BF72C00E0ADA6 /* Resources */,
-				FF189475BD31DD1ADB31F5A8 /* [CP] Embed Pods Frameworks */,
+				6F3F6A4E5711EE34364185B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -747,6 +769,7 @@
 				4DC7D02B235C051600E0ADA6 /* Sources */,
 				4DC7D02C235C051600E0ADA6 /* Frameworks */,
 				4DC7D02D235C051600E0ADA6 /* Resources */,
+				6732690AA4E9490BD531CEE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -814,6 +837,9 @@
 				Base,
 			);
 			mainGroup = 4DC7CFC0235BF72A00E0ADA6;
+			packageReferences = (
+				4DDAEC2923FE6AF700282A76 /* XCRemoteSwiftPackageReference "URLImage" */,
+			);
 			productRefGroup = 4DC7CFCA235BF72A00E0ADA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -876,6 +902,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D718DD423B1DB780087EFE4 /* FoursquareAPI.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1008,6 +1035,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6732690AA4E9490BD531CEE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YelpAPI-YelpAPITests/Pods-YelpAPI-YelpAPITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YelpAPI-YelpAPITests/Pods-YelpAPI-YelpAPITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YelpAPI-YelpAPITests/Pods-YelpAPI-YelpAPITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F3F6A4E5711EE34364185B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7454DBCFBA8FA9E7C607EF09 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1091,23 +1152,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF189475BD31DD1ADB31F5A8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1138,10 +1182,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC91ED723BEE4CF00E99C81 /* CheckinView.swift in Sources */,
+				4D777CDD240B88C10017EFCA /* TextView.swift in Sources */,
 				4D4AC85723A01A140019866E /* LoginViewController.swift in Sources */,
 				4DC7CFCD235BF72A00E0ADA6 /* AppDelegate.swift in Sources */,
 				4DC7CFD2235BF72A00E0ADA6 /* CheckInPlus.xcdatamodeld in Sources */,
-				4D0A43EE23A6FD97001F6334 /* FoursquareAPIManagerExtension.swift in Sources */,
 				4D4AC85E23A037400019866E /* SettingsView.swift in Sources */,
 				4D9D3551239EC7F70052E728 /* LocationManager.swift in Sources */,
 				4DC7CFD4235BF72A00E0ADA6 /* CheckInVenueListView.swift in Sources */,
@@ -1172,6 +1217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D02677B23983A0D00B063DC /* Venue.swift in Sources */,
+				4D44AD3D23EA8F9900FDC594 /* KeychainExtension.swift in Sources */,
 				4D6F3F8723A2B63C003C5658 /* FoursquareAPI.swift in Sources */,
 				4D0267772398181E00B063DC /* FoursquareEndPoint.swift in Sources */,
 				4D0267B22398560100B063DC /* FoursquareAPIManager.swift in Sources */,
@@ -1344,7 +1390,7 @@
 		4D02679C2398419800B063DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
 				INFOPLIST_FILE = NetworkLayerTests/Info.plist;
@@ -1365,7 +1411,7 @@
 		4D02679D2398419800B063DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
 				INFOPLIST_FILE = NetworkLayerTests/Info.plist;
@@ -1501,7 +1547,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2BB88DEC5885A919BAC0396D /* Pods-CheckInPlus.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CheckInPlus/CheckInPlus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -1525,7 +1571,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3084A750D83CC5C21E08394A /* Pods-CheckInPlus.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CheckInPlus/CheckInPlus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -1549,7 +1595,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 70E4E80384C3C24FA6F48D24 /* Pods-CheckInPlusTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
@@ -1572,7 +1618,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A92F6CE1A4E555739BF69BBB /* Pods-CheckInPlusTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
@@ -1595,7 +1641,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C46968413264B8B7B7E13869 /* Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
 				INFOPLIST_FILE = CheckInPlusUITests/Info.plist;
@@ -1616,7 +1662,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 274FE1C4894168B77C15B9E6 /* Pods-CheckInPlus-CheckInPlusUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
 				INFOPLIST_FILE = CheckInPlusUITests/Info.plist;
@@ -1700,7 +1746,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F46FBEFF35E4F611E0900F9C /* Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
 				INFOPLIST_FILE = FoursquareAPITests/Info.plist;
@@ -1721,7 +1767,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2D1E4BACBC1683ECC3A1BFCA /* Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
 				INFOPLIST_FILE = FoursquareAPITests/Info.plist;
@@ -1802,7 +1848,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8DBC0E95E9FCED6FEA86CE35 /* Pods-YelpAPI-YelpAPITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
 				INFOPLIST_FILE = YelpAPITests/Info.plist;
@@ -1823,7 +1869,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1642AC8971960CD1389AEBAC /* Pods-YelpAPI-YelpAPITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
 				INFOPLIST_FILE = YelpAPITests/Info.plist;
@@ -1934,6 +1980,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4DDAEC2923FE6AF700282A76 /* XCRemoteSwiftPackageReference "URLImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eMdOS/URLImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4DDAEC2A23FE6AF700282A76 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DDAEC2923FE6AF700282A76 /* XCRemoteSwiftPackageReference "URLImage" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4DC7CFD0235BF72A00E0ADA6 /* CheckInPlus.xcdatamodeld */ = {

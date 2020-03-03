@@ -8,7 +8,7 @@
 
 import Foundation
 
-public typealias NetworkRouterCompletion = (_ data: Data?, _ response: URLResponse?, _ error: Error?) -> ()
+public typealias NetworkRouterCompletion = (_ data: Data?, _ response: URLResponse?, _ error: Error?) -> Void
 
 public protocol NetworkRouter: class {
     associatedtype EndPoint: EndPointType
@@ -19,9 +19,7 @@ public protocol NetworkRouter: class {
 public class Router<EndPoint: EndPointType>: NetworkRouter {
     private var task: URLSessionTask?
 
-    public init() {
-
-    }
+    public init() {}
     
     public func request(_ route: EndPoint, completion: @escaping NetworkRouterCompletion) {
         let session = URLSession.shared
