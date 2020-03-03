@@ -10,10 +10,6 @@ plugin 'cocoapods-keys', {
   ]
 }
 
-plugin 'cocoapods-binary'
-
-all_binary!
-
 #plugin 'cocoapods-keys', {
 #  :project => "CheckInPlus",
 #  :target => "YelpAPI",
@@ -22,13 +18,16 @@ all_binary!
 #    "YelpClientSecret"
 #  ]
 #}
+def shared_pods
+  pod 'KeychainAccess'
+end
 
 target 'CheckInPlus' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for CheckInPlus
-  pod 'KeychainAccess'
+  shared_pods
 
   target 'CheckInPlusTests' do
     inherit! :search_paths
@@ -45,6 +44,8 @@ target 'FoursquareAPI' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+  shared_pods
+
   # Pods for FoursquareAPI
   pod 'FSOAuth'
 
@@ -58,6 +59,8 @@ target 'YelpAPI' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+  shared_pods
+  
   # Pods for YelpAPI
 
   target 'YelpAPITests' do

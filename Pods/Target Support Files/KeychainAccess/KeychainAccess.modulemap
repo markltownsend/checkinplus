@@ -4,8 +4,3 @@ framework module KeychainAccess {
   export *
   module * { export * }
 }
-
-module KeychainAccess.Swift {
-    header "KeychainAccess-Swift.h"
-    requires objc
-}
