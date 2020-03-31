@@ -29,19 +29,25 @@ struct CheckinView: View {
   var body: some View {
     VStack {
       Text("Add in what you're doing:")
+
       TextView(placeholder: "Enter here", text: $shout, minHeight: self.textHeight, calculatedHeight: self.$textHeight)
           .frame(minHeight: self.textHeight, maxHeight: self.textHeight)
         .padding()
-//      TextField("Enter here", text: $shout)
-//        .textFieldStyle(RoundedBorderTextFieldStyle())
-//        .padding()
+        .overlay(
+          RoundedRectangle(cornerRadius: 4.0)
+            .stroke(Color.primary, lineWidth: 1)
+      )
+
       Button(action: { self.checkIn() }) {
         Text("Check In")
-      }.padding()
+      }
+      .padding()
+
       HStack {
         Toggle(isOn: $useFoursquare) {
           Text("Foursquare")
-        }.padding()
+        }
+        .padding()
       }
       Spacer()
     }

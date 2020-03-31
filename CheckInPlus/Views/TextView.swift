@@ -38,10 +38,6 @@ struct TextView: UIViewRepresentable {
     textView.isUserInteractionEnabled = true
     textView.text = placeholder
     textView.textColor = UIColor.tertiaryLabel
-
-    textView.layer.borderColor = UIColor.tertiaryLabel.cgColor
-    textView.layer.cornerRadius = 3.0
-    textView.layer.masksToBounds = true
     return textView
   }
 
