@@ -29,7 +29,6 @@
 		4D1A7F6A239F1D3E00ADFB14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */; };
 		4D44AD3D23EA8F9900FDC594 /* KeychainExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44AD3C23EA8F9900FDC594 /* KeychainExtension.swift */; };
 		4D4AC85723A01A140019866E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85623A01A140019866E /* LoginViewController.swift */; };
-		4D4AC85923A01EA50019866E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4AC85823A01EA50019866E /* LoginView.xib */; };
 		4D4AC85B23A028300019866E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85A23A028300019866E /* Constants.swift */; };
 		4D4AC85E23A037400019866E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85D23A037400019866E /* SettingsView.swift */; };
 		4D6F3F8723A2B63C003C5658 /* FoursquareAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6F3F8623A2B63C003C5658 /* FoursquareAPI.swift */; };
@@ -197,7 +196,6 @@
 		4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4D44AD3C23EA8F9900FDC594 /* KeychainExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainExtension.swift; sourceTree = "<group>"; };
 		4D4AC85623A01A140019866E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		4D4AC85823A01EA50019866E /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		4D4AC85A23A028300019866E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4D4AC85D23A037400019866E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4D52393023A54A960070683C /* CheckInPlus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheckInPlus.entitlements; sourceTree = "<group>"; };
@@ -411,7 +409,6 @@
 			children = (
 				4DC7CFD3235BF72A00E0ADA6 /* CheckInVenueListView.swift */,
 				4D4AC85623A01A140019866E /* LoginViewController.swift */,
-				4D4AC85823A01EA50019866E /* LoginView.xib */,
 				4D4AC85D23A037400019866E /* SettingsView.swift */,
 				4DC91ED623BEE4CF00E99C81 /* CheckinView.swift */,
 				4D777CDC240B88C10017EFCA /* TextView.swift */,
@@ -879,7 +876,6 @@
 				4DC7CFDC235BF72C00E0ADA6 /* LaunchScreen.storyboard in Resources */,
 				4D1A7F6A239F1D3E00ADFB14 /* Localizable.strings in Resources */,
 				4DC7CFD9235BF72C00E0ADA6 /* Preview Assets.xcassets in Resources */,
-				4D4AC85923A01EA50019866E /* LoginView.xib in Resources */,
 				4DC7CFD6235BF72C00E0ADA6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
