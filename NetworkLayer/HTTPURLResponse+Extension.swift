@@ -27,8 +27,8 @@ public extension HTTPURLResponse {
     func handleNetworkResponse() -> NetworkResponseResult<String> {
         switch statusCode {
         case 200...299: return .success
-        case 401...500: return .failure(NetworkResponse.authenticationError.rawValue)
-        case 501...599: return .failure(NetworkResponse.badRequest.rawValue)
+        case 400...499: return .failure(NetworkResponse.authenticationError.rawValue)
+        case 500...599: return .failure(NetworkResponse.badRequest.rawValue)
         case 600: return .failure(NetworkResponse.outdated.rawValue)
         default: return .failure(NetworkResponse.failed.rawValue)
         }
