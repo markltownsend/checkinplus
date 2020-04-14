@@ -31,6 +31,9 @@ struct CheckInVenueListView: View {
           HStack {
             URLImage(url: venue.getPrimaryCategoryIconURL(), placeholder: Image(systemName: "app"), contentMode: .fit)
               .frame(width: 32, height: 32, alignment: .center)
+              .padding(EdgeInsets(top: 6, leading: 6, bottom: 6, trailing: 6))
+              .background(Color.green)
+              .cornerRadius(19.0)
             Text(venue.name)
           }.padding()
         }

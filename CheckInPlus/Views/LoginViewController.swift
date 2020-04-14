@@ -15,6 +15,12 @@ final class LoginViewController: UIViewController {
 
   private let keychain = Keychain(service: Keychain.serviceID)
 
+  override func loadView() {
+    super.loadView()
+    view = UIView()
+    view.backgroundColor = .systemBackground
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     setupSigninWithAppleID()
@@ -63,6 +69,7 @@ private extension LoginViewController {
     let titleLabel = UILabel()
     titleLabel.font = .systemFont(ofSize: 25)
     titleLabel.text = NSLocalizedString("CheckIn Plus", comment: "")
+    titleLabel.textColor = .label
     titleLabel.sizeToFit()
     
     let authButton = ASAuthorizationAppleIDButton()
