@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0441B3E976E5F55E22731AECFF0DBA88 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA069DF828C4C95F8F825BF3E474AF07 /* Keychain.swift */; };
 		1467FBFB8C5EE7A8C93E9FC1E8E35C9B /* Pods-FoursquareAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E17EB436CBF7699C77C1D94A47F024B /* Pods-FoursquareAPI-dummy.m */; };
 		182D48098ECB32EF9215D5B08C275C4C /* Pods-CheckInPlus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFF6BAD81B521A4D4A6DD09A015D247D /* Pods-CheckInPlus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A46F3B0415BEE8A9C7C4F7DA7DD6B74 /* CheckInPlusKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 501B1D7A23AA8E8C8043520E5342C30E /* CheckInPlusKeys.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1CA7FAC960AD72A2ECFCCCD4859C35C5 /* Pods-YelpAPI-YelpAPITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5569A0D71D2E3DA09C94402F666D1D0 /* Pods-YelpAPI-YelpAPITests-dummy.m */; };
 		2AB72148F28F3367994B5250DFBA9EC4 /* Pods-CheckInPlus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC395C6E7542BDDF45FC866FBAC5E86B /* Pods-CheckInPlus-dummy.m */; };
 		2C67D965BAB1C5229F938BEE66CFCD75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -26,12 +27,12 @@
 		692EAE9B06113CEC757AEADB4105A664 /* Pods-CheckInPlusTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CB27E609ABB0B86F104552CCAF4DEE /* Pods-CheckInPlusTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72741F1B3F203E2212A8E9BDF049476C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		7959E9FEE73967306B055DB37F3A7365 /* FSOAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1DADC92EAC509C194486991E13E277 /* FSOAuth-dummy.m */; };
-		88D3E9D886CCB9EEE5434B35402D037A /* CheckInPlusKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 501B1D7A23AA8E8C8043520E5342C30E /* CheckInPlusKeys.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		917D8483B3A4410009F8AFD67789A092 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		A5EB17F6E6424036241E93432D76C36D /* Pods-YelpAPI-YelpAPITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 541E6CFA36B643C6EFCB9D6BD3391645 /* Pods-YelpAPI-YelpAPITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0F76812D8231BA54940535954D9D48A /* Keys-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 907DB7E521965669C219CBFFBAD7AEAB /* Keys-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE1E61C8BE9C7C4A7A533A253D109775 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		BE91612758BB2A9B060D44412222ED3C /* Pods-FoursquareAPI-FoursquareAPITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D6ABC5A1E42DBAAB0F884310610C1C /* Pods-FoursquareAPI-FoursquareAPITests-dummy.m */; };
+		BF811BC410E1E76410789A5F6EFFCFEC /* FSOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = B79609010B6CCD39E59E2489FB081D68 /* FSOAuth.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C441C2BC18B83D0C36ADF4D28974728E /* Keys-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA50170F628DD618687812110CC6E52 /* Keys-dummy.m */; };
 		C47A1C638C0E97C4ECCBD18FD494BB34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		C86D207AF712B13F3C44545BB3903A8D /* CheckInPlusKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 21ADB239C2C821FDCAE32E22AEDDC43B /* CheckInPlusKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,7 +41,6 @@
 		E4437D601987196B3FEDB10F5496DEE4 /* Pods-FoursquareAPI-FoursquareAPITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93C70E2E901A35103788D3943859D085 /* Pods-FoursquareAPI-FoursquareAPITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEADFC5C1C5EC6E3E20506B8E069931D /* KeychainAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A94E81CA037B594963A6752B69A39166 /* KeychainAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFA51CBE171522365DA55F75FBF59B3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F188A707FA2EFE5464784651922CDE3F /* FSOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = B79609010B6CCD39E59E2489FB081D68 /* FSOAuth.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		FD9D07BA929E69B8491C6A7950BF88E9 /* Pods-YelpAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 732A8B72B2B71BA58A84888D59659B2D /* Pods-YelpAPI-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -158,18 +158,18 @@
 		2A1DADC92EAC509C194486991E13E277 /* FSOAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSOAuth-dummy.m"; sourceTree = "<group>"; };
 		2B53526FF1CE360901CE26620D2CC32A /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
 		2E67682EF801FB8027E5D5B50B83C6DA /* Pods-FoursquareAPI-FoursquareAPITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoursquareAPI-FoursquareAPITests-Info.plist"; sourceTree = "<group>"; };
-		3120B8D9500E0FA45F584F680D7CD6F2 /* Pods_CheckInPlus_CheckInPlusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckInPlus_CheckInPlusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3120B8D9500E0FA45F584F680D7CD6F2 /* Pods_CheckInPlus_CheckInPlusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CheckInPlus_CheckInPlusUITests.framework; path = "Pods-CheckInPlus-CheckInPlusUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		347C46C48061C7C5E47B7B45810F4D3E /* Pods-FoursquareAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FoursquareAPI.modulemap"; sourceTree = "<group>"; };
 		3903542218884880F74993C8C0A49706 /* FSOAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSOAuth.debug.xcconfig; sourceTree = "<group>"; };
 		3ACFD6DC79CFEF8D59B3B488E429FE2C /* Pods-FoursquareAPI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoursquareAPI-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4515CCAC7A050D9B2172D85AF8DA0538 /* Pods-FoursquareAPI-FoursquareAPITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoursquareAPI-FoursquareAPITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		45302DC405900A3E1BF36E1F79A25DDB /* Pods_YelpAPI_YelpAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YelpAPI_YelpAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45302DC405900A3E1BF36E1F79A25DDB /* Pods_YelpAPI_YelpAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YelpAPI_YelpAPITests.framework; path = "Pods-YelpAPI-YelpAPITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4534C03506845BE1D38074AFF7C5B1D5 /* Pods-YelpAPI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YelpAPI-acknowledgements.plist"; sourceTree = "<group>"; };
 		4AD519A93A0AB43151F140B7D172BCB2 /* Pods-CheckInPlus-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckInPlus-acknowledgements.plist"; sourceTree = "<group>"; };
 		501B1D7A23AA8E8C8043520E5342C30E /* CheckInPlusKeys.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CheckInPlusKeys.m; sourceTree = "<group>"; };
 		51C10B3F655B99BB76EE553CC807FCA3 /* Pods-CheckInPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckInPlus.release.xcconfig"; sourceTree = "<group>"; };
 		541E6CFA36B643C6EFCB9D6BD3391645 /* Pods-YelpAPI-YelpAPITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YelpAPI-YelpAPITests-umbrella.h"; sourceTree = "<group>"; };
-		5AFB35D39383869120CEBCF9E5CD29DE /* Pods_FoursquareAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoursquareAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFB35D39383869120CEBCF9E5CD29DE /* Pods_FoursquareAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FoursquareAPI.framework; path = "Pods-FoursquareAPI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE8B327A02A0A07FCC2DF211C83420C /* Pods-CheckInPlus-CheckInPlusUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CheckInPlus-CheckInPlusUITests.modulemap"; sourceTree = "<group>"; };
 		5F18360FC0D9D56AAE3E45428E130871 /* Pods-CheckInPlus-CheckInPlusUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckInPlus-CheckInPlusUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6023BBDA70418B4F0011AFB79FF7136D /* FSOAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSOAuth-umbrella.h"; sourceTree = "<group>"; };
@@ -195,16 +195,16 @@
 		9002D0EB78C8939FAD945B999510C2DB /* Pods-CheckInPlus-CheckInPlusUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckInPlus-CheckInPlusUITests-Info.plist"; sourceTree = "<group>"; };
 		907DB7E521965669C219CBFFBAD7AEAB /* Keys-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Keys-umbrella.h"; sourceTree = "<group>"; };
 		92451FA8E5E46DAF32C54F3F6C87B4DA /* Pods-CheckInPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckInPlus.debug.xcconfig"; sourceTree = "<group>"; };
-		92F208773EC45B8E3C9C25A1E9764652 /* Pods_CheckInPlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckInPlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F208773EC45B8E3C9C25A1E9764652 /* Pods_CheckInPlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CheckInPlusTests.framework; path = "Pods-CheckInPlusTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C70E2E901A35103788D3943859D085 /* Pods-FoursquareAPI-FoursquareAPITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FoursquareAPI-FoursquareAPITests-umbrella.h"; sourceTree = "<group>"; };
 		94A6E3FF7BF34EDF770CE1CE36D9EC86 /* Pods-YelpAPI-YelpAPITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YelpAPI-YelpAPITests-Info.plist"; sourceTree = "<group>"; };
 		9783DDB63F8EBE85E97C997FBFC295CE /* Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		97F17ACE5D5EBBECAF6B1D28B70FE17D /* KeychainAccess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.release.xcconfig; sourceTree = "<group>"; };
-		9838F3DCA2C6D40EE8B19B8070101E24 /* FSOAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSOAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9838F3DCA2C6D40EE8B19B8070101E24 /* FSOAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSOAuth.framework; path = FSOAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		993962B0E895FFEA3EEE96A71285B6D1 /* Pods-CheckInPlus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CheckInPlus.modulemap"; sourceTree = "<group>"; };
 		995C4C6C459838BEA488ED0BC1E91705 /* Pods-YelpAPI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YelpAPI-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9A1A413932C84D9FFAE15EDC0A20E916 /* Pods-YelpAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YelpAPI.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E17EB436CBF7699C77C1D94A47F024B /* Pods-FoursquareAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FoursquareAPI-dummy.m"; sourceTree = "<group>"; };
 		9EA4D06459E4F30F8AE80D8A228F3872 /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
 		A07CA5E1FCD7652708DAA8FC1449DD0C /* Pods-YelpAPI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YelpAPI-Info.plist"; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 		BF7552EF9A2E631EDA7FB6C1EE5B4705 /* Pods-CheckInPlusTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CheckInPlusTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BFC853DB59B416916EB30E9BC75AEA07 /* Pods-YelpAPI-YelpAPITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YelpAPI-YelpAPITests.modulemap"; sourceTree = "<group>"; };
 		C1C907FD543C7EA3536D3F256F4A1D2E /* Pods-CheckInPlusTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CheckInPlusTests.modulemap"; sourceTree = "<group>"; };
-		C304600742230EBE8FBBA2FBE8980EAE /* Keys.podspec.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = Keys.podspec.json; sourceTree = "<group>"; };
+		C304600742230EBE8FBBA2FBE8980EAE /* Keys.podspec.json */ = {isa = PBXFileReference; includeInIndex = 1; path = Keys.podspec.json; sourceTree = "<group>"; };
 		C85DF91FCCE442E118FD713BA9B20D69 /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
 		DA069DF828C4C95F8F825BF3E474AF07 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
 		DD31F5DE0E63483D49274015D596FA52 /* FSOAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSOAuth-prefix.pch"; sourceTree = "<group>"; };
@@ -227,13 +227,13 @@
 		E6D6ABC5A1E42DBAAB0F884310610C1C /* Pods-FoursquareAPI-FoursquareAPITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FoursquareAPI-FoursquareAPITests-dummy.m"; sourceTree = "<group>"; };
 		E7F0DA9569F1B05F08EA31BD12ED4553 /* Pods-FoursquareAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoursquareAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		E812ABC4DC571D5EED08CBC6826EE275 /* KeychainAccess-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeychainAccess-Info.plist"; sourceTree = "<group>"; };
-		E8CACB8744373C1818777FFB8F84C67E /* Keys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Keys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8EE7F078656FABB8F6821D10FF994BB /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8CACB8744373C1818777FFB8F84C67E /* Keys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Keys.framework; path = Keys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8EE7F078656FABB8F6821D10FF994BB /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainAccess.framework; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC395C6E7542BDDF45FC866FBAC5E86B /* Pods-CheckInPlus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CheckInPlus-dummy.m"; sourceTree = "<group>"; };
-		EDE2051257B603AEAC54DE9271AC0CB7 /* Pods_CheckInPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckInPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFD1C80CF85E03C774D2801A2DD99E2A /* Pods_YelpAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YelpAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE2051257B603AEAC54DE9271AC0CB7 /* Pods_CheckInPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CheckInPlus.framework; path = "Pods-CheckInPlus.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFD1C80CF85E03C774D2801A2DD99E2A /* Pods_YelpAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YelpAPI.framework; path = "Pods-YelpAPI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5569A0D71D2E3DA09C94402F666D1D0 /* Pods-YelpAPI-YelpAPITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YelpAPI-YelpAPITests-dummy.m"; sourceTree = "<group>"; };
-		F5D9C549700F30907AF17BBF263E95E6 /* Pods_FoursquareAPI_FoursquareAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoursquareAPI_FoursquareAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D9C549700F30907AF17BBF263E95E6 /* Pods_FoursquareAPI_FoursquareAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FoursquareAPI_FoursquareAPITests.framework; path = "Pods-FoursquareAPI-FoursquareAPITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89425CBCDDA365F9372C6D859AEC2ED /* KeychainAccess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.debug.xcconfig; sourceTree = "<group>"; };
 		FC9FF06ED5622FBB11BECFEDE82A3D47 /* Pods-CheckInPlus-CheckInPlusUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CheckInPlus-CheckInPlusUITests-umbrella.h"; sourceTree = "<group>"; };
 		FCEE2E04713BC24470CE0A0C1C631134 /* Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -448,6 +448,7 @@
 				B79609010B6CCD39E59E2489FB081D68 /* FSOAuth.m */,
 				B392BD24BD7836D22F5D759BC2DBB79E /* Support Files */,
 			);
+			name = FSOAuth;
 			path = FSOAuth;
 			sourceTree = "<group>";
 		};
@@ -457,6 +458,7 @@
 				DA069DF828C4C95F8F825BF3E474AF07 /* Keychain.swift */,
 				BA6942173A0AF539CDF9E584ED263587 /* Support Files */,
 			);
+			name = KeychainAccess;
 			path = KeychainAccess;
 			sourceTree = "<group>";
 		};
@@ -888,10 +890,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 11.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -1027,7 +1029,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88D3E9D886CCB9EEE5434B35402D037A /* CheckInPlusKeys.m in Sources */,
+				1A46F3B0415BEE8A9C7C4F7DA7DD6B74 /* CheckInPlusKeys.m in Sources */,
 				C441C2BC18B83D0C36ADF4D28974728E /* Keys-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1053,7 +1055,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7959E9FEE73967306B055DB37F3A7365 /* FSOAuth-dummy.m in Sources */,
-				F188A707FA2EFE5464784651922CDE3F /* FSOAuth.m in Sources */,
+				BF811BC410E1E76410789A5F6EFFCFEC /* FSOAuth.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1174,7 +1176,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-FoursquareAPI/Pods-FoursquareAPI-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1212,7 +1213,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1315,7 +1315,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-FoursquareAPI/Pods-FoursquareAPI-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1352,7 +1351,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-YelpAPI/Pods-YelpAPI-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1390,7 +1388,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-YelpAPI/Pods-YelpAPI-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1427,7 +1424,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-CheckInPlus/Pods-CheckInPlus-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1527,7 +1523,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-CheckInPlusTests/Pods-CheckInPlusTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1564,7 +1559,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1602,7 +1596,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-CheckInPlusTests/Pods-CheckInPlusTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1639,7 +1632,6 @@
 				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KeychainAccess/KeychainAccess-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1674,7 +1666,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-YelpAPI-YelpAPITests/Pods-YelpAPI-YelpAPITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1711,7 +1702,6 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Keys/Keys-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Keys/Keys-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1747,7 +1737,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-CheckInPlus/Pods-CheckInPlus-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1784,7 +1773,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-FoursquareAPI-FoursquareAPITests/Pods-FoursquareAPI-FoursquareAPITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1820,7 +1808,6 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FSOAuth/FSOAuth-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FSOAuth/FSOAuth-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1855,7 +1842,6 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Keys/Keys-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Keys/Keys-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1889,7 +1875,6 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FSOAuth/FSOAuth-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FSOAuth/FSOAuth-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1924,7 +1909,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-FoursquareAPI-FoursquareAPITests/Pods-FoursquareAPI-FoursquareAPITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1961,7 +1945,6 @@
 				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KeychainAccess/KeychainAccess-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1997,7 +1980,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-YelpAPI-YelpAPITests/Pods-YelpAPI-YelpAPITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
