@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Constants {
+enum Constants {
   static var callbackURI: String {
     "https://checkinplus.markltownsend.com"
   }

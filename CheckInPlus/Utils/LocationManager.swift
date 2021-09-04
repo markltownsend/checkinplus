@@ -6,23 +6,15 @@
 //  Copyright © 2019 Mark Townsend. All rights reserved.
 //
 
-import Foundation
 import CoreLocation
+import Foundation
 import os
-
-extension Notification.Name {
-  static let CurrentLocationDidUpdateNotification = Notification.Name("CurrentLocatioNDidUpdateNotification")
-}
 
 final class LocationManager: NSObject {
   private var firstTimeUpdatingLocation = true
   private let locManager = CLLocationManager()
 
-  public var currentLocation: (latitude: Double, longitude: Double)? {
-    didSet {
-      NotificationCenter.default.post(name: Notification.Name.CurrentLocationDidUpdateNotification, object: nil)
-    }
-  }
+  @Published public var currentLocation: (latitude: Double, longitude: Double)?
 
   override init() {
     super.init()

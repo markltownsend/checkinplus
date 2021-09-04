@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -441,7 +441,9 @@
 				8C8D42337871B5A10ECC3F1B /* Pods */,
 				12306995CE95A98BDE9E1D7F /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		4DC7CFCA235BF72A00E0ADA6 /* Products */ = {
 			isa = PBXGroup;
@@ -826,7 +828,7 @@
 				};
 			};
 			buildConfigurationList = 4DC7CFC4235BF72A00E0ADA6 /* Build configuration list for PBXProject "CheckInPlus" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (

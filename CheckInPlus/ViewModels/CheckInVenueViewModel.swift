@@ -10,27 +10,29 @@ import Combine
 import Foundation
 import FoursquareAPI
 
-public final class CheckInVenueViewModel: ObservableObject {
+final class CheckInVenueViewModel: ObservableObject {
   
   @Published private(set) var venues: [Venue] = []
   @Published private(set) var venueError: String = ""
   @Published var hasError = false
   @Published var checkInSuccess = false
-  
+
+  private var cancellables = Set<AnyCancellable>()
   private let locationManager = LocationManager()
   private let foursquareAPI = FoursquareAPIManager()
-  
+
   init() {
-    NotificationCenter.default.addObserver(forName: Notification.Name.CurrentLocationDidUpdateNotification, object: nil, queue: .main) { [weak self] (_) in
-      guard let self = self else { return }
-      self.loadData()
-    }
-    
+    locationManager.$currentLocation
+      .sink { [weak self] location in
+        guard let location = location else { return }
+        self?.loadData(at: location)
+      }
+      .store(in: &cancellables)
   }
-  func loadData() {
-    guard let currentLocation = locationManager.currentLocation else { return }
+  
+  func loadData(at location: (latitude: Double, longitude: Double)) {
     
-    foursquareAPI.getCheckInVenues(latitude: currentLocation.latitude, longitude: currentLocation.longitude) { [weak self] (venues, error) in
+    foursquareAPI.getCheckInVenues(latitude: location.latitude, longitude: location.longitude) { [weak self] (venues, error) in
       guard let self = self else { return }
       let queue = DispatchQueue.main
       queue.async {

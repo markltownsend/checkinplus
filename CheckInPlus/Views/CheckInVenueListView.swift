@@ -14,11 +14,12 @@ struct CheckInVenueListView: View {
   @State private var settingsShowing = false
 
   init() {
-    self.viewModel = CheckInVenueViewModel()
+    let viewModel = CheckInVenueViewModel()
+    _viewModel = ObservedObject(wrappedValue: viewModel)
   }
 
   var settingsButton: some View {
-    Button(action: { self.settingsShowing = true}) {
+    Button(action: { settingsShowing = true}) {
       Image(systemName: "gear")
         .padding(EdgeInsets(top: 40, leading: 40, bottom: 40, trailing: 10))
     }
@@ -27,7 +28,7 @@ struct CheckInVenueListView: View {
   var body: some View {
     NavigationView {
       List(viewModel.venues) { venue in
-        NavigationLink(destination: CheckinView(venueId: venue.id, venueName: venue.name, viewModel: self.viewModel)) {
+        NavigationLink(destination: CheckinView(venueId: venue.id, venueName: venue.name, viewModel: viewModel)) {
           HStack {
             URLImage(url: venue.getPrimaryCategoryIconURL(), placeholder: Image(systemName: "app"), contentMode: .fit)
               .frame(width: 32, height: 32, alignment: .center)
@@ -35,17 +36,18 @@ struct CheckInVenueListView: View {
               .background(Color.green)
               .cornerRadius(19.0)
             Text(venue.name)
-          }.padding()
+          }
+          .padding()
         }
-      }.navigationBarTitle(Text("Venues"))
-        .navigationBarItems(trailing: settingsButton)
-        .sheet(isPresented: $settingsShowing) {
-          SettingsView(showModal: self.$settingsShowing)
       }
-    }.onAppear() {
-      self.viewModel.loadData()
-    }.alert(isPresented: self.$viewModel.hasError) {
-      Alert(title: Text("Error"), message: Text(self.viewModel.venueError), dismissButton: .default(Text("OK")))
+      .navigationBarTitle(Text("Venues"))
+      .navigationBarItems(trailing: settingsButton)
+      .sheet(isPresented: $settingsShowing) {
+        SettingsView(showModal: $settingsShowing)
+      }
+    }
+    .alert(isPresented: $viewModel.hasError) {
+      Alert(title: Text("Error"), message: Text(viewModel.venueError), dismissButton: .default(Text("OK")))
     }
   }
 }
