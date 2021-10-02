@@ -49,6 +49,10 @@ struct CheckInVenueListView: View {
     .alert(isPresented: $viewModel.hasError) {
       Alert(title: Text("Error"), message: Text(viewModel.venueError), dismissButton: .default(Text("OK")))
     }
+    .onAppear(perform: viewModel.refreshData)
+    .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+      viewModel.refreshData()
+    }
   }
 }
 

@@ -50,18 +50,14 @@ extension LocationManager: CLLocationManagerDelegate {
   }
 
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-    guard let location = locations.last, firstTimeUpdatingLocation else { return }
-
-    firstTimeUpdatingLocation = false
+    guard let location = locations.last else { return }
 
     os_log("Updating locations")
 
     currentLocation = (location.coordinate.latitude, location.coordinate.longitude)
     locManager.stopUpdatingLocation()
   }
-}
 
-private extension LocationManager {
   func startScanning() {
     locManager.startUpdatingLocation()
   }

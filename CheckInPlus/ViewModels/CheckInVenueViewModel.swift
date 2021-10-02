@@ -21,7 +21,10 @@ final class CheckInVenueViewModel: ObservableObject {
   private let locationManager = LocationManager()
   private let foursquareAPI = FoursquareAPIManager()
 
-  init() {
+  init() {  }
+
+  func refreshData() {
+    locationManager.startScanning()
     locationManager.$currentLocation
       .sink { [weak self] location in
         guard let location = location else { return }
@@ -29,7 +32,7 @@ final class CheckInVenueViewModel: ObservableObject {
       }
       .store(in: &cancellables)
   }
-  
+
   func loadData(at location: (latitude: Double, longitude: Double)) {
     
     foursquareAPI.getCheckInVenues(latitude: location.latitude, longitude: location.longitude) { [weak self] (venues, error) in
