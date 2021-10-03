@@ -6,13 +6,16 @@
 //  Copyright © 2019 Mark Townsend. All rights reserved.
 //
 
+import Combine
 import CoreLocation
 import Foundation
 import os
+import UIKit
 
 final class LocationManager: NSObject {
   private var firstTimeUpdatingLocation = true
   private let locManager = CLLocationManager()
+  private var cancellables = Set<AnyCancellable>()
 
   @Published public var currentLocation: (latitude: Double, longitude: Double)?
 
@@ -20,10 +23,36 @@ final class LocationManager: NSObject {
     super.init()
     locManager.delegate = self
     locManager.requestWhenInUseAuthorization()
+    setupNotifications()
+  }
+
+  func startScanning() {
+    os_log("Start Scanning")
+    locManager.startUpdatingLocation()
+  }
+
+  func stopScanning() {
+    os_log("Stop Scanning")
+    locManager.stopUpdatingLocation()
+  }
+
+  func setupNotifications() {
+    let center = NotificationCenter.default
+    center.publisher(for: UIApplication.willEnterForegroundNotification, object: nil)
+      .sink { [weak self] _ in
+        self?.startScanning()
+      }
+      .store(in: &cancellables)
+    center.publisher(for: UIApplication.didEnterBackgroundNotification, object: nil)
+      .sink { [weak self] _ in
+        self?.stopScanning()
+      }
+      .store(in: &cancellables)
   }
 
 }
 
+// MARK: - CLLocationManagerDelegate
 extension LocationManager: CLLocationManagerDelegate {
   func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
     switch status {
@@ -55,10 +84,5 @@ extension LocationManager: CLLocationManagerDelegate {
     os_log("Updating locations")
 
     currentLocation = (location.coordinate.latitude, location.coordinate.longitude)
-    locManager.stopUpdatingLocation()
-  }
-
-  func startScanning() {
-    locManager.startUpdatingLocation()
   }
 }
