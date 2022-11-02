@@ -11,21 +11,9 @@
 		27704A8A445DCF84A40199B4 /* Pods_YelpAPI_YelpAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C300A605C7F7E327355544BC /* Pods_YelpAPI_YelpAPITests.framework */; };
 		4D0267772398181E00B063DC /* FoursquareEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267762398181E00B063DC /* FoursquareEndPoint.swift */; };
 		4D02677B23983A0D00B063DC /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D02677A23983A0D00B063DC /* Venue.swift */; };
-		4D02678A2398419800B063DC /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0267812398419800B063DC /* NetworkLayer.framework */; };
-		4D0267912398419800B063DC /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267902398419800B063DC /* NetworkLayerTests.swift */; };
-		4D0267932398419800B063DC /* NetworkLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D0267832398419800B063DC /* NetworkLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D0267962398419800B063DC /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0267812398419800B063DC /* NetworkLayer.framework */; };
-		4D0267972398419800B063DC /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0267812398419800B063DC /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4D02679E239841A800B063DC /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0267812398419800B063DC /* NetworkLayer.framework */; };
-		4D0267A42398421300B063DC /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267A32398421300B063DC /* EndPointType.swift */; };
-		4D0267A62398426E00B063DC /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267A52398426E00B063DC /* HTTPMethod.swift */; };
-		4D0267A8239842B000B063DC /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267A7239842B000B063DC /* HTTPTask.swift */; };
-		4D0267AA2398439300B063DC /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267A92398439300B063DC /* ParameterEncoding.swift */; };
-		4D0267AC2398452C00B063DC /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267AB2398452C00B063DC /* URLParameterEncoding.swift */; };
-		4D0267AE239845E100B063DC /* JSONParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267AD239845E100B063DC /* JSONParameterEncoding.swift */; };
-		4D0267B02398504600B063DC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267AF2398504600B063DC /* Router.swift */; };
 		4D0267B22398560100B063DC /* FoursquareAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267B12398560100B063DC /* FoursquareAPIManager.swift */; };
-		4D0267B42398581100B063DC /* HTTPURLResponse+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267B32398581100B063DC /* HTTPURLResponse+Extension.swift */; };
+		4D0B03882912A67B00659DD6 /* NetworkLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 4D0B03872912A67B00659DD6 /* NetworkLayer */; };
+		4D0B03892912A67B00659DD6 /* NetworkLayer in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 4D0B03872912A67B00659DD6 /* NetworkLayer */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4D1A7F6A239F1D3E00ADFB14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */; };
 		4D44AD3D23EA8F9900FDC594 /* KeychainExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44AD3C23EA8F9900FDC594 /* KeychainExtension.swift */; };
 		4D4AC85723A01A140019866E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85623A01A140019866E /* LoginViewController.swift */; };
@@ -64,34 +52,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4D02678B2398419800B063DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D0267802398419800B063DC;
-			remoteInfo = NetworkLayer;
-		};
-		4D02678D2398419800B063DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DC7CFC8235BF72A00E0ADA6;
-			remoteInfo = CheckInPlus;
-		};
-		4D0267942398419800B063DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D0267802398419800B063DC;
-			remoteInfo = NetworkLayer;
-		};
-		4D0267A0239841A800B063DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D0267802398419800B063DC;
-			remoteInfo = NetworkLayer;
-		};
 		4DC7CFE3235BF72C00E0ADA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
@@ -151,13 +111,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		4D0B038A2912A67B00659DD6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4D0B03892912A67B00659DD6 /* NetworkLayer in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DC7D01E235C050700E0ADA6 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4D0267972398419800B063DC /* NetworkLayer.framework in Embed Frameworks */,
 				4DC7D01A235C050700E0ADA6 /* FoursquareAPI.framework in Embed Frameworks */,
 				4DC7D03D235C051600E0ADA6 /* YelpAPI.framework in Embed Frameworks */,
 			);
@@ -177,22 +147,9 @@
 		422C3356553B39A59FC93146 /* Pods_CheckInPlus_CheckInPlusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckInPlus_CheckInPlusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0267762398181E00B063DC /* FoursquareEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareEndPoint.swift; sourceTree = "<group>"; };
 		4D02677A23983A0D00B063DC /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
-		4D0267812398419800B063DC /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D0267832398419800B063DC /* NetworkLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkLayer.h; sourceTree = "<group>"; };
-		4D0267842398419800B063DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D0267892398419800B063DC /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D0267902398419800B063DC /* NetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTests.swift; sourceTree = "<group>"; };
-		4D0267922398419800B063DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D0267A32398421300B063DC /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
-		4D0267A52398426E00B063DC /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		4D0267A7239842B000B063DC /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
-		4D0267A92398439300B063DC /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
-		4D0267AB2398452C00B063DC /* URLParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoding.swift; sourceTree = "<group>"; };
-		4D0267AD239845E100B063DC /* JSONParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoding.swift; sourceTree = "<group>"; };
-		4D0267AF2398504600B063DC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4D0267B12398560100B063DC /* FoursquareAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIManager.swift; sourceTree = "<group>"; };
-		4D0267B32398581100B063DC /* HTTPURLResponse+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Extension.swift"; sourceTree = "<group>"; };
 		4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		4D1D1B992912A4B60057CA83 /* NetworkLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkLayer; sourceTree = "<group>"; };
 		4D44AD3C23EA8F9900FDC594 /* KeychainExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainExtension.swift; sourceTree = "<group>"; };
 		4D4AC85623A01A140019866E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4D4AC85A23A028300019866E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -248,27 +205,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4D02677E2398419800B063DC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D0267862398419800B063DC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D02678A2398419800B063DC /* NetworkLayer.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4DC7CFC6235BF72A00E0ADA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4DC7D019235C050700E0ADA6 /* FoursquareAPI.framework in Frameworks */,
-				4D0267962398419800B063DC /* NetworkLayer.framework in Frameworks */,
 				4DC7D03C235C051600E0ADA6 /* YelpAPI.framework in Frameworks */,
 				B3E65E9167409566AE18F2CD /* Pods_CheckInPlus.framework in Frameworks */,
 			);
@@ -295,7 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E61FB10140987B0FF9FC6095 /* Pods_FoursquareAPI.framework in Frameworks */,
-				4D02679E239841A800B063DC /* NetworkLayer.framework in Frameworks */,
+				4D0B03882912A67B00659DD6 /* NetworkLayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,32 +281,6 @@
 				C300A605C7F7E327355544BC /* Pods_YelpAPI_YelpAPITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4D0267822398419800B063DC /* NetworkLayer */ = {
-			isa = PBXGroup;
-			children = (
-				4D0267832398419800B063DC /* NetworkLayer.h */,
-				4D0267842398419800B063DC /* Info.plist */,
-				4D0267A32398421300B063DC /* EndPointType.swift */,
-				4D0267A52398426E00B063DC /* HTTPMethod.swift */,
-				4D0267A7239842B000B063DC /* HTTPTask.swift */,
-				4D0267A92398439300B063DC /* ParameterEncoding.swift */,
-				4D0267AB2398452C00B063DC /* URLParameterEncoding.swift */,
-				4D0267AD239845E100B063DC /* JSONParameterEncoding.swift */,
-				4D0267AF2398504600B063DC /* Router.swift */,
-				4D0267B32398581100B063DC /* HTTPURLResponse+Extension.swift */,
-			);
-			path = NetworkLayer;
-			sourceTree = "<group>";
-		};
-		4D02678F2398419800B063DC /* NetworkLayerTests */ = {
-			isa = PBXGroup;
-			children = (
-				4D0267902398419800B063DC /* NetworkLayerTests.swift */,
-				4D0267922398419800B063DC /* Info.plist */,
-			);
-			path = NetworkLayerTests;
 			sourceTree = "<group>";
 		};
 		4D0267B523985AD200B063DC /* Model */ = {
@@ -426,6 +341,7 @@
 		4DC7CFC0235BF72A00E0ADA6 = {
 			isa = PBXGroup;
 			children = (
+				4D1D1B992912A4B60057CA83 /* NetworkLayer */,
 				4DC7CFCB235BF72A00E0ADA6 /* CheckInPlus */,
 				4DC7CFE5235BF72C00E0ADA6 /* CheckInPlusTests */,
 				4DC7CFF0235BF72C00E0ADA6 /* CheckInPlusUITests */,
@@ -433,8 +349,6 @@
 				4DC7D012235C050700E0ADA6 /* FoursquareAPITests */,
 				4DC7D028235C051600E0ADA6 /* YelpAPI */,
 				4DC7D035235C051600E0ADA6 /* YelpAPITests */,
-				4D0267822398419800B063DC /* NetworkLayer */,
-				4D02678F2398419800B063DC /* NetworkLayerTests */,
 				4DC7CFCA235BF72A00E0ADA6 /* Products */,
 				8C8D42337871B5A10ECC3F1B /* Pods */,
 				12306995CE95A98BDE9E1D7F /* Frameworks */,
@@ -453,8 +367,6 @@
 				4DC7D00C235C050700E0ADA6 /* FoursquareAPITests.xctest */,
 				4DC7D027235C051600E0ADA6 /* YelpAPI.framework */,
 				4DC7D02F235C051600E0ADA6 /* YelpAPITests.xctest */,
-				4D0267812398419800B063DC /* NetworkLayer.framework */,
-				4D0267892398419800B063DC /* NetworkLayerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -569,14 +481,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4D02677C2398419800B063DC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D0267932398419800B063DC /* NetworkLayer.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4DC7CFFF235C050600E0ADA6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -596,43 +500,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4D0267802398419800B063DC /* NetworkLayer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D0267982398419800B063DC /* Build configuration list for PBXNativeTarget "NetworkLayer" */;
-			buildPhases = (
-				4D02677C2398419800B063DC /* Headers */,
-				4D02677D2398419800B063DC /* Sources */,
-				4D02677E2398419800B063DC /* Frameworks */,
-				4D02677F2398419800B063DC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = NetworkLayer;
-			productName = NetworkLayer;
-			productReference = 4D0267812398419800B063DC /* NetworkLayer.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		4D0267882398419800B063DC /* NetworkLayerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D02679B2398419800B063DC /* Build configuration list for PBXNativeTarget "NetworkLayerTests" */;
-			buildPhases = (
-				4D0267852398419800B063DC /* Sources */,
-				4D0267862398419800B063DC /* Frameworks */,
-				4D0267872398419800B063DC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4D02678C2398419800B063DC /* PBXTargetDependency */,
-				4D02678E2398419800B063DC /* PBXTargetDependency */,
-			);
-			name = NetworkLayerTests;
-			productName = NetworkLayerTests;
-			productReference = 4D0267892398419800B063DC /* NetworkLayerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		4DC7CFC8235BF72A00E0ADA6 /* CheckInPlus */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DC7CFF6235BF72C00E0ADA6 /* Build configuration list for PBXNativeTarget "CheckInPlus" */;
@@ -649,7 +516,6 @@
 			dependencies = (
 				4DC7D018235C050700E0ADA6 /* PBXTargetDependency */,
 				4DC7D03B235C051600E0ADA6 /* PBXTargetDependency */,
-				4D0267952398419800B063DC /* PBXTargetDependency */,
 			);
 			name = CheckInPlus;
 			packageProductDependencies = (
@@ -706,13 +572,16 @@
 				4DC7D000235C050600E0ADA6 /* Sources */,
 				4DC7D001235C050600E0ADA6 /* Frameworks */,
 				4DC7D002235C050600E0ADA6 /* Resources */,
+				4D0B038A2912A67B00659DD6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4D0267A1239841A800B063DC /* PBXTargetDependency */,
 			);
 			name = FoursquareAPI;
+			packageProductDependencies = (
+				4D0B03872912A67B00659DD6 /* NetworkLayer */,
+			);
 			productName = FoursquareAPI;
 			productReference = 4DC7D004235C050600E0ADA6 /* FoursquareAPI.framework */;
 			productType = "com.apple.product-type.framework";
@@ -788,14 +657,6 @@
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Mark Townsend";
 				TargetAttributes = {
-					4D0267802398419800B063DC = {
-						CreatedOnToolsVersion = 11.2.1;
-						LastSwiftMigration = 1120;
-					};
-					4D0267882398419800B063DC = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 4DC7CFC8235BF72A00E0ADA6;
-					};
 					4DC7CFC8235BF72A00E0ADA6 = {
 						CreatedOnToolsVersion = 11.1;
 					};
@@ -846,27 +707,11 @@
 				4DC7D00B235C050700E0ADA6 /* FoursquareAPITests */,
 				4DC7D026235C051600E0ADA6 /* YelpAPI */,
 				4DC7D02E235C051600E0ADA6 /* YelpAPITests */,
-				4D0267802398419800B063DC /* NetworkLayer */,
-				4D0267882398419800B063DC /* NetworkLayerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4D02677F2398419800B063DC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D0267872398419800B063DC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4DC7CFC7235BF72A00E0ADA6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1149,29 +994,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4D02677D2398419800B063DC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D0267A8239842B000B063DC /* HTTPTask.swift in Sources */,
-				4D0267A62398426E00B063DC /* HTTPMethod.swift in Sources */,
-				4D0267AE239845E100B063DC /* JSONParameterEncoding.swift in Sources */,
-				4D0267B02398504600B063DC /* Router.swift in Sources */,
-				4D0267B42398581100B063DC /* HTTPURLResponse+Extension.swift in Sources */,
-				4D0267AA2398439300B063DC /* ParameterEncoding.swift in Sources */,
-				4D0267AC2398452C00B063DC /* URLParameterEncoding.swift in Sources */,
-				4D0267A42398421300B063DC /* EndPointType.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D0267852398419800B063DC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D0267912398419800B063DC /* NetworkLayerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4DC7CFC5235BF72A00E0ADA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1244,26 +1066,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4D02678C2398419800B063DC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4D0267802398419800B063DC /* NetworkLayer */;
-			targetProxy = 4D02678B2398419800B063DC /* PBXContainerItemProxy */;
-		};
-		4D02678E2398419800B063DC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4DC7CFC8235BF72A00E0ADA6 /* CheckInPlus */;
-			targetProxy = 4D02678D2398419800B063DC /* PBXContainerItemProxy */;
-		};
-		4D0267952398419800B063DC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4D0267802398419800B063DC /* NetworkLayer */;
-			targetProxy = 4D0267942398419800B063DC /* PBXContainerItemProxy */;
-		};
-		4D0267A1239841A800B063DC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4D0267802398419800B063DC /* NetworkLayer */;
-			targetProxy = 4D0267A0239841A800B063DC /* PBXContainerItemProxy */;
-		};
 		4DC7CFE4235BF72C00E0ADA6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4DC7CFC8235BF72A00E0ADA6 /* CheckInPlus */;
@@ -1318,111 +1120,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4D0267992398419800B063DC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
-				DEVELOPMENT_TEAM = 55AT6EYVPW;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = NetworkLayer/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.NetworkLayer;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4D02679A2398419800B063DC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
-				DEVELOPMENT_TEAM = 55AT6EYVPW;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = NetworkLayer/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.NetworkLayer;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4D02679C2398419800B063DC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55AT6EYVPW;
-				INFOPLIST_FILE = NetworkLayerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.NetworkLayerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckInPlus.app/CheckInPlus";
-			};
-			name = Debug;
-		};
-		4D02679D2398419800B063DC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55AT6EYVPW;
-				INFOPLIST_FILE = NetworkLayerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.NetworkLayerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckInPlus.app/CheckInPlus";
-			};
-			name = Release;
-		};
 		4DC7CFF4235BF72C00E0ADA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1885,24 +1582,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4D0267982398419800B063DC /* Build configuration list for PBXNativeTarget "NetworkLayer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D0267992398419800B063DC /* Debug */,
-				4D02679A2398419800B063DC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4D02679B2398419800B063DC /* Build configuration list for PBXNativeTarget "NetworkLayerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D02679C2398419800B063DC /* Debug */,
-				4D02679D2398419800B063DC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4DC7CFC4235BF72A00E0ADA6 /* Build configuration list for PBXProject "CheckInPlus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1976,6 +1655,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D0B03872912A67B00659DD6 /* NetworkLayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkLayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4DC7CFD0235BF72A00E0ADA6 /* CheckInPlus.xcdatamodeld */ = {
