@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import URLImage
 
 struct CheckInVenueListView: View {
   @ObservedObject private var viewModel: CheckInVenueViewModel
@@ -30,7 +29,7 @@ struct CheckInVenueListView: View {
       List(viewModel.venues) { venue in
         NavigationLink(destination: CheckinView(venueId: venue.id, venueName: venue.name, viewModel: viewModel)) {
           HStack {
-            URLImage(url: venue.getPrimaryCategoryIconURL(), placeholder: Image(systemName: "app"), contentMode: .fit)
+            AsyncImage(url: venue.getPrimaryCategoryIconURL())
               .frame(width: 32, height: 32, alignment: .center)
               .padding(EdgeInsets(top: 6, leading: 6, bottom: 6, trailing: 6))
               .background(Color.green)
