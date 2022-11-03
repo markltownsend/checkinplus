@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "foursquare-ios-oauth",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/markltownsend/foursquare-ios-oauth.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "278e824039cb12b84edc9585ee1cb31505633dd4"
+      }
+    },
+    {
+      "identity" : "keychainaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kishikawakatsumi/KeychainAccess.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "6299daec1d74be12164fec090faf9ed14d0da9d6"
+      }
+    }
+  ],
+  "version" : 2
+}

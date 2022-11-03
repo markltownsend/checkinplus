@@ -1,27 +1,3 @@
-PODS:
-  - FSOAuth (1.2.1)
-  - KeychainAccess (4.2.2)
-  - Keys (1.0.1)
+PODFILE CHECKSUM: f6ac1db8cf43714f300e7752ac8233426fc0c358
 
-DEPENDENCIES:
-  - FSOAuth
-  - KeychainAccess
-  - Keys (from `Pods/CocoaPodsKeys`)
-
-SPEC REPOS:
-  trunk:
-    - FSOAuth
-    - KeychainAccess
-
-EXTERNAL SOURCES:
-  Keys:
-    :path: Pods/CocoaPodsKeys
-
-SPEC CHECKSUMS:
-  FSOAuth: abf5dc97e90d1da4cb6e04305653998088a223b3
-  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
-  Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
-
-PODFILE CHECKSUM: e087c97a6a3f2db7ca8c11e5e7e966df2ab596e9
-
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3

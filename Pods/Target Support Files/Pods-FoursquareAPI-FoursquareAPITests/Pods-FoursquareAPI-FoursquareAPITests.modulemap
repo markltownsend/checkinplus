@@ -1,6 +1,0 @@
-framework module Pods_FoursquareAPI_FoursquareAPITests {
-  umbrella header "Pods-FoursquareAPI-FoursquareAPITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

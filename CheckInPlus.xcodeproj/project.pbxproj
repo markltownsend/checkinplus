@@ -7,23 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1158C1F292196C471BEB25BB /* Pods_YelpAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1A2FEFE6F5E0578144A2096 /* Pods_YelpAPI.framework */; };
-		27704A8A445DCF84A40199B4 /* Pods_YelpAPI_YelpAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C300A605C7F7E327355544BC /* Pods_YelpAPI_YelpAPITests.framework */; };
-		4D0267772398181E00B063DC /* FoursquareEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267762398181E00B063DC /* FoursquareEndPoint.swift */; };
-		4D02677B23983A0D00B063DC /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D02677A23983A0D00B063DC /* Venue.swift */; };
-		4D0267B22398560100B063DC /* FoursquareAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0267B12398560100B063DC /* FoursquareAPIManager.swift */; };
-		4D0B03882912A67B00659DD6 /* NetworkLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 4D0B03872912A67B00659DD6 /* NetworkLayer */; };
-		4D0B03892912A67B00659DD6 /* NetworkLayer in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 4D0B03872912A67B00659DD6 /* NetworkLayer */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4D1A7F6A239F1D3E00ADFB14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */; };
-		4D44AD3D23EA8F9900FDC594 /* KeychainExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44AD3C23EA8F9900FDC594 /* KeychainExtension.swift */; };
 		4D4AC85723A01A140019866E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85623A01A140019866E /* LoginViewController.swift */; };
 		4D4AC85B23A028300019866E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85A23A028300019866E /* Constants.swift */; };
 		4D4AC85E23A037400019866E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85D23A037400019866E /* SettingsView.swift */; };
-		4D6F3F8723A2B63C003C5658 /* FoursquareAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6F3F8623A2B63C003C5658 /* FoursquareAPI.swift */; };
-		4D718DD423B1DB780087EFE4 /* FoursquareAPI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D718DD323B1DB780087EFE4 /* FoursquareAPI.xcassets */; };
+		4D4FAB342914011600AC262F /* FoursquareAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 4D4FAB332914011600AC262F /* FoursquareAPI */; };
 		4D777CDD240B88C10017EFCA /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D777CDC240B88C10017EFCA /* TextView.swift */; };
 		4D9D354E239EC23E0052E728 /* CheckInVenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D354D239EC23E0052E728 /* CheckInVenueViewModel.swift */; };
 		4D9D3551239EC7F70052E728 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D3550239EC7F70052E728 /* LocationManager.swift */; };
+		4DBD6BC22912E23A008A2351 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 4DBD6BC12912E23A008A2351 /* KeychainAccess */; };
 		4DC7CFCD235BF72A00E0ADA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFCC235BF72A00E0ADA6 /* AppDelegate.swift */; };
 		4DC7CFCF235BF72A00E0ADA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFCE235BF72A00E0ADA6 /* SceneDelegate.swift */; };
 		4DC7CFD2235BF72A00E0ADA6 /* CheckInPlus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFD0235BF72A00E0ADA6 /* CheckInPlus.xcdatamodeld */; };
@@ -33,21 +25,10 @@
 		4DC7CFDC235BF72C00E0ADA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC7CFDA235BF72C00E0ADA6 /* LaunchScreen.storyboard */; };
 		4DC7CFE7235BF72C00E0ADA6 /* CheckInPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFE6235BF72C00E0ADA6 /* CheckInPlusTests.swift */; };
 		4DC7CFF2235BF72C00E0ADA6 /* CheckInPlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFF1235BF72C00E0ADA6 /* CheckInPlusUITests.swift */; };
-		4DC7D00D235C050700E0ADA6 /* FoursquareAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7D004235C050600E0ADA6 /* FoursquareAPI.framework */; };
-		4DC7D014235C050700E0ADA6 /* FoursquareAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7D013235C050700E0ADA6 /* FoursquareAPITests.swift */; };
-		4DC7D016235C050700E0ADA6 /* FoursquareAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC7D006235C050700E0ADA6 /* FoursquareAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DC7D019235C050700E0ADA6 /* FoursquareAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7D004235C050600E0ADA6 /* FoursquareAPI.framework */; };
-		4DC7D01A235C050700E0ADA6 /* FoursquareAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7D004235C050600E0ADA6 /* FoursquareAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4DC7D030235C051600E0ADA6 /* YelpAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7D027235C051600E0ADA6 /* YelpAPI.framework */; };
-		4DC7D037235C051600E0ADA6 /* YelpAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7D036235C051600E0ADA6 /* YelpAPITests.swift */; };
 		4DC7D039235C051600E0ADA6 /* YelpAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC7D029235C051600E0ADA6 /* YelpAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DC7D03C235C051600E0ADA6 /* YelpAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7D027235C051600E0ADA6 /* YelpAPI.framework */; };
-		4DC7D03D235C051600E0ADA6 /* YelpAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7D027235C051600E0ADA6 /* YelpAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DC91ED723BEE4CF00E99C81 /* CheckinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC91ED623BEE4CF00E99C81 /* CheckinView.swift */; };
 		B3E65E9167409566AE18F2CD /* Pods_CheckInPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F267B53FE8DD58F7A987746 /* Pods_CheckInPlus.framework */; };
-		B6BBCAFA35E8FAF837ED3303 /* Pods_FoursquareAPI_FoursquareAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DCA8C1CF2814CC78906486 /* Pods_FoursquareAPI_FoursquareAPITests.framework */; };
 		C307A62898DDA6A9B35BF10D /* Pods_CheckInPlusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4C4B1677A9AA402FB4DD1D /* Pods_CheckInPlusTests.framework */; };
-		E61FB10140987B0FF9FC6095 /* Pods_FoursquareAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167FEA66D769F4B7F086CAA9 /* Pods_FoursquareAPI.framework */; };
 		E649F3AD4597735A1914740A /* Pods_CheckInPlus_CheckInPlusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422C3356553B39A59FC93146 /* Pods_CheckInPlus_CheckInPlusUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,70 +47,15 @@
 			remoteGlobalIDString = 4DC7CFC8235BF72A00E0ADA6;
 			remoteInfo = CheckInPlus;
 		};
-		4DC7D00E235C050700E0ADA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DC7D003235C050600E0ADA6;
-			remoteInfo = FoursquareAPI;
-		};
-		4DC7D010235C050700E0ADA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DC7CFC8235BF72A00E0ADA6;
-			remoteInfo = CheckInPlus;
-		};
-		4DC7D017235C050700E0ADA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DC7D003235C050600E0ADA6;
-			remoteInfo = FoursquareAPI;
-		};
-		4DC7D031235C051600E0ADA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DC7D026235C051600E0ADA6;
-			remoteInfo = YelpAPI;
-		};
-		4DC7D033235C051600E0ADA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DC7CFC8235BF72A00E0ADA6;
-			remoteInfo = CheckInPlus;
-		};
-		4DC7D03A235C051600E0ADA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DC7D026235C051600E0ADA6;
-			remoteInfo = YelpAPI;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4D0B038A2912A67B00659DD6 /* Embed Frameworks */ = {
+		4DFC1A2D2912A9BD00E6A560 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4D0B03892912A67B00659DD6 /* NetworkLayer in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DC7D01E235C050700E0ADA6 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4DC7D01A235C050700E0ADA6 /* FoursquareAPI.framework in Embed Frameworks */,
-				4DC7D03D235C051600E0ADA6 /* YelpAPI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,19 +71,13 @@
 		2D1E4BACBC1683ECC3A1BFCA /* Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig"; path = "Target Support Files/Pods-FoursquareAPI-FoursquareAPITests/Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig"; sourceTree = "<group>"; };
 		3084A750D83CC5C21E08394A /* Pods-CheckInPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckInPlus.release.xcconfig"; path = "Target Support Files/Pods-CheckInPlus/Pods-CheckInPlus.release.xcconfig"; sourceTree = "<group>"; };
 		422C3356553B39A59FC93146 /* Pods_CheckInPlus_CheckInPlusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckInPlus_CheckInPlusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D0267762398181E00B063DC /* FoursquareEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareEndPoint.swift; sourceTree = "<group>"; };
-		4D02677A23983A0D00B063DC /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
-		4D0267B12398560100B063DC /* FoursquareAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIManager.swift; sourceTree = "<group>"; };
+		4D0B038B2912A73C00659DD6 /* FoursquareAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FoursquareAPI; sourceTree = "<group>"; };
 		4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4D1D1B992912A4B60057CA83 /* NetworkLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkLayer; sourceTree = "<group>"; };
-		4D44AD3C23EA8F9900FDC594 /* KeychainExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainExtension.swift; sourceTree = "<group>"; };
 		4D4AC85623A01A140019866E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4D4AC85A23A028300019866E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4D4AC85D23A037400019866E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4D52393023A54A960070683C /* CheckInPlus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheckInPlus.entitlements; sourceTree = "<group>"; };
-		4D5A11F523A3FADA0019C454 /* FoursquareAPI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = FoursquareAPI.xctestplan; path = /Users/mark/Dropbox/Projects/CheckInPlus/FoursquareAPI/FoursquareAPI.xctestplan; sourceTree = "<absolute>"; };
-		4D6F3F8623A2B63C003C5658 /* FoursquareAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPI.swift; sourceTree = "<group>"; };
-		4D718DD323B1DB780087EFE4 /* FoursquareAPI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FoursquareAPI.xcassets; sourceTree = "<group>"; };
 		4D777CDC240B88C10017EFCA /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		4D9D354D239EC23E0052E728 /* CheckInVenueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVenueViewModel.swift; sourceTree = "<group>"; };
 		4D9D3550239EC7F70052E728 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -176,30 +96,20 @@
 		4DC7CFED235BF72C00E0ADA6 /* CheckInPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckInPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC7CFF1235BF72C00E0ADA6 /* CheckInPlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInPlusUITests.swift; sourceTree = "<group>"; };
 		4DC7CFF3235BF72C00E0ADA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DC7D004235C050600E0ADA6 /* FoursquareAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoursquareAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DC7D006235C050700E0ADA6 /* FoursquareAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoursquareAPI.h; sourceTree = "<group>"; };
-		4DC7D007235C050700E0ADA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DC7D00C235C050700E0ADA6 /* FoursquareAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoursquareAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DC7D013235C050700E0ADA6 /* FoursquareAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPITests.swift; sourceTree = "<group>"; };
-		4DC7D015235C050700E0ADA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DC7D027235C051600E0ADA6 /* YelpAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YelpAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC7D029235C051600E0ADA6 /* YelpAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YelpAPI.h; sourceTree = "<group>"; };
 		4DC7D02A235C051600E0ADA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DC7D02F235C051600E0ADA6 /* YelpAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelpAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC7D036235C051600E0ADA6 /* YelpAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAPITests.swift; sourceTree = "<group>"; };
 		4DC7D038235C051600E0ADA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DC91ED623BEE4CF00E99C81 /* CheckinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinView.swift; sourceTree = "<group>"; };
 		6F267B53FE8DD58F7A987746 /* Pods_CheckInPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckInPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E4E80384C3C24FA6F48D24 /* Pods-CheckInPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckInPlusTests.debug.xcconfig"; path = "Target Support Files/Pods-CheckInPlusTests/Pods-CheckInPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
-		72AAE6E5258DA259766D0C1D /* Pods-YelpAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpAPI.debug.xcconfig"; path = "Target Support Files/Pods-YelpAPI/Pods-YelpAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		8DBC0E95E9FCED6FEA86CE35 /* Pods-YelpAPI-YelpAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpAPI-YelpAPITests.debug.xcconfig"; path = "Target Support Files/Pods-YelpAPI-YelpAPITests/Pods-YelpAPI-YelpAPITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A643500FB702F1E846A6AE24 /* Pods-YelpAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpAPI.release.xcconfig"; path = "Target Support Files/Pods-YelpAPI/Pods-YelpAPI.release.xcconfig"; sourceTree = "<group>"; };
 		A92F6CE1A4E555739BF69BBB /* Pods-CheckInPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckInPlusTests.release.xcconfig"; path = "Target Support Files/Pods-CheckInPlusTests/Pods-CheckInPlusTests.release.xcconfig"; sourceTree = "<group>"; };
 		C300A605C7F7E327355544BC /* Pods_YelpAPI_YelpAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YelpAPI_YelpAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DCA8C1CF2814CC78906486 /* Pods_FoursquareAPI_FoursquareAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoursquareAPI_FoursquareAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46968413264B8B7B7E13869 /* Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig"; path = "Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA6E03D13A0810FC4A24168A /* Pods-FoursquareAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareAPI.debug.xcconfig"; path = "Target Support Files/Pods-FoursquareAPI/Pods-FoursquareAPI.debug.xcconfig"; sourceTree = "<group>"; };
-		D1A2FEFE6F5E0578144A2096 /* Pods_YelpAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YelpAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4C4B1677A9AA402FB4DD1D /* Pods_CheckInPlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckInPlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46FBEFF35E4F611E0900F9C /* Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig"; path = "Target Support Files/Pods-FoursquareAPI-FoursquareAPITests/Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -209,8 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DC7D019235C050700E0ADA6 /* FoursquareAPI.framework in Frameworks */,
-				4DC7D03C235C051600E0ADA6 /* YelpAPI.framework in Frameworks */,
+				4D4FAB342914011600AC262F /* FoursquareAPI in Frameworks */,
+				4DBD6BC22912E23A008A2351 /* KeychainAccess in Frameworks */,
 				B3E65E9167409566AE18F2CD /* Pods_CheckInPlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,38 +141,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DC7D001235C050600E0ADA6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E61FB10140987B0FF9FC6095 /* Pods_FoursquareAPI.framework in Frameworks */,
-				4D0B03882912A67B00659DD6 /* NetworkLayer in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DC7D009235C050700E0ADA6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DC7D00D235C050700E0ADA6 /* FoursquareAPI.framework in Frameworks */,
-				B6BBCAFA35E8FAF837ED3303 /* Pods_FoursquareAPI_FoursquareAPITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4DC7D024235C051600E0ADA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1158C1F292196C471BEB25BB /* Pods_YelpAPI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DC7D02C235C051600E0ADA6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DC7D030235C051600E0ADA6 /* YelpAPI.framework in Frameworks */,
-				27704A8A445DCF84A40199B4 /* Pods_YelpAPI_YelpAPITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,18 +159,9 @@
 				DD4C4B1677A9AA402FB4DD1D /* Pods_CheckInPlusTests.framework */,
 				167FEA66D769F4B7F086CAA9 /* Pods_FoursquareAPI.framework */,
 				C3DCA8C1CF2814CC78906486 /* Pods_FoursquareAPI_FoursquareAPITests.framework */,
-				D1A2FEFE6F5E0578144A2096 /* Pods_YelpAPI.framework */,
 				C300A605C7F7E327355544BC /* Pods_YelpAPI_YelpAPITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4D0267B523985AD200B063DC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				4D02677A23983A0D00B063DC /* Venue.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		4D1A7F6B239F1D4E00ADFB14 /* Resources */ = {
@@ -297,14 +170,6 @@
 				4DC7CFD5235BF72C00E0ADA6 /* Assets.xcassets */,
 				4DC7CFDD235BF72C00E0ADA6 /* Info.plist */,
 				4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		4D718DD223B1DB5D0087EFE4 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4D718DD323B1DB780087EFE4 /* FoursquareAPI.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -341,12 +206,11 @@
 		4DC7CFC0235BF72A00E0ADA6 = {
 			isa = PBXGroup;
 			children = (
+				4D0B038B2912A73C00659DD6 /* FoursquareAPI */,
 				4D1D1B992912A4B60057CA83 /* NetworkLayer */,
 				4DC7CFCB235BF72A00E0ADA6 /* CheckInPlus */,
 				4DC7CFE5235BF72C00E0ADA6 /* CheckInPlusTests */,
 				4DC7CFF0235BF72C00E0ADA6 /* CheckInPlusUITests */,
-				4DC7D005235C050700E0ADA6 /* FoursquareAPI */,
-				4DC7D012235C050700E0ADA6 /* FoursquareAPITests */,
 				4DC7D028235C051600E0ADA6 /* YelpAPI */,
 				4DC7D035235C051600E0ADA6 /* YelpAPITests */,
 				4DC7CFCA235BF72A00E0ADA6 /* Products */,
@@ -363,10 +227,7 @@
 				4DC7CFC9235BF72A00E0ADA6 /* CheckInPlus.app */,
 				4DC7CFE2235BF72C00E0ADA6 /* CheckInPlusTests.xctest */,
 				4DC7CFED235BF72C00E0ADA6 /* CheckInPlusUITests.xctest */,
-				4DC7D004235C050600E0ADA6 /* FoursquareAPI.framework */,
-				4DC7D00C235C050700E0ADA6 /* FoursquareAPITests.xctest */,
 				4DC7D027235C051600E0ADA6 /* YelpAPI.framework */,
-				4DC7D02F235C051600E0ADA6 /* YelpAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -414,31 +275,6 @@
 			path = CheckInPlusUITests;
 			sourceTree = "<group>";
 		};
-		4DC7D005235C050700E0ADA6 /* FoursquareAPI */ = {
-			isa = PBXGroup;
-			children = (
-				4D718DD223B1DB5D0087EFE4 /* Resources */,
-				4D5A11F523A3FADA0019C454 /* FoursquareAPI.xctestplan */,
-				4D0267B523985AD200B063DC /* Model */,
-				4DC7D006235C050700E0ADA6 /* FoursquareAPI.h */,
-				4DC7D007235C050700E0ADA6 /* Info.plist */,
-				4D0267762398181E00B063DC /* FoursquareEndPoint.swift */,
-				4D0267B12398560100B063DC /* FoursquareAPIManager.swift */,
-				4D6F3F8623A2B63C003C5658 /* FoursquareAPI.swift */,
-				4D44AD3C23EA8F9900FDC594 /* KeychainExtension.swift */,
-			);
-			path = FoursquareAPI;
-			sourceTree = "<group>";
-		};
-		4DC7D012235C050700E0ADA6 /* FoursquareAPITests */ = {
-			isa = PBXGroup;
-			children = (
-				4DC7D013235C050700E0ADA6 /* FoursquareAPITests.swift */,
-				4DC7D015235C050700E0ADA6 /* Info.plist */,
-			);
-			path = FoursquareAPITests;
-			sourceTree = "<group>";
-		};
 		4DC7D028235C051600E0ADA6 /* YelpAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,8 +306,6 @@
 				1E6142EA0997B59BBFFB5E53 /* Pods-FoursquareAPI.release.xcconfig */,
 				F46FBEFF35E4F611E0900F9C /* Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig */,
 				2D1E4BACBC1683ECC3A1BFCA /* Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig */,
-				72AAE6E5258DA259766D0C1D /* Pods-YelpAPI.debug.xcconfig */,
-				A643500FB702F1E846A6AE24 /* Pods-YelpAPI.release.xcconfig */,
 				8DBC0E95E9FCED6FEA86CE35 /* Pods-YelpAPI-YelpAPITests.debug.xcconfig */,
 				1642AC8971960CD1389AEBAC /* Pods-YelpAPI-YelpAPITests.release.xcconfig */,
 			);
@@ -481,14 +315,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4DC7CFFF235C050600E0ADA6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DC7D016235C050700E0ADA6 /* FoursquareAPI.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4DC7D022235C051600E0ADA6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -508,17 +334,16 @@
 				4DC7CFC5235BF72A00E0ADA6 /* Sources */,
 				4DC7CFC6235BF72A00E0ADA6 /* Frameworks */,
 				4DC7CFC7235BF72A00E0ADA6 /* Resources */,
-				4DC7D01E235C050700E0ADA6 /* Embed Frameworks */,
-				7454DBCFBA8FA9E7C607EF09 /* [CP] Embed Pods Frameworks */,
+				4DFC1A2D2912A9BD00E6A560 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4DC7D018235C050700E0ADA6 /* PBXTargetDependency */,
-				4DC7D03B235C051600E0ADA6 /* PBXTargetDependency */,
 			);
 			name = CheckInPlus;
 			packageProductDependencies = (
+				4DBD6BC12912E23A008A2351 /* KeychainAccess */,
+				4D4FAB332914011600AC262F /* FoursquareAPI */,
 			);
 			productName = CheckInPlus;
 			productReference = 4DC7CFC9235BF72A00E0ADA6 /* CheckInPlus.app */;
@@ -551,7 +376,6 @@
 				4DC7CFE9235BF72C00E0ADA6 /* Sources */,
 				4DC7CFEA235BF72C00E0ADA6 /* Frameworks */,
 				4DC7CFEB235BF72C00E0ADA6 /* Resources */,
-				6F3F6A4E5711EE34364185B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -563,55 +387,10 @@
 			productReference = 4DC7CFED235BF72C00E0ADA6 /* CheckInPlusUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		4DC7D003235C050600E0ADA6 /* FoursquareAPI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4DC7D01B235C050700E0ADA6 /* Build configuration list for PBXNativeTarget "FoursquareAPI" */;
-			buildPhases = (
-				0D22768598753B25295EE094 /* [CP] Check Pods Manifest.lock */,
-				4DC7CFFF235C050600E0ADA6 /* Headers */,
-				4DC7D000235C050600E0ADA6 /* Sources */,
-				4DC7D001235C050600E0ADA6 /* Frameworks */,
-				4DC7D002235C050600E0ADA6 /* Resources */,
-				4D0B038A2912A67B00659DD6 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FoursquareAPI;
-			packageProductDependencies = (
-				4D0B03872912A67B00659DD6 /* NetworkLayer */,
-			);
-			productName = FoursquareAPI;
-			productReference = 4DC7D004235C050600E0ADA6 /* FoursquareAPI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		4DC7D00B235C050700E0ADA6 /* FoursquareAPITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4DC7D01F235C050700E0ADA6 /* Build configuration list for PBXNativeTarget "FoursquareAPITests" */;
-			buildPhases = (
-				99CB7517C4D2784A1D21C477 /* [CP] Check Pods Manifest.lock */,
-				4DC7D008235C050700E0ADA6 /* Sources */,
-				4DC7D009235C050700E0ADA6 /* Frameworks */,
-				4DC7D00A235C050700E0ADA6 /* Resources */,
-				209BAB900F884B26B664D63F /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4DC7D00F235C050700E0ADA6 /* PBXTargetDependency */,
-				4DC7D011235C050700E0ADA6 /* PBXTargetDependency */,
-			);
-			name = FoursquareAPITests;
-			productName = FoursquareAPITests;
-			productReference = 4DC7D00C235C050700E0ADA6 /* FoursquareAPITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		4DC7D026235C051600E0ADA6 /* YelpAPI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DC7D03E235C051600E0ADA6 /* Build configuration list for PBXNativeTarget "YelpAPI" */;
 			buildPhases = (
-				59D9B8EEC7BED6F937758E67 /* [CP] Check Pods Manifest.lock */,
 				4DC7D022235C051600E0ADA6 /* Headers */,
 				4DC7D023235C051600E0ADA6 /* Sources */,
 				4DC7D024235C051600E0ADA6 /* Frameworks */,
@@ -625,27 +404,6 @@
 			productName = YelpAPI;
 			productReference = 4DC7D027235C051600E0ADA6 /* YelpAPI.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		4DC7D02E235C051600E0ADA6 /* YelpAPITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4DC7D041235C051600E0ADA6 /* Build configuration list for PBXNativeTarget "YelpAPITests" */;
-			buildPhases = (
-				E1835D23DF66F59D0E0DF7DE /* [CP] Check Pods Manifest.lock */,
-				4DC7D02B235C051600E0ADA6 /* Sources */,
-				4DC7D02C235C051600E0ADA6 /* Frameworks */,
-				4DC7D02D235C051600E0ADA6 /* Resources */,
-				6732690AA4E9490BD531CEE7 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4DC7D032235C051600E0ADA6 /* PBXTargetDependency */,
-				4DC7D034235C051600E0ADA6 /* PBXTargetDependency */,
-			);
-			name = YelpAPITests;
-			productName = YelpAPITests;
-			productReference = 4DC7D02F235C051600E0ADA6 /* YelpAPITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -668,20 +426,8 @@
 						CreatedOnToolsVersion = 11.1;
 						TestTargetID = 4DC7CFC8235BF72A00E0ADA6;
 					};
-					4DC7D003235C050600E0ADA6 = {
-						CreatedOnToolsVersion = 11.1;
-						LastSwiftMigration = 1120;
-					};
-					4DC7D00B235C050700E0ADA6 = {
-						CreatedOnToolsVersion = 11.1;
-						TestTargetID = 4DC7CFC8235BF72A00E0ADA6;
-					};
 					4DC7D026235C051600E0ADA6 = {
 						CreatedOnToolsVersion = 11.1;
-					};
-					4DC7D02E235C051600E0ADA6 = {
-						CreatedOnToolsVersion = 11.1;
-						TestTargetID = 4DC7CFC8235BF72A00E0ADA6;
 					};
 				};
 			};
@@ -695,6 +441,7 @@
 			);
 			mainGroup = 4DC7CFC0235BF72A00E0ADA6;
 			packageReferences = (
+				4D5288AA2912D0EB00B02807 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 4DC7CFCA235BF72A00E0ADA6 /* Products */;
 			projectDirPath = "";
@@ -703,10 +450,7 @@
 				4DC7CFC8235BF72A00E0ADA6 /* CheckInPlus */,
 				4DC7CFE1235BF72C00E0ADA6 /* CheckInPlusTests */,
 				4DC7CFEC235BF72C00E0ADA6 /* CheckInPlusUITests */,
-				4DC7D003235C050600E0ADA6 /* FoursquareAPI */,
-				4DC7D00B235C050700E0ADA6 /* FoursquareAPITests */,
 				4DC7D026235C051600E0ADA6 /* YelpAPI */,
-				4DC7D02E235C051600E0ADA6 /* YelpAPITests */,
 			);
 		};
 /* End PBXProject section */
@@ -737,29 +481,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DC7D002235C050600E0ADA6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D718DD423B1DB780087EFE4 /* FoursquareAPI.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DC7D00A235C050700E0ADA6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4DC7D025235C051600E0ADA6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DC7D02D235C051600E0ADA6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -769,45 +491,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D22768598753B25295EE094 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FoursquareAPI-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		209BAB900F884B26B664D63F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FoursquareAPI-FoursquareAPITests/Pods-FoursquareAPI-FoursquareAPITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FoursquareAPI-FoursquareAPITests/Pods-FoursquareAPI-FoursquareAPITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoursquareAPI-FoursquareAPITests/Pods-FoursquareAPI-FoursquareAPITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2C5B4A04F06293FBFD7DD7EF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -852,101 +535,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		59D9B8EEC7BED6F937758E67 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YelpAPI-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6732690AA4E9490BD531CEE7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YelpAPI-YelpAPITests/Pods-YelpAPI-YelpAPITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YelpAPI-YelpAPITests/Pods-YelpAPI-YelpAPITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YelpAPI-YelpAPITests/Pods-YelpAPI-YelpAPITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6F3F6A4E5711EE34364185B2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7454DBCFBA8FA9E7C607EF09 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CheckInPlus/Pods-CheckInPlus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CheckInPlus/Pods-CheckInPlus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckInPlus/Pods-CheckInPlus-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		99CB7517C4D2784A1D21C477 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FoursquareAPI-FoursquareAPITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D97571FFC8F7FE67E976F4B1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -963,28 +551,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CheckInPlusTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E1835D23DF66F59D0E0DF7DE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YelpAPI-YelpAPITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1028,38 +594,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DC7D000235C050600E0ADA6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D02677B23983A0D00B063DC /* Venue.swift in Sources */,
-				4D44AD3D23EA8F9900FDC594 /* KeychainExtension.swift in Sources */,
-				4D6F3F8723A2B63C003C5658 /* FoursquareAPI.swift in Sources */,
-				4D0267772398181E00B063DC /* FoursquareEndPoint.swift in Sources */,
-				4D0267B22398560100B063DC /* FoursquareAPIManager.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DC7D008235C050700E0ADA6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DC7D014235C050700E0ADA6 /* FoursquareAPITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4DC7D023235C051600E0ADA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DC7D02B235C051600E0ADA6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DC7D037235C051600E0ADA6 /* YelpAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1075,36 +613,6 @@
 			isa = PBXTargetDependency;
 			target = 4DC7CFC8235BF72A00E0ADA6 /* CheckInPlus */;
 			targetProxy = 4DC7CFEE235BF72C00E0ADA6 /* PBXContainerItemProxy */;
-		};
-		4DC7D00F235C050700E0ADA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4DC7D003235C050600E0ADA6 /* FoursquareAPI */;
-			targetProxy = 4DC7D00E235C050700E0ADA6 /* PBXContainerItemProxy */;
-		};
-		4DC7D011235C050700E0ADA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4DC7CFC8235BF72A00E0ADA6 /* CheckInPlus */;
-			targetProxy = 4DC7D010235C050700E0ADA6 /* PBXContainerItemProxy */;
-		};
-		4DC7D018235C050700E0ADA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4DC7D003235C050600E0ADA6 /* FoursquareAPI */;
-			targetProxy = 4DC7D017235C050700E0ADA6 /* PBXContainerItemProxy */;
-		};
-		4DC7D032235C051600E0ADA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4DC7D026235C051600E0ADA6 /* YelpAPI */;
-			targetProxy = 4DC7D031235C051600E0ADA6 /* PBXContainerItemProxy */;
-		};
-		4DC7D034235C051600E0ADA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4DC7CFC8235BF72A00E0ADA6 /* CheckInPlus */;
-			targetProxy = 4DC7D033235C051600E0ADA6 /* PBXContainerItemProxy */;
-		};
-		4DC7D03B235C051600E0ADA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4DC7D026235C051600E0ADA6 /* YelpAPI */;
-			targetProxy = 4DC7D03A235C051600E0ADA6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1240,7 +748,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2BB88DEC5885A919BAC0396D /* Pods-CheckInPlus.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CheckInPlus/CheckInPlus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -1264,7 +771,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3084A750D83CC5C21E08394A /* Pods-CheckInPlus.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CheckInPlus/CheckInPlus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -1372,114 +878,8 @@
 			};
 			name = Release;
 		};
-		4DC7D01C235C050700E0ADA6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA6E03D13A0810FC4A24168A /* Pods-FoursquareAPI.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 55AT6EYVPW;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FoursquareAPI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.FoursquareAPI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4DC7D01D235C050700E0ADA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E6142EA0997B59BBFFB5E53 /* Pods-FoursquareAPI.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 55AT6EYVPW;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FoursquareAPI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.FoursquareAPI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4DC7D020235C050700E0ADA6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F46FBEFF35E4F611E0900F9C /* Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55AT6EYVPW;
-				INFOPLIST_FILE = FoursquareAPITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.FoursquareAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckInPlus.app/CheckInPlus";
-			};
-			name = Debug;
-		};
-		4DC7D021235C050700E0ADA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D1E4BACBC1683ECC3A1BFCA /* Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55AT6EYVPW;
-				INFOPLIST_FILE = FoursquareAPITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.FoursquareAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckInPlus.app/CheckInPlus";
-			};
-			name = Release;
-		};
 		4DC7D03F235C051600E0ADA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72AAE6E5258DA259766D0C1D /* Pods-YelpAPI.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1509,7 +909,6 @@
 		};
 		4DC7D040235C051600E0ADA6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A643500FB702F1E846A6AE24 /* Pods-YelpAPI.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1534,48 +933,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4DC7D042235C051600E0ADA6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DBC0E95E9FCED6FEA86CE35 /* Pods-YelpAPI-YelpAPITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55AT6EYVPW;
-				INFOPLIST_FILE = YelpAPITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.YelpAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckInPlus.app/CheckInPlus";
-			};
-			name = Debug;
-		};
-		4DC7D043235C051600E0ADA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1642AC8971960CD1389AEBAC /* Pods-YelpAPI-YelpAPITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55AT6EYVPW;
-				INFOPLIST_FILE = YelpAPITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.YelpAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckInPlus.app/CheckInPlus";
 			};
 			name = Release;
 		};
@@ -1618,24 +975,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4DC7D01B235C050700E0ADA6 /* Build configuration list for PBXNativeTarget "FoursquareAPI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4DC7D01C235C050700E0ADA6 /* Debug */,
-				4DC7D01D235C050700E0ADA6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4DC7D01F235C050700E0ADA6 /* Build configuration list for PBXNativeTarget "FoursquareAPITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4DC7D020235C050700E0ADA6 /* Debug */,
-				4DC7D021235C050700E0ADA6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4DC7D03E235C051600E0ADA6 /* Build configuration list for PBXNativeTarget "YelpAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1645,21 +984,28 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4DC7D041235C051600E0ADA6 /* Build configuration list for PBXNativeTarget "YelpAPITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4DC7D042235C051600E0ADA6 /* Debug */,
-				4DC7D043235C051600E0ADA6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		4D5288AA2912D0EB00B02807 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		4D0B03872912A67B00659DD6 /* NetworkLayer */ = {
+		4D4FAB332914011600AC262F /* FoursquareAPI */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = NetworkLayer;
+			productName = FoursquareAPI;
+		};
+		4DBD6BC12912E23A008A2351 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D5288AA2912D0EB00B02807 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
 
