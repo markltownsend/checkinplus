@@ -6,56 +6,56 @@
 //  Copyright © 2019 Mark Townsend. All rights reserved.
 //
 
-import SwiftUI
 import FoursquareAPI
 import KeychainAccess
+import SwiftUI
 
 struct SettingsView: View {
-  private let foursquareManager = FoursquareAPIManager()
-  private let keychain = Keychain(service: Keychain.serviceID)
-  private let tokenSavedPublisher = NotificationCenter.default.publisher(for: .FoursquareDidSaveAuthTokenNotification)
-  
-  @Binding var showModal: Bool
-  @State private var foursquareConnected = false
-  
-  var body: some View {
-    NavigationView {
-      VStack {
-        Button(action:{ self.connectToFoursquare() }) {
-          Text(self.foursquareConnected ? NSLocalizedString("Disconnect Foursquare", comment: "") : NSLocalizedString("Connect with Foursquare", comment: ""))
-        }.padding()
-        
-        Button(action:{}) {
-          Text(NSLocalizedString("Connect with Yelp", comment: ""))
+    private let foursquareManager = FoursquareAPIManager()
+    private let keychain = Keychain(service: Keychain.serviceID)
+    private let tokenSavedPublisher = NotificationCenter.default.publisher(for: .FoursquareDidSaveAuthTokenNotification)
+
+    @Binding var showModal: Bool
+    @State private var foursquareConnected = false
+
+    var body: some View {
+        NavigationView {
+            VStack {
+                Button(action: { self.connectToFoursquare() }) {
+                    Text(self.foursquareConnected ? NSLocalizedString("Disconnect Foursquare", comment: "") : NSLocalizedString("Connect with Foursquare", comment: ""))
+                }.padding()
+
+                Button(action: {}) {
+                    Text(NSLocalizedString("Connect with Yelp", comment: ""))
+                }
+            }
+            .navigationBarTitle(Text(NSLocalizedString("Settings", comment: "")))
+            .navigationBarItems(trailing: Button(action: { self.showModal.toggle() }) {
+                Text(NSLocalizedString("Done", comment: ""))
+            }).onAppear {
+                self.foursquareConnected = self.foursquareManager.currentFoursquareAuthToken != nil
+            }.onReceive(tokenSavedPublisher) { _ in
+                self.foursquareConnected = true
+            }
         }
-      }
-      .navigationBarTitle(Text(NSLocalizedString("Settings", comment: "")))
-      .navigationBarItems(trailing: Button(action: { self.showModal.toggle()}) {
-        Text(NSLocalizedString("Done", comment: ""))
-      }).onAppear {
-        self.foursquareConnected = self.foursquareManager.currentFoursquareAuthToken != nil
-      }.onReceive(tokenSavedPublisher) { (_) in
-        self.foursquareConnected = true
-      }
     }
-  }
-  
-  func connectToFoursquare() {
-    if foursquareConnected {
-      foursquareManager.removeToken()
-      foursquareConnected = false
-    } else {
-      do {
-        try foursquareManager.authorizeUser(Constants.callbackURI)
-      } catch {
-        print("\(error)")
-      }
+
+    func connectToFoursquare() {
+        if foursquareConnected {
+            foursquareManager.removeToken()
+            foursquareConnected = false
+        } else {
+            do {
+                try foursquareManager.authorizeUser(Constants.callbackURI)
+            } catch {
+                print("\(error)")
+            }
+        }
     }
-  }
 }
 
 struct SettingsView_Previews: PreviewProvider {
-  static var previews: some View {
-    SettingsView(showModal: .constant(true))
-  }
+    static var previews: some View {
+        SettingsView(showModal: .constant(true))
+    }
 }

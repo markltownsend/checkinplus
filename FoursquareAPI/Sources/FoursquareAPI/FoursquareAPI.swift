@@ -14,4 +14,3 @@ public protocol FoursquareAPI {
     func getCheckInVenues(latitude: Double, longitude: Double, completion: @escaping (_ venues: [Venue]?, _ error: String?) -> Void)
     func addCheckin(venueId: String, shout: String?, completion: @escaping (_ error: String?) -> Void)
 }
-

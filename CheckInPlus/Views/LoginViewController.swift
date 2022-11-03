@@ -6,107 +6,106 @@
 //  Copyright © 2019 Mark Townsend. All rights reserved.
 //
 
-import UIKit
 import AuthenticationServices
 import KeychainAccess
 import os
+import UIKit
 
 final class LoginViewController: UIViewController {
+    private let keychain = Keychain(service: Keychain.serviceID)
 
-  private let keychain = Keychain(service: Keychain.serviceID)
+    override func loadView() {
+        super.loadView()
+        view = UIView()
+        view.backgroundColor = .systemBackground
+    }
 
-  override func loadView() {
-    super.loadView()
-    view = UIView()
-    view.backgroundColor = .systemBackground
-  }
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    setupSigninWithAppleID()
-  }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupSigninWithAppleID()
+    }
 
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    performExistingAccountSetupFlow()
-  }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        performExistingAccountSetupFlow()
+    }
 }
 
 // MARK: - ASAuthorizationcontrollerDelegate
+
 extension LoginViewController: ASAuthorizationControllerDelegate {
-  func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
-
-    if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
-
-      let userIdentifier = appleIDCredential.user
-      keychain[Keychain.userIdentifierKey] = userIdentifier
-    } else if let passwordCredential = authorization.credential as? ASPasswordCredential {
-
-      print("Get credential from keychain for \(passwordCredential.user)")
+    func authorizationController(controller _: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+        if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
+            let userIdentifier = appleIDCredential.user
+            keychain[Keychain.userIdentifierKey] = userIdentifier
+        } else if let passwordCredential = authorization.credential as? ASPasswordCredential {
+            os_log("Get credential from keychain for %{private}@", passwordCredential.user)
+        }
+        dismiss(animated: true, completion: nil)
     }
-    dismiss(animated: true, completion: nil)
-  }
 
-  func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
-    os_log("Error logging in: %s", log: OSLog.default, type: .error, error.localizedDescription)
-  }
+    func authorizationController(controller _: ASAuthorizationController, didCompleteWithError error: Error) {
+        os_log("Error logging in: %s", log: OSLog.default, type: .error, error.localizedDescription)
+    }
 }
 
 // MARK: - ASAuthorizationControllerPresentationContextProviding
+
 extension LoginViewController: ASAuthorizationControllerPresentationContextProviding {
-  func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
-    return self.view.window!
-  }
+    func presentationAnchor(for _: ASAuthorizationController) -> ASPresentationAnchor {
+        view.window!
+    }
 }
 
 // MARK: - Private Functions
+
 private extension LoginViewController {
-  func setupSigninWithAppleID() {
-    let stackView = UIStackView()
-    stackView.axis = .vertical
-    stackView.spacing = 25.0
+    func setupSigninWithAppleID() {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.spacing = 25.0
 
-    let titleLabel = UILabel()
-    titleLabel.font = .systemFont(ofSize: 25)
-    titleLabel.text = NSLocalizedString("CheckIn Plus", comment: "")
-    titleLabel.textColor = .label
-    titleLabel.sizeToFit()
-    
-    let authButton = ASAuthorizationAppleIDButton()
-    authButton.addTarget(self, action: #selector(authButtonPressed), for: .touchUpInside)
+        let titleLabel = UILabel()
+        titleLabel.font = .systemFont(ofSize: 25)
+        titleLabel.text = NSLocalizedString("CheckIn Plus", comment: "")
+        titleLabel.textColor = .label
+        titleLabel.sizeToFit()
 
-    stackView.addArrangedSubview(titleLabel)
-    stackView.addArrangedSubview(authButton)
+        let authButton = ASAuthorizationAppleIDButton()
+        authButton.addTarget(self, action: #selector(authButtonPressed), for: .touchUpInside)
 
-    stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.addArrangedSubview(titleLabel)
+        stackView.addArrangedSubview(authButton)
 
-    view.addSubview(stackView)
+        stackView.translatesAutoresizingMaskIntoConstraints = false
 
-    NSLayoutConstraint.activate([
-      stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-      stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-    ])
-  }
+        view.addSubview(stackView)
 
-  @objc
-  func authButtonPressed() {
-    let appleIDProvider = ASAuthorizationAppleIDProvider()
-    let request = appleIDProvider.createRequest()
-    request.requestedScopes = [.fullName]
+        NSLayoutConstraint.activate([
+            stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        ])
+    }
 
-    let authorizationController = ASAuthorizationController(authorizationRequests: [request])
-    authorizationController.delegate = self
-    authorizationController.presentationContextProvider = self
-    authorizationController.performRequests()
-  }
+    @objc
+    func authButtonPressed() {
+        let appleIDProvider = ASAuthorizationAppleIDProvider()
+        let request = appleIDProvider.createRequest()
+        request.requestedScopes = [.fullName]
 
-  func performExistingAccountSetupFlow() {
-    let requests = [ASAuthorizationAppleIDProvider().createRequest(),
-                    ASAuthorizationPasswordProvider().createRequest()]
+        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+        authorizationController.delegate = self
+        authorizationController.presentationContextProvider = self
+        authorizationController.performRequests()
+    }
 
-    let authController = ASAuthorizationController(authorizationRequests: requests)
-    authController.delegate = self
-    authController.presentationContextProvider = self
-    authController.performRequests()
-  }
+    func performExistingAccountSetupFlow() {
+        let requests = [ASAuthorizationAppleIDProvider().createRequest(),
+                        ASAuthorizationPasswordProvider().createRequest()]
+
+        let authController = ASAuthorizationController(authorizationRequests: requests)
+        authController.delegate = self
+        authController.presentationContextProvider = self
+        authController.performRequests()
+    }
 }

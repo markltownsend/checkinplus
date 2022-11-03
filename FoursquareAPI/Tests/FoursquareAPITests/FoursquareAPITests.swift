@@ -1,5 +1,5 @@
-import XCTest
 @testable import FoursquareAPI
+import XCTest
 
 final class FoursquareAPITests: XCTestCase {
     func testExample() throws {

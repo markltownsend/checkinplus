@@ -6,13 +6,14 @@ import PackageDescription
 let package = Package(
     name: "FoursquareAPI",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v13),
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "FoursquareAPI",
-            targets: ["FoursquareAPI"]),
+            targets: ["FoursquareAPI"]
+        ),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,7 +21,7 @@ let package = Package(
         .package(url: "https://github.com/kishikawakatsumi/KeychainAccess.git", from: "3.0.0"),
         .package(url: "https://github.com/markltownsend/foursquare-ios-oauth.git", branch: "master"),
         .package(path: "../NetworkLayer"),
-        .package(name: "ArkanaKeys", path: "../ArkanaKeys/ArkanaKeys")
+        .package(name: "ArkanaKeys", path: "../ArkanaKeys/ArkanaKeys"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -30,8 +31,8 @@ let package = Package(
             dependencies: [
                 "NetworkLayer",
                 "KeychainAccess",
-                .product(name:"FSOAuth", package: "foursquare-ios-oauth"),
-                "ArkanaKeys"
+                .product(name: "FSOAuth", package: "foursquare-ios-oauth"),
+                "ArkanaKeys",
             ]
         ),
         .testTarget(

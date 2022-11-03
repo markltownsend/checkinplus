@@ -174,6 +174,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		4D4FAB352914022B00AC262F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4DC7CFCC235BF72A00E0ADA6 /* AppDelegate.swift */,
+				4DC7CFCE235BF72A00E0ADA6 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		4D9D354B239EC21C0052E728 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,16 +244,15 @@
 		4DC7CFCB235BF72A00E0ADA6 /* CheckInPlus */ = {
 			isa = PBXGroup;
 			children = (
+				4D4FAB352914022B00AC262F /* Application */,
 				4D52393023A54A960070683C /* CheckInPlus.entitlements */,
+				4DC7CFD0235BF72A00E0ADA6 /* CheckInPlus.xcdatamodeld */,
+				4DC7CFDA235BF72C00E0ADA6 /* LaunchScreen.storyboard */,
+				4DC7CFD7235BF72C00E0ADA6 /* Preview Content */,
 				4D1A7F6B239F1D4E00ADFB14 /* Resources */,
 				4D9D354F239EC7E30052E728 /* Utils */,
-				4D9D354C239EC2250052E728 /* Views */,
 				4D9D354B239EC21C0052E728 /* ViewModels */,
-				4DC7CFCC235BF72A00E0ADA6 /* AppDelegate.swift */,
-				4DC7CFCE235BF72A00E0ADA6 /* SceneDelegate.swift */,
-				4DC7CFDA235BF72C00E0ADA6 /* LaunchScreen.storyboard */,
-				4DC7CFD0235BF72A00E0ADA6 /* CheckInPlus.xcdatamodeld */,
-				4DC7CFD7235BF72C00E0ADA6 /* Preview Content */,
+				4D9D354C239EC2250052E728 /* Views */,
 			);
 			path = CheckInPlus;
 			sourceTree = "<group>";

@@ -9,7 +9,7 @@
 import Foundation
 
 enum Constants {
-  static var callbackURI: String {
-    "https://checkinplus.markltownsend.com"
-  }
+    static var callbackURI: String {
+        "https://checkinplus.markltownsend.com"
+    }
 }

@@ -10,11 +10,12 @@ import Foundation
 import KeychainAccess
 
 // MARK: - Keychain extension that holds constants for the keychain
+
 public extension Keychain {
     static var serviceID: String {
         "com.foursquare.service"
     }
-    
+
     static var userIdentifierKey: String {
         "userIdentifier"
     }
