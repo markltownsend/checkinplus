@@ -10,6 +10,7 @@
 		4D1A7F6A239F1D3E00ADFB14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */; };
 		4D40B539291AA1E000B9E6B2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D40B538291AA1E000B9E6B2 /* LoginView.swift */; };
 		4D40B53B291AC1AD00B9E6B2 /* AppleSignInDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D40B53A291AC1AD00B9E6B2 /* AppleSignInDelegate.swift */; };
+		4D40B53F291AD7FF00B9E6B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D40B53E291AD7FF00B9E6B2 /* LaunchScreen.storyboard */; };
 		4D4AC85B23A028300019866E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85A23A028300019866E /* Constants.swift */; };
 		4D4AC85E23A037400019866E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85D23A037400019866E /* SettingsView.swift */; };
 		4D4FAB342914011600AC262F /* FoursquareAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 4D4FAB332914011600AC262F /* FoursquareAPI */; };
@@ -62,6 +63,7 @@
 		4D1D1B992912A4B60057CA83 /* NetworkLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkLayer; sourceTree = "<group>"; };
 		4D40B538291AA1E000B9E6B2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4D40B53A291AC1AD00B9E6B2 /* AppleSignInDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInDelegate.swift; sourceTree = "<group>"; };
+		4D40B53E291AD7FF00B9E6B2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D4AC85A23A028300019866E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4D4AC85D23A037400019866E /* SettingsView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		4D52393023A54A960070683C /* CheckInPlus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheckInPlus.entitlements; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		4D4FAB352914022B00AC262F /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				4D40B53E291AD7FF00B9E6B2 /* LaunchScreen.storyboard */,
 				4DCDE621291A8DD3005EFF8D /* CheckInPlusApp.swift */,
 			);
 			path = Application;
@@ -336,6 +339,7 @@
 			files = (
 				4D1A7F6A239F1D3E00ADFB14 /* Localizable.strings in Resources */,
 				4DC7CFD9235BF72C00E0ADA6 /* Preview Assets.xcassets in Resources */,
+				4D40B53F291AD7FF00B9E6B2 /* LaunchScreen.storyboard in Resources */,
 				4DC7CFD6235BF72C00E0ADA6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +537,8 @@
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CheckInPlus/Resources/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -556,6 +562,8 @@
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CheckInPlus/Resources/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
