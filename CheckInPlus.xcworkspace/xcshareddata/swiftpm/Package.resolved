@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/markltownsend/foursquare-ios-oauth.git",
       "state" : {
-        "branch" : "master",
-        "revision" : "278e824039cb12b84edc9585ee1cb31505633dd4"
+        "revision" : "bc2df08c38a90e815e1a01c3533a4f9039713455",
+        "version" : "1.2.2"
       }
     },
     {

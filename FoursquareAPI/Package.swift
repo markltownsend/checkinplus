@@ -19,7 +19,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/kishikawakatsumi/KeychainAccess.git", from: "3.0.0"),
-        .package(url: "https://github.com/markltownsend/foursquare-ios-oauth.git", branch: "master"),
+        .package(url: "https://github.com/markltownsend/foursquare-ios-oauth.git", exact: "1.2.2"),
         .package(path: "../NetworkLayer"),
         .package(name: "ArkanaKeys", path: "../ArkanaKeys/ArkanaKeys"),
     ],

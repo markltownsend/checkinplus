@@ -25,12 +25,11 @@ public struct FoursquareAPIManager: FoursquareAPI {
     public init() {}
 
     public func authorizeUser(_ callBackURI: String) throws {
-        let status = FSOAuth.shared().authorizeUser(
+        let status = FSOAuth.authorizeUser(
             usingClientId: Keys.Global().foursquareClientID,
             nativeURICallbackString: callBackURI,
             universalURICallbackString: "",
-            allowShowingAppStore: true,
-            presentFrom: UIViewController()
+            allowShowingAppStore: true
         )
         switch status {
         case .success:
@@ -54,8 +53,8 @@ public struct FoursquareAPIManager: FoursquareAPI {
 
     public func generateAuthToken(with url: URL, callbackURI: String, completion: @escaping (_ authToken: String?, _ error: Error?) -> Void) {
         var fsoauthError: FSOAuthErrorCode = .none
-        if let accessCode = FSOAuth.shared().accessCode(forFSOAuthURL: url, error: &fsoauthError) {
-            FSOAuth.shared().requestAccessToken(forCode: accessCode,
+        if let accessCode = FSOAuth.accessCode(forFSOAuthURL: url, error: &fsoauthError) {
+            FSOAuth.requestAccessToken(forCode: accessCode,
                                                 clientId: Keys.Global().foursquareClientID,
                                                 callbackURIString: callbackURI,
                                                 clientSecret: Keys.Global().foursquareClientSecret) { authToken, completed, errorCode in
@@ -157,5 +156,19 @@ public extension FoursquareAPIManager {
         if let userIdentifier = Keychain.currentUserIdentifier {
             keychain["\(userIdentifier)\(keychainAuthTokenSuffix)"] = nil
         }
+    }
+}
+
+import UIKit
+
+@objc
+public extension UIApplication {
+    var currentWindow: UIWindow? {
+        connectedScenes
+            .filter { $0.activationState == .foregroundActive }
+            .compactMap { $0 as? UIWindowScene }
+            .first?.windows
+            .filter(\.isKeyWindow)
+            .first
     }
 }
