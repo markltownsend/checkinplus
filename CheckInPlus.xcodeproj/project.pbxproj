@@ -24,9 +24,6 @@
 		4DC7CFF2235BF72C00E0ADA6 /* CheckInPlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFF1235BF72C00E0ADA6 /* CheckInPlusUITests.swift */; };
 		4DC91ED723BEE4CF00E99C81 /* CheckinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC91ED623BEE4CF00E99C81 /* CheckinView.swift */; };
 		4DCDE622291A8DD3005EFF8D /* CheckInPlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDE621291A8DD3005EFF8D /* CheckInPlusApp.swift */; };
-		B3E65E9167409566AE18F2CD /* Pods_CheckInPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F267B53FE8DD58F7A987746 /* Pods_CheckInPlus.framework */; };
-		C307A62898DDA6A9B35BF10D /* Pods_CheckInPlusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4C4B1677A9AA402FB4DD1D /* Pods_CheckInPlusTests.framework */; };
-		E649F3AD4597735A1914740A /* Pods_CheckInPlus_CheckInPlusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422C3356553B39A59FC93146 /* Pods_CheckInPlus_CheckInPlusUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,14 +57,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1642AC8971960CD1389AEBAC /* Pods-YelpAPI-YelpAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpAPI-YelpAPITests.release.xcconfig"; path = "Target Support Files/Pods-YelpAPI-YelpAPITests/Pods-YelpAPI-YelpAPITests.release.xcconfig"; sourceTree = "<group>"; };
-		167FEA66D769F4B7F086CAA9 /* Pods_FoursquareAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoursquareAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E6142EA0997B59BBFFB5E53 /* Pods-FoursquareAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareAPI.release.xcconfig"; path = "Target Support Files/Pods-FoursquareAPI/Pods-FoursquareAPI.release.xcconfig"; sourceTree = "<group>"; };
-		274FE1C4894168B77C15B9E6 /* Pods-CheckInPlus-CheckInPlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckInPlus-CheckInPlusUITests.release.xcconfig"; path = "Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests.release.xcconfig"; sourceTree = "<group>"; };
-		2BB88DEC5885A919BAC0396D /* Pods-CheckInPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckInPlus.debug.xcconfig"; path = "Target Support Files/Pods-CheckInPlus/Pods-CheckInPlus.debug.xcconfig"; sourceTree = "<group>"; };
-		2D1E4BACBC1683ECC3A1BFCA /* Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig"; path = "Target Support Files/Pods-FoursquareAPI-FoursquareAPITests/Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig"; sourceTree = "<group>"; };
-		3084A750D83CC5C21E08394A /* Pods-CheckInPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckInPlus.release.xcconfig"; path = "Target Support Files/Pods-CheckInPlus/Pods-CheckInPlus.release.xcconfig"; sourceTree = "<group>"; };
-		422C3356553B39A59FC93146 /* Pods_CheckInPlus_CheckInPlusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckInPlus_CheckInPlusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0B038B2912A73C00659DD6 /* FoursquareAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FoursquareAPI; sourceTree = "<group>"; };
 		4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4D1D1B992912A4B60057CA83 /* NetworkLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkLayer; sourceTree = "<group>"; };
@@ -92,16 +81,6 @@
 		4DC7CFF3235BF72C00E0ADA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DC91ED623BEE4CF00E99C81 /* CheckinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinView.swift; sourceTree = "<group>"; };
 		4DCDE621291A8DD3005EFF8D /* CheckInPlusApp.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = CheckInPlusApp.swift; sourceTree = "<group>"; tabWidth = 4; };
-		6F267B53FE8DD58F7A987746 /* Pods_CheckInPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckInPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		70E4E80384C3C24FA6F48D24 /* Pods-CheckInPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckInPlusTests.debug.xcconfig"; path = "Target Support Files/Pods-CheckInPlusTests/Pods-CheckInPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8DBC0E95E9FCED6FEA86CE35 /* Pods-YelpAPI-YelpAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpAPI-YelpAPITests.debug.xcconfig"; path = "Target Support Files/Pods-YelpAPI-YelpAPITests/Pods-YelpAPI-YelpAPITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A92F6CE1A4E555739BF69BBB /* Pods-CheckInPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckInPlusTests.release.xcconfig"; path = "Target Support Files/Pods-CheckInPlusTests/Pods-CheckInPlusTests.release.xcconfig"; sourceTree = "<group>"; };
-		C300A605C7F7E327355544BC /* Pods_YelpAPI_YelpAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YelpAPI_YelpAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3DCA8C1CF2814CC78906486 /* Pods_FoursquareAPI_FoursquareAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoursquareAPI_FoursquareAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C46968413264B8B7B7E13869 /* Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig"; path = "Target Support Files/Pods-CheckInPlus-CheckInPlusUITests/Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		CA6E03D13A0810FC4A24168A /* Pods-FoursquareAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareAPI.debug.xcconfig"; path = "Target Support Files/Pods-FoursquareAPI/Pods-FoursquareAPI.debug.xcconfig"; sourceTree = "<group>"; };
-		DD4C4B1677A9AA402FB4DD1D /* Pods_CheckInPlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckInPlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F46FBEFF35E4F611E0900F9C /* Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig"; path = "Target Support Files/Pods-FoursquareAPI-FoursquareAPITests/Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +90,6 @@
 			files = (
 				4D4FAB342914011600AC262F /* FoursquareAPI in Frameworks */,
 				4DBD6BC22912E23A008A2351 /* KeychainAccess in Frameworks */,
-				B3E65E9167409566AE18F2CD /* Pods_CheckInPlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C307A62898DDA6A9B35BF10D /* Pods_CheckInPlusTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,26 +104,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E649F3AD4597735A1914740A /* Pods_CheckInPlus_CheckInPlusUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12306995CE95A98BDE9E1D7F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6F267B53FE8DD58F7A987746 /* Pods_CheckInPlus.framework */,
-				422C3356553B39A59FC93146 /* Pods_CheckInPlus_CheckInPlusUITests.framework */,
-				DD4C4B1677A9AA402FB4DD1D /* Pods_CheckInPlusTests.framework */,
-				167FEA66D769F4B7F086CAA9 /* Pods_FoursquareAPI.framework */,
-				C3DCA8C1CF2814CC78906486 /* Pods_FoursquareAPI_FoursquareAPITests.framework */,
-				C300A605C7F7E327355544BC /* Pods_YelpAPI_YelpAPITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		4D1A7F6B239F1D4E00ADFB14 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,25 +224,6 @@
 			path = CheckInPlusUITests;
 			sourceTree = "<group>";
 		};
-		8C8D42337871B5A10ECC3F1B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2BB88DEC5885A919BAC0396D /* Pods-CheckInPlus.debug.xcconfig */,
-				3084A750D83CC5C21E08394A /* Pods-CheckInPlus.release.xcconfig */,
-				C46968413264B8B7B7E13869 /* Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig */,
-				274FE1C4894168B77C15B9E6 /* Pods-CheckInPlus-CheckInPlusUITests.release.xcconfig */,
-				70E4E80384C3C24FA6F48D24 /* Pods-CheckInPlusTests.debug.xcconfig */,
-				A92F6CE1A4E555739BF69BBB /* Pods-CheckInPlusTests.release.xcconfig */,
-				CA6E03D13A0810FC4A24168A /* Pods-FoursquareAPI.debug.xcconfig */,
-				1E6142EA0997B59BBFFB5E53 /* Pods-FoursquareAPI.release.xcconfig */,
-				F46FBEFF35E4F611E0900F9C /* Pods-FoursquareAPI-FoursquareAPITests.debug.xcconfig */,
-				2D1E4BACBC1683ECC3A1BFCA /* Pods-FoursquareAPI-FoursquareAPITests.release.xcconfig */,
-				8DBC0E95E9FCED6FEA86CE35 /* Pods-YelpAPI-YelpAPITests.debug.xcconfig */,
-				1642AC8971960CD1389AEBAC /* Pods-YelpAPI-YelpAPITests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,7 +231,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DC7CFF6235BF72C00E0ADA6 /* Build configuration list for PBXNativeTarget "CheckInPlus" */;
 			buildPhases = (
-				2C5B4A04F06293FBFD7DD7EF /* [CP] Check Pods Manifest.lock */,
 				4DC7CFC5235BF72A00E0ADA6 /* Sources */,
 				4DC7CFC6235BF72A00E0ADA6 /* Frameworks */,
 				4DC7CFC7235BF72A00E0ADA6 /* Resources */,
@@ -310,7 +253,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DC7CFF9235BF72C00E0ADA6 /* Build configuration list for PBXNativeTarget "CheckInPlusTests" */;
 			buildPhases = (
-				D97571FFC8F7FE67E976F4B1 /* [CP] Check Pods Manifest.lock */,
 				4DC7CFDE235BF72C00E0ADA6 /* Sources */,
 				4DC7CFDF235BF72C00E0ADA6 /* Frameworks */,
 				4DC7CFE0235BF72C00E0ADA6 /* Resources */,
@@ -329,7 +271,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DC7CFFC235BF72C00E0ADA6 /* Build configuration list for PBXNativeTarget "CheckInPlusUITests" */;
 			buildPhases = (
-				523FCD343497267BEE2B9824 /* [CP] Check Pods Manifest.lock */,
 				4DC7CFE9235BF72C00E0ADA6 /* Sources */,
 				4DC7CFEA235BF72C00E0ADA6 /* Frameworks */,
 				4DC7CFEB235BF72C00E0ADA6 /* Resources */,
@@ -416,75 +357,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2C5B4A04F06293FBFD7DD7EF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CheckInPlus-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		523FCD343497267BEE2B9824 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CheckInPlus-CheckInPlusUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D97571FFC8F7FE67E976F4B1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CheckInPlusTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4DC7CFC5235BF72A00E0ADA6 /* Sources */ = {
@@ -677,7 +549,6 @@
 		};
 		4DC7CFF8235BF72C00E0ADA6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3084A750D83CC5C21E08394A /* Pods-CheckInPlus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CheckInPlus/Resources/CheckInPlus.entitlements;
@@ -700,7 +571,6 @@
 		};
 		4DC7CFFA235BF72C00E0ADA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70E4E80384C3C24FA6F48D24 /* Pods-CheckInPlusTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -723,7 +593,6 @@
 		};
 		4DC7CFFB235BF72C00E0ADA6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A92F6CE1A4E555739BF69BBB /* Pods-CheckInPlusTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -746,7 +615,6 @@
 		};
 		4DC7CFFD235BF72C00E0ADA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C46968413264B8B7B7E13869 /* Pods-CheckInPlus-CheckInPlusUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -767,7 +635,6 @@
 		};
 		4DC7CFFE235BF72C00E0ADA6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 274FE1C4894168B77C15B9E6 /* Pods-CheckInPlus-CheckInPlusUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
