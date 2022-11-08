@@ -168,8 +168,6 @@
 				4DC7CFE5235BF72C00E0ADA6 /* CheckInPlusTests */,
 				4DC7CFF0235BF72C00E0ADA6 /* CheckInPlusUITests */,
 				4DC7CFCA235BF72A00E0ADA6 /* Products */,
-				8C8D42337871B5A10ECC3F1B /* Pods */,
-				12306995CE95A98BDE9E1D7F /* Frameworks */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -526,9 +524,9 @@
 		};
 		4DC7CFF7235BF72C00E0ADA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BB88DEC5885A919BAC0396D /* Pods-CheckInPlus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CheckInPlus/Resources/CheckInPlus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CheckInPlus/Preview Content\"";
@@ -551,6 +549,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CheckInPlus/Resources/CheckInPlus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CheckInPlus/Preview Content\"";
