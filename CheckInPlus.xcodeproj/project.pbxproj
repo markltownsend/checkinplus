@@ -14,7 +14,6 @@
 		4D4AC85B23A028300019866E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85A23A028300019866E /* Constants.swift */; };
 		4D4AC85E23A037400019866E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85D23A037400019866E /* SettingsView.swift */; };
 		4D4FAB342914011600AC262F /* FoursquareAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 4D4FAB332914011600AC262F /* FoursquareAPI */; };
-		4D777CDD240B88C10017EFCA /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D777CDC240B88C10017EFCA /* TextView.swift */; };
 		4D9D354E239EC23E0052E728 /* CheckInVenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D354D239EC23E0052E728 /* CheckInVenueViewModel.swift */; };
 		4D9D3551239EC7F70052E728 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D3550239EC7F70052E728 /* LocationManager.swift */; };
 		4DBD6BC22912E23A008A2351 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 4DBD6BC12912E23A008A2351 /* KeychainAccess */; };
@@ -67,7 +66,6 @@
 		4D4AC85A23A028300019866E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4D4AC85D23A037400019866E /* SettingsView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		4D52393023A54A960070683C /* CheckInPlus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheckInPlus.entitlements; sourceTree = "<group>"; };
-		4D777CDC240B88C10017EFCA /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		4D9D354D239EC23E0052E728 /* CheckInVenueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVenueViewModel.swift; sourceTree = "<group>"; };
 		4D9D3550239EC7F70052E728 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		4DC7CFC9235BF72A00E0ADA6 /* CheckInPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckInPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,7 +144,6 @@
 				4DC7CFD3235BF72A00E0ADA6 /* CheckInVenueListView.swift */,
 				4D4AC85D23A037400019866E /* SettingsView.swift */,
 				4DC91ED623BEE4CF00E99C81 /* CheckinView.swift */,
-				4D777CDC240B88C10017EFCA /* TextView.swift */,
 				4D40B538291AA1E000B9E6B2 /* LoginView.swift */,
 			);
 			path = Views;
@@ -366,7 +363,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DC91ED723BEE4CF00E99C81 /* CheckinView.swift in Sources */,
-				4D777CDD240B88C10017EFCA /* TextView.swift in Sources */,
 				4D4AC85E23A037400019866E /* SettingsView.swift in Sources */,
 				4D9D3551239EC7F70052E728 /* LocationManager.swift in Sources */,
 				4D40B53B291AC1AD00B9E6B2 /* AppleSignInDelegate.swift in Sources */,

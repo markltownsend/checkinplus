@@ -29,8 +29,11 @@ struct CheckinView: View {
     var body: some View {
         VStack {
             Text("Add in what you're doing:")
+                .font(.title)
 
-            TextView(placeholder: "Enter here", text: $shout, minHeight: self.textHeight, calculatedHeight: self.$textHeight)
+            TextEditor(text: $shout)
+                .font(.body)
+                .foregroundColor(.black)
                 .frame(minHeight: self.textHeight, maxHeight: self.textHeight)
                 .padding()
                 .overlay(
@@ -75,6 +78,8 @@ struct CheckinView: View {
 
 struct CheckinView_Previews: PreviewProvider {
     static var previews: some View {
-        CheckinView(venueId: "", venueName: "", viewModel: CheckInVenueViewModel())
+        NavigationView {
+            CheckinView(venueId: "", venueName: "Awesome Place To Be", viewModel: CheckInVenueViewModel())
+        }
     }
 }
