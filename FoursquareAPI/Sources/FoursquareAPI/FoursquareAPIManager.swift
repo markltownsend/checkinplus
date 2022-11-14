@@ -19,12 +19,13 @@ public enum AuthorizeUserError: Error {
     case invalidClientID
 }
 
+@MainActor
 public struct FoursquareAPIManager: FoursquareAPI {
     let router = Router<FoursquareApi>()
 
     public init() {}
 
-    public func authorizeUser(_ callBackURI: String) throws {
+    nonisolated public func authorizeUser(_ callBackURI: String) throws {
         let status = FSOAuth.authorizeUser(
             usingClientId: Keys.Global().foursquareClientID,
             nativeURICallbackString: callBackURI,
@@ -51,68 +52,56 @@ public struct FoursquareAPIManager: FoursquareAPI {
         }
     }
 
-    public func generateAuthToken(with url: URL, callbackURI: String, completion: @escaping (_ authToken: String?, _ error: Error?) -> Void) {
-        var fsoauthError: FSOAuthErrorCode = .none
-        if let accessCode = FSOAuth.accessCode(forFSOAuthURL: url, error: &fsoauthError) {
-            FSOAuth.requestAccessToken(forCode: accessCode,
-                                                clientId: Keys.Global().foursquareClientID,
-                                                callbackURIString: callbackURI,
-                                                clientSecret: Keys.Global().foursquareClientSecret) { authToken, completed, errorCode in
-
-                if completed {
-                    if errorCode == .none {
-                        completion(authToken, nil)
-                    } else {
-                        completion(nil, nil)
+    public func generateAuthToken(with url: URL, callbackURI: String) async throws -> String? {
+        var fsOAuthError: FSOAuthErrorCode = .none
+        if let accessCode = FSOAuth.accessCode(forFSOAuthURL: url, error: &fsOAuthError) {
+            return await withCheckedContinuation { continuation in
+                FSOAuth.requestAccessToken(
+                    forCode: accessCode,
+                    clientId: Keys.Global().foursquareClientID,
+                    callbackURIString: callbackURI,
+                    clientSecret: Keys.Global().foursquareClientSecret
+                ) { authToken, completed, errorCode in
+                    if completed {
+                        if errorCode == .none {
+                            continuation.resume(returning: authToken)
+                        } else {
+                            continuation.resume(returning: nil)
+                        }
                     }
                 }
             }
+        } else {
+            return nil
         }
     }
 
-    public func getCheckInVenues(latitude: Double, longitude: Double, completion: @escaping (_ venues: [Venue]?, _ error: String?) -> Void) {
-        router.request(.checkInSearch(latitude: latitude, longitude: longitude)) { data, response, error in
-            guard error == nil else { completion(nil, "Check your network connection"); return }
-
-            if let response = response as? HTTPURLResponse {
-                let result = response.handleNetworkResponse()
-                switch result {
-                case .success:
-                    guard let responseData = data else {
-                        completion(nil, NetworkResponse.noData.rawValue)
-                        return
-                    }
-                    do {
-                        let apiResponse = try JSONDecoder().decode(CheckInVenuesResponse.self, from: responseData)
-                        completion(apiResponse.venues, nil)
-                    } catch {
-                        print("\(error)")
-                        completion(nil, NetworkResponse.unableToDecode.rawValue)
-                    }
-                case let .failure(networkFailureError):
-                    completion(nil, networkFailureError)
-                }
+    public func getCheckInVenues(latitude: Double, longitude: Double) async throws -> [Venue]? {
+        let (data, response) = try await router.request(.checkInSearch(latitude: latitude, longitude: longitude))
+        guard let response = response as? HTTPURLResponse else { return nil }
+        let result = response.handleNetworkResponse()
+        switch result {
+        case .success:
+            do {
+                let apiResponse = try JSONDecoder().decode(CheckInVenuesResponse.self, from: data)
+                return apiResponse.venues
+            } catch {
+                throw NetworkResponseError.unableToDecode
             }
+        case let .failure(networkFailureError):
+            throw networkFailureError
         }
     }
 
-    public func addCheckin(venueId: String, shout: String?, completion: @escaping (_: String?) -> Void) {
-        router.request(.addCheckIn(venueId: venueId, shout: shout)) { data, response, error in
-            guard error == nil else { completion(error?.localizedDescription); return }
-
-            if let response = response as? HTTPURLResponse {
-                let result = response.handleNetworkResponse()
-                switch result {
-                case .success:
-                    guard let _ = data else {
-                        completion(NetworkResponse.noData.rawValue)
-                        return
-                    }
-                    completion(nil)
-                case let .failure(networkFailurError):
-                    completion(networkFailurError)
-                }
-            }
+    public func addCheckin(venueId: String, shout: String?) async throws {
+        let (_, response) = try await router.request(.addCheckIn(venueId: venueId, shout: shout))
+        guard let response = response as? HTTPURLResponse else { return }
+        let result = response.handleNetworkResponse()
+        switch result {
+        case .success:
+            return
+        case let .failure(networkFailureError):
+            throw networkFailureError
         }
     }
 }
@@ -156,19 +145,5 @@ public extension FoursquareAPIManager {
         if let userIdentifier = Keychain.currentUserIdentifier {
             keychain["\(userIdentifier)\(keychainAuthTokenSuffix)"] = nil
         }
-    }
-}
-
-import UIKit
-
-@objc
-public extension UIApplication {
-    var currentWindow: UIWindow? {
-        connectedScenes
-            .filter { $0.activationState == .foregroundActive }
-            .compactMap { $0 as? UIWindowScene }
-            .first?.windows
-            .filter(\.isKeyWindow)
-            .first
     }
 }

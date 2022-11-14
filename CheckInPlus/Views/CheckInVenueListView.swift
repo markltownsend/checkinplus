@@ -46,7 +46,7 @@ struct CheckInVenueListView: View {
             }
         }
         .alert(isPresented: $viewModel.hasError) {
-            Alert(title: Text("Error"), message: Text(viewModel.venueError), dismissButton: .default(Text("OK")))
+            Alert(title: Text("Error"), message: Text(viewModel.venueError!.rawValue), dismissButton: .default(Text("OK")))
         }
     }
 }

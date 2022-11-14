@@ -10,6 +10,7 @@ import FoursquareAPI
 import KeychainAccess
 import SwiftUI
 
+@MainActor
 struct SettingsView: View {
     private let foursquareManager = FoursquareAPIManager()
     private let keychain = Keychain(service: Keychain.serviceID)

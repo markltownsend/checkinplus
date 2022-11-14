@@ -12,30 +12,17 @@ public typealias NetworkRouterCompletion = (_ data: Data?, _ response: URLRespon
 
 public protocol NetworkRouter: AnyObject {
     associatedtype EndPoint: EndPointType
-    func request(_ route: EndPoint, completion: @escaping NetworkRouterCompletion)
-    func cancel()
+    func request(_ route: EndPoint) async throws -> (data: Data, response: URLResponse)
 }
 
+@MainActor
 public class Router<EndPoint: EndPointType>: NetworkRouter {
-    private var task: URLSessionTask?
-
     public init() {}
 
-    public func request(_ route: EndPoint, completion: @escaping NetworkRouterCompletion) {
+    public func request(_ route: EndPoint) async throws -> (data: Data, response: URLResponse) {
         let session = URLSession.shared
-        do {
-            let request = try buildRequest(from: route)
-            task = session.dataTask(with: request, completionHandler: { data, response, error in
-                completion(data, response, error)
-            })
-        } catch {
-            completion(nil, nil, error)
-        }
-        task?.resume()
-    }
-
-    public func cancel() {
-        task?.cancel()
+        let request = try buildRequest(from: route)
+        return try await session.data(for: request)
     }
 
     fileprivate func buildRequest(from route: EndPoint) throws -> URLRequest {

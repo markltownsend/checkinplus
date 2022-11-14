@@ -9,8 +9,8 @@
 import Foundation
 
 public protocol FoursquareAPI {
-    func authorizeUser(_ callbackURI: String) throws
-    func generateAuthToken(with url: URL, callbackURI: String, completion: @escaping (_ authToken: String?, _ error: Error?) -> Void)
-    func getCheckInVenues(latitude: Double, longitude: Double, completion: @escaping (_ venues: [Venue]?, _ error: String?) -> Void)
-    func addCheckin(venueId: String, shout: String?, completion: @escaping (_ error: String?) -> Void)
+    nonisolated func authorizeUser(_ callbackURI: String) throws
+    func generateAuthToken(with url: URL, callbackURI: String) async throws -> String?
+    func getCheckInVenues(latitude: Double, longitude: Double) async throws -> [Venue]?
+    func addCheckin(venueId: String, shout: String?) async throws
 }

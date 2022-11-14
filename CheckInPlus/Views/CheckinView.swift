@@ -6,6 +6,7 @@
 //  Copyright © 2020 Mark Townsend. All rights reserved.
 //
 
+import NetworkLayer
 import SwiftUI
 
 struct CheckinView: View {
@@ -61,16 +62,16 @@ struct CheckinView: View {
         }.navigationBarTitle(Text(venueName), displayMode: .inline)
     }
 
+    @MainActor
     func checkIn() {
-        viewModel.checkIn(venueId: venueId, shout: shout) { error in
-            guard let error else {
-                DispatchQueue.main.async {
-                    self.presentation.wrappedValue.dismiss()
-                }
-                return
-            }
-            self.currentErrorMessage = error
-            self.isShowingError.toggle()
+        do {
+            try viewModel.checkIn(venueId: venueId, shout: shout)
+            presentation.wrappedValue.dismiss()
+        } catch let error as NetworkResponseError {
+            currentErrorMessage = error.rawValue
+            isShowingError.toggle()
+        } catch {
+            isShowingError.toggle()
         }
     }
 }

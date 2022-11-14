@@ -40,10 +40,9 @@ struct CheckInPlusApp: App {
     }
 
     private func generateAuthToken(with url: URL) {
-        foursquareManager.generateAuthToken(with: url, callbackURI: Constants.callbackURI) { authToken, error in
-            if let authToken {
-                self.foursquareManager.saveAuthToken(authToken)
-            }
+        Task {
+            guard let authToken = try? await foursquareManager.generateAuthToken(with: url, callbackURI: Constants.callbackURI) else { return }
+            await foursquareManager.saveAuthToken(authToken)
         }
     }
 

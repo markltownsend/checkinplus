@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum NetworkResponse: String {
+public enum NetworkResponseError: String, Error {
     case success
     case authenticationError = "You need to be authenticated first."
     case badRequest = "Bad request"
@@ -20,17 +20,17 @@ public enum NetworkResponse: String {
 
 public enum NetworkResponseResult<String> {
     case success
-    case failure(String)
+    case failure(NetworkResponseError)
 }
 
 public extension HTTPURLResponse {
     func handleNetworkResponse() -> NetworkResponseResult<String> {
         switch statusCode {
         case 200 ... 299: return .success
-        case 400 ... 499: return .failure(NetworkResponse.authenticationError.rawValue)
-        case 500 ... 599: return .failure(NetworkResponse.badRequest.rawValue)
-        case 600: return .failure(NetworkResponse.outdated.rawValue)
-        default: return .failure(NetworkResponse.failed.rawValue)
+        case 400 ... 499: return .failure(NetworkResponseError.authenticationError)
+        case 500 ... 599: return .failure(NetworkResponseError.badRequest)
+        case 600: return .failure(NetworkResponseError.outdated)
+        default: return .failure(NetworkResponseError.failed)
         }
     }
 }

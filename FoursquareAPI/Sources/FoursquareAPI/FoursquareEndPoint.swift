@@ -19,11 +19,13 @@ public enum FoursquareError: Error {
     case notFound
 }
 
+@MainActor
 public enum FoursquareApi {
     case checkInSearch(latitude: Double, longitude: Double)
     case addCheckIn(venueId: String, shout: String?)
 }
 
+@MainActor
 extension FoursquareApi: EndPointType {
     private func urlParametersWithAuthentication(parameters: Parameters) -> Parameters {
         parameters.merging(authentication) { current, _ in current }.merging(version) { current, _ in current }

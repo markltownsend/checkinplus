@@ -9,10 +9,12 @@
 import Combine
 import Foundation
 import FoursquareAPI
+import NetworkLayer
 
+@MainActor
 final class CheckInVenueViewModel: ObservableObject {
     @Published private(set) var venues: [Venue] = []
-    @Published private(set) var venueError: String = ""
+    @Published private(set) var venueError: NetworkResponseError?
     @Published var hasError = false
     @Published var checkInSuccess = false
 
@@ -34,36 +36,21 @@ final class CheckInVenueViewModel: ObservableObject {
     }
 
     func loadData(at location: (latitude: Double, longitude: Double)) {
-        foursquareAPI.getCheckInVenues(latitude: location.latitude, longitude: location.longitude) { [weak self] venues, error in
-            guard let self else { return }
-            let queue = DispatchQueue.main
-            queue.async {
-                if let error {
-                    self.venueError = error
-                    self.hasError = true
-                    return
-                }
-
-                self.hasError = false
-                if let venues {
-                    self.venues = venues.sorted(by: { first, second -> Bool in
-                        first.location?.distance ?? 0 < second.location?.distance ?? 0
-                    })
-                }
+        Task {
+            do {
+                guard let venues = try await foursquareAPI.getCheckInVenues(latitude: location.latitude, longitude: location.longitude) else { return }
+                hasError = false
+                self.venues = venues.sorted(by: { first, second -> Bool in
+                    first.location?.distance ?? 0 < second.location?.distance ?? 0
+                })
+            } catch let error as NetworkResponseError {
+                venueError = error
+                hasError = true
             }
         }
     }
 
-    func checkIn(venueId: String, shout: String?, completion: @escaping (String?) -> Void) {
-        foursquareAPI.addCheckin(venueId: venueId, shout: shout) { error in
-            guard let error else {
-                completion(nil)
-                return
-            }
-            let queue = DispatchQueue.main
-            queue.async {
-                completion(error)
-            }
-        }
+    func checkIn(venueId: String, shout: String?) throws {
+        Task { try await foursquareAPI.addCheckin(venueId: venueId, shout: shout) }
     }
 }
