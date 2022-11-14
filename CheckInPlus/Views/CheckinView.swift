@@ -33,7 +33,6 @@ struct CheckinView: View {
 
             TextEditor(text: $shout)
                 .font(.body)
-                .foregroundColor(.black)
                 .frame(minHeight: self.textHeight, maxHeight: self.textHeight)
                 .padding()
                 .overlay(
