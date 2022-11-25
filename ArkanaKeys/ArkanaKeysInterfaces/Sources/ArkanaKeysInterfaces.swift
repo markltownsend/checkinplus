@@ -8,4 +8,6 @@ public protocol KeysGlobalProtocol {
     var foursquareClientSecret: String { get }
 }
 
-public protocol KeysEnvironmentProtocol {}
+public protocol KeysEnvironmentProtocol {
+    var foursquareAPIKey: String { get }
+}
