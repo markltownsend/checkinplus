@@ -132,14 +132,6 @@ public extension FoursquareAPIManager {
         }
     }
 
-    func retrieveAuthToken() -> String? {
-        let keychain = Keychain(service: Keychain.serviceID)
-        if let userIdIdentifier = Keychain.currentUserIdentifier {
-            return keychain["\(userIdIdentifier)\(keychainAuthTokenSuffix)"]
-        }
-        return nil
-    }
-
     func removeToken() {
         let keychain = Keychain(service: Keychain.serviceID)
         if let userIdentifier = Keychain.currentUserIdentifier {
