@@ -11,11 +11,12 @@ import Foundation
 import FSOAuth
 import KeychainAccess
 import NetworkLayer
+import os.log
 
 public enum AuthorizeUserError: Error {
     case foursquareOAuthNotSupported
-    case invalideCallback
-    case fouresquareNotInstalled
+    case invalidCallback
+    case fourSquareNotInstalled
     case invalidClientID
 }
 
