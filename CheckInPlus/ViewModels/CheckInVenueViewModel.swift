@@ -31,6 +31,7 @@ final class CheckInVenueViewModel: ObservableObject {
             .sink { [weak self] location in
                 guard let location else { return }
                 self?.loadData(at: location)
+                self?.locationManager.stopScanning()
             }
             .store(in: &cancellables)
     }
@@ -52,5 +53,23 @@ final class CheckInVenueViewModel: ObservableObject {
 
     func checkIn(venueId: String, shout: String?) throws {
         Task { try await foursquareAPI.addCheckin(venueId: venueId, shout: shout) }
+    }
+
+    func searchResults(searchText: String) -> [Venue] {
+        let trimmedSearchText = searchText.trimmingCharacters(in: .whitespaces)
+        guard !trimmedSearchText.isEmpty else { return venues }
+
+        let smartSearchMatcher = SmartSearchMatcher(searchString: trimmedSearchText)
+
+        let searchResults = venues.filter { venue in
+            if smartSearchMatcher.searchTokens.count == 1,
+               smartSearchMatcher.matches(venue.name) {
+                return true
+            }
+
+            return smartSearchMatcher.matches(venue.name)
+        }
+
+        return searchResults
     }
 }

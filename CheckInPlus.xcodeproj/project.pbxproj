@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D1A7F6A239F1D3E00ADFB14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */; };
+		4D27CFB929E9921200DE2CB1 /* SmartSearchMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D27CFB829E9921200DE2CB1 /* SmartSearchMatcher.swift */; };
 		4D40B539291AA1E000B9E6B2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D40B538291AA1E000B9E6B2 /* LoginView.swift */; };
 		4D40B53B291AC1AD00B9E6B2 /* AppleSignInDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D40B53A291AC1AD00B9E6B2 /* AppleSignInDelegate.swift */; };
 		4D40B53F291AD7FF00B9E6B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D40B53E291AD7FF00B9E6B2 /* LaunchScreen.storyboard */; };
@@ -60,6 +61,7 @@
 		4D0B038B2912A73C00659DD6 /* FoursquareAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FoursquareAPI; sourceTree = "<group>"; };
 		4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4D1D1B992912A4B60057CA83 /* NetworkLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkLayer; sourceTree = "<group>"; };
+		4D27CFB829E9921200DE2CB1 /* SmartSearchMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartSearchMatcher.swift; sourceTree = "<group>"; };
 		4D40B538291AA1E000B9E6B2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4D40B53A291AC1AD00B9E6B2 /* AppleSignInDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInDelegate.swift; sourceTree = "<group>"; };
 		4D40B53E291AD7FF00B9E6B2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		4D9D354F239EC7E30052E728 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4D27CFB829E9921200DE2CB1 /* SmartSearchMatcher.swift */,
 				4D4AC85A23A028300019866E /* Constants.swift */,
 				4D9D3550239EC7F70052E728 /* LocationManager.swift */,
 				4D40B53A291AC1AD00B9E6B2 /* AppleSignInDelegate.swift */,
@@ -289,8 +292,9 @@
 		4DC7CFC1235BF72A00E0ADA6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "Mark Townsend";
 				TargetAttributes = {
 					4DC7CFC8235BF72A00E0ADA6 = {
@@ -364,6 +368,7 @@
 			files = (
 				4DC91ED723BEE4CF00E99C81 /* CheckinView.swift in Sources */,
 				4D4AC85E23A037400019866E /* SettingsView.swift in Sources */,
+				4D27CFB929E9921200DE2CB1 /* SmartSearchMatcher.swift in Sources */,
 				4D9D3551239EC7F70052E728 /* LocationManager.swift in Sources */,
 				4D40B53B291AC1AD00B9E6B2 /* AppleSignInDelegate.swift in Sources */,
 				4D40B539291AA1E000B9E6B2 /* LoginView.swift in Sources */,

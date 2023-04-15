@@ -11,6 +11,7 @@ import SwiftUI
 struct CheckInVenueListView: View {
     @ObservedObject private var viewModel: CheckInVenueViewModel
     @State private var settingsShowing = false
+    @State private var searchText: String = ""
 
     init() {
         let viewModel = CheckInVenueViewModel()
@@ -26,7 +27,7 @@ struct CheckInVenueListView: View {
 
     var body: some View {
         NavigationView {
-            List(viewModel.venues) { venue in
+            List(viewModel.searchResults(searchText: searchText)) { venue in
                 NavigationLink(destination: CheckinView(venueId: venue.id, venueName: venue.name, viewModel: viewModel)) {
                     HStack {
                         AsyncImage(url: venue.getPrimaryCategoryIconURL())
@@ -39,8 +40,10 @@ struct CheckInVenueListView: View {
                     .padding()
                 }
             }
+            .listStyle(.inset)
             .navigationBarTitle(Text("Venues"))
             .navigationBarItems(trailing: settingsButton)
+            .searchable(text: $searchText, placement: .automatic)
             .sheet(isPresented: $settingsShowing) {
                 SettingsView(showModal: $settingsShowing)
             }
@@ -51,10 +54,8 @@ struct CheckInVenueListView: View {
     }
 }
 
-#if DEBUG
-    struct ContentView_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             CheckInVenueListView()
         }
     }
-#endif
