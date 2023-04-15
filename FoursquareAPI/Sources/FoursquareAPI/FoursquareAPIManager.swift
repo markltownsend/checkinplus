@@ -35,21 +35,21 @@ public struct FoursquareAPIManager: FoursquareAPI {
         )
         switch status {
         case .success:
-            print("Success!")
+            os_log(.debug, "Success!")
         case .errorFoursquareOAuthNotSupported:
-            print("OauthNotSupported")
+            os_log(.debug, "OauthNotSupported")
             throw AuthorizeUserError.foursquareOAuthNotSupported
         case .errorInvalidCallback:
-            print("Invalid Call Back")
-            throw AuthorizeUserError.invalideCallback
+            os_log(.debug, "Invalid Call Back")
+            throw AuthorizeUserError.invalidCallback
         case .errorFoursquareNotInstalled:
-            print("FoursquareNotInstalled")
-            throw AuthorizeUserError.fouresquareNotInstalled
+            os_log(.debug, "FoursquareNotInstalled")
+            throw AuthorizeUserError.fourSquareNotInstalled
         case .errorInvalidClientID:
-            print("Invalid Cliend ID")
+            os_log(.debug, "Invalid Client ID")
             throw AuthorizeUserError.invalidClientID
         default:
-            print("None of those things happened")
+            os_log(.debug, "None of those things happened")
         }
     }
 

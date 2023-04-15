@@ -60,11 +60,11 @@ extension LocationManager: CLLocationManagerDelegate {
             startScanning()
         case .denied:
             // Show denied error
-            print("Location Service denied")
+            os_log(.debug, "Location Service denied")
         case .notDetermined:
-            print("Location Service permission could not be determined")
+            os_log(.debug, "Location Service permission could not be determined")
         case .restricted:
-            print("Location Service permission has been restricted")
+            os_log(.debug, "Location Service permission has been restricted")
             break
         @unknown default:
             fatalError()
@@ -72,7 +72,7 @@ extension LocationManager: CLLocationManagerDelegate {
     }
 
     func locationManager(_: CLLocationManager, didFailWithError error: Error) {
-        print("\(#function): \(error)")
+        os_log(.debug, "\(#function): \(error)")
     }
 
     func locationManager(_: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
