@@ -36,6 +36,10 @@ final class CheckInVenueViewModel: ObservableObject {
             .store(in: &cancellables)
     }
 
+    var isCurrentlyLoggedIn: Bool {
+        foursquareAPI.currentFoursquareAuthToken != nil
+    }
+
     func loadData(at location: (latitude: Double, longitude: Double)) {
         Task {
             do {

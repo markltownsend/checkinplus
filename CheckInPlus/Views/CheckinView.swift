@@ -60,10 +60,18 @@ struct CheckinView: View {
         }.alert(isPresented: $isShowingSuccess) {
             Alert(title: Text("Checked In!"), message: Text("You're all checked in!"), dismissButton: .default(Text("OK")))
         }.navigationBarTitle(Text(venueName), displayMode: .inline)
+        .sheet(isPresented: $isShowingSettings) {
+            SettingsView(showModal: $isShowingSettings)
+        }
     }
 
     @MainActor
     func checkIn() {
+        guard viewModel.isCurrentlyLoggedIn
+        else {
+            isShowingSettings.toggle()
+            return
+        }
         do {
             try viewModel.checkIn(venueId: venueId, shout: shout)
             presentation.wrappedValue.dismiss()
