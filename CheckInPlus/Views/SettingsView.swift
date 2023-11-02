@@ -55,8 +55,6 @@ struct SettingsView: View {
     }
 }
 
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView(showModal: .constant(true))
-    }
+#Preview("SettingsView") {
+    SettingsView(showModal: .constant(true))
 }

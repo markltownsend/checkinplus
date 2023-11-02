@@ -55,8 +55,6 @@ struct CheckInVenueListView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            CheckInVenueListView()
-        }
-    }
+#Preview("CheckInVenueListView") {
+    CheckInVenueListView()
+}

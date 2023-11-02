@@ -9,6 +9,16 @@
 import SwiftUI
 import AuthenticationServices
 
+private struct SignInWithAppleView: UIViewRepresentable {
+    func makeUIView(context: Context) -> ASAuthorizationAppleIDButton {
+        return ASAuthorizationAppleIDButton()
+    }
+
+    func updateUIView(_ uiView: ASAuthorizationAppleIDButton, context: Context) {
+
+    }
+}
+
 struct LoginView: View {
     @State private var appleSignInDelegate: AppleSignInDelegate! = nil
     @Binding var showModal: Bool
@@ -58,18 +68,6 @@ struct LoginView: View {
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView(showModal: .constant(true))
-    }
-}
-
-struct SignInWithAppleView: UIViewRepresentable {
-    func makeUIView(context: Context) -> ASAuthorizationAppleIDButton {
-        return ASAuthorizationAppleIDButton()
-    }
-
-    func updateUIView(_ uiView: ASAuthorizationAppleIDButton, context: Context) {
-
-    }
+#Preview("Login View") {
+    LoginView(showModal: .constant(true))
 }

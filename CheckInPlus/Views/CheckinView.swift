@@ -87,11 +87,9 @@ struct CheckinView: View {
     }
 }
 
-struct CheckinView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            CheckinView(venueId: "", venueName: "Awesome Place To Be")
-                .environmentObject(CheckInVenueViewModel())
-        }
+#Preview("CheckInView") {
+    NavigationView {
+        CheckinView(venueId: "", venueName: "Awesome Place To Be")
+            .environmentObject(CheckInVenueViewModel())
     }
 }
