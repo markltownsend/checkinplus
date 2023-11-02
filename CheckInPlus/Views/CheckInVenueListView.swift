@@ -28,11 +28,11 @@ struct CheckInVenueListView: View {
     var body: some View {
         NavigationView {
             List(viewModel.searchResults(searchText: searchText)) { venue in
-                NavigationLink(destination: CheckinView(venueId: venue.id, venueName: venue.name, viewModel: viewModel)) {
+                NavigationLink(destination: CheckinView(venueId: venue.id, venueName: venue.name)) {
                     HStack {
                         AsyncImage(url: venue.getPrimaryCategoryIconURL())
                             .frame(width: 32, height: 32, alignment: .center)
-                            .padding(EdgeInsets(top: 6, leading: 6, bottom: 6, trailing: 6))
+                            .padding(6.0)
                             .background(Color.green)
                             .cornerRadius(19.0)
                         Text(venue.name)
@@ -51,6 +51,7 @@ struct CheckInVenueListView: View {
         .alert(isPresented: $viewModel.hasError) {
             Alert(title: Text("Error"), message: Text(viewModel.venueError!.rawValue), dismissButton: .default(Text("OK")))
         }
+        .environmentObject(viewModel)
     }
 }
 

@@ -11,18 +11,19 @@ import SwiftUI
 
 struct CheckinView: View {
     @Environment(\.presentationMode) var presentation
+    @EnvironmentObject private var viewModel: CheckInVenueViewModel
+
     @State private var shout: String = ""
     @State private var useFoursquare: Bool = true
     @State private var isShowingError = false
     @State private var isShowingSuccess = false
+    @State private var isShowingSettings = false
     @State private var currentErrorMessage: String = ""
     @State private var textHeight: CGFloat = 150
     private var venueId: String
-    private var viewModel: CheckInVenueViewModel
     private var venueName: String
 
-    init(venueId: String, venueName: String, viewModel: CheckInVenueViewModel) {
-        self.viewModel = viewModel
+    init(venueId: String, venueName: String) {
         self.venueName = venueName
         self.venueId = venueId
     }
@@ -57,9 +58,11 @@ struct CheckinView: View {
         .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
         .alert(isPresented: $isShowingError) {
             Alert(title: Text("Try again."), message: Text(self.currentErrorMessage), dismissButton: .default(Text("OK")))
-        }.alert(isPresented: $isShowingSuccess) {
+        }
+        .alert(isPresented: $isShowingSuccess) {
             Alert(title: Text("Checked In!"), message: Text("You're all checked in!"), dismissButton: .default(Text("OK")))
-        }.navigationBarTitle(Text(venueName), displayMode: .inline)
+        }
+        .navigationBarTitle(Text(venueName), displayMode: .inline)
         .sheet(isPresented: $isShowingSettings) {
             SettingsView(showModal: $isShowingSettings)
         }
@@ -87,7 +90,8 @@ struct CheckinView: View {
 struct CheckinView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            CheckinView(venueId: "", venueName: "Awesome Place To Be", viewModel: CheckInVenueViewModel())
+            CheckinView(venueId: "", venueName: "Awesome Place To Be")
+                .environmentObject(CheckInVenueViewModel())
         }
     }
 }

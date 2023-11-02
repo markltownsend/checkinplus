@@ -119,24 +119,22 @@ public extension FoursquareAPIManager {
 
     var currentFoursquareAuthToken: String? {
         let keychain = Keychain(service: Keychain.serviceID)
-        if let userIdentifier = Keychain.currentUserIdentifier {
-            return keychain["\(userIdentifier)\(keychainAuthTokenSuffix)"]
-        }
-        return nil
+
+        guard let userIdentifier = Keychain.currentUserIdentifier else { return nil }
+
+        return keychain["\(userIdentifier)\(keychainAuthTokenSuffix)"]
     }
 
     func saveAuthToken(_ token: String) {
         let keychain = Keychain(service: Keychain.serviceID)
-        if let userIdentifier = Keychain.currentUserIdentifier {
-            keychain["\(userIdentifier)\(keychainAuthTokenSuffix)"] = token
-            NotificationCenter.default.post(name: .FoursquareDidSaveAuthTokenNotification, object: nil, userInfo: nil)
-        }
+        guard let userIdentifier = Keychain.currentUserIdentifier else { return }
+        keychain["\(userIdentifier)\(keychainAuthTokenSuffix)"] = token
+        NotificationCenter.default.post(name: .FoursquareDidSaveAuthTokenNotification, object: nil, userInfo: nil)
     }
 
     func removeToken() {
         let keychain = Keychain(service: Keychain.serviceID)
-        if let userIdentifier = Keychain.currentUserIdentifier {
-            keychain["\(userIdentifier)\(keychainAuthTokenSuffix)"] = nil
-        }
+        guard let userIdentifier = Keychain.currentUserIdentifier else { return }
+        keychain["\(userIdentifier)\(keychainAuthTokenSuffix)"] = nil
     }
 }
