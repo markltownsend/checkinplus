@@ -29,42 +29,44 @@ struct CheckinView: View {
     }
 
     var body: some View {
-        VStack {
-            Text("Add in what you're doing:")
-                .font(.title)
+        ScrollView {
+            VStack {
+                Text("Add in what you're doing:")
+                    .font(.headline)
 
-            TextEditor(text: $shout)
-                .font(.body)
-                .frame(minHeight: self.textHeight, maxHeight: self.textHeight)
-                .padding()
-                .overlay(
-                    RoundedRectangle(cornerRadius: 4.0)
-                        .stroke(Color.primary, lineWidth: 1)
-                )
+                TextEditor(text: $shout)
+                    .font(.body)
+                    .frame(minHeight: self.textHeight, maxHeight: self.textHeight)
+                    .padding()
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 4.0)
+                            .stroke(Color.primary, lineWidth: 1)
+                    )
 
-            Button(action: { self.checkIn() }) {
-                Text("Check In")
-            }
-            .padding()
-
-            HStack {
-                Toggle(isOn: $useFoursquare) {
-                    Text("Foursquare")
+                Button(action: { self.checkIn() }) {
+                    Text("Check In")
                 }
                 .padding()
+
+                HStack {
+                    Toggle(isOn: $useFoursquare) {
+                        Text("Foursquare")
+                    }
+                    .padding()
+                }
+                Spacer()
             }
-            Spacer()
-        }
-        .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
-        .alert(isPresented: $isShowingError) {
-            Alert(title: Text("Try again."), message: Text(self.currentErrorMessage), dismissButton: .default(Text("OK")))
-        }
-        .alert(isPresented: $isShowingSuccess) {
-            Alert(title: Text("Checked In!"), message: Text("You're all checked in!"), dismissButton: .default(Text("OK")))
-        }
-        .navigationBarTitle(Text(venueName), displayMode: .inline)
-        .sheet(isPresented: $isShowingSettings) {
-            SettingsView(showModal: $isShowingSettings)
+            .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
+            .alert(isPresented: $isShowingError) {
+                Alert(title: Text("Try again."), message: Text(self.currentErrorMessage), dismissButton: .default(Text("OK")))
+            }
+            .alert(isPresented: $isShowingSuccess) {
+                Alert(title: Text("Checked In!"), message: Text("You're all checked in!"), dismissButton: .default(Text("OK")))
+            }
+            .navigationBarTitle(Text(venueName), displayMode: .inline)
+            .sheet(isPresented: $isShowingSettings) {
+                SettingsView(showModal: $isShowingSettings)
+            }
         }
     }
 
