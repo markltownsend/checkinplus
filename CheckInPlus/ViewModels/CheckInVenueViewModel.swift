@@ -13,20 +13,31 @@ import NetworkLayer
 
 @MainActor
 final class CheckInVenueViewModel: ObservableObject {
-    @Published private(set) var venues: [Venue] = []
+    @Published private(set) var venues: [Venue] = [] {
+        didSet {
+            noSearchResults = venues.isEmpty
+        }
+    }
     @Published private(set) var venueError: NetworkResponseError?
     @Published var hasError = false
-    @Published var checkInSuccess = false
+    @Published private(set) var checkInSuccess = false
+    @Published var noSearchResults = false
 
     private var cancellables = Set<AnyCancellable>()
     private let locationManager = LocationManager()
     private let foursquareAPI = FoursquareAPIManager()
 
-    init() {
+    init(_ showNoResults: Bool = false) {
+        guard !showNoResults
+        else {
+            noSearchResults = showNoResults
+            return
+        }
+
         setupSubscribers()
     }
 
-    func setupSubscribers() {
+    private func setupSubscribers() {
         locationManager.$currentLocation
             .sink { [weak self] location in
                 guard let location else { return }
@@ -40,7 +51,7 @@ final class CheckInVenueViewModel: ObservableObject {
         foursquareAPI.currentFoursquareAuthToken != nil
     }
 
-    func loadData(at location: (latitude: Double, longitude: Double)) {
+    private func loadData(at location: (latitude: Double, longitude: Double)) {
         Task {
             do {
                 guard let venues = try await foursquareAPI.getCheckInVenues(latitude: location.latitude, longitude: location.longitude) else { return }
@@ -73,6 +84,8 @@ final class CheckInVenueViewModel: ObservableObject {
 
             return smartSearchMatcher.matches(venue.name)
         }
+        
+        noSearchResults = searchResults.isEmpty
 
         return searchResults
     }

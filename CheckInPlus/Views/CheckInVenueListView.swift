@@ -13,8 +13,8 @@ struct CheckInVenueListView: View {
     @State private var settingsShowing = false
     @State private var searchText: String = ""
 
-    init() {
-        let viewModel = CheckInVenueViewModel()
+    init(_ showNoResults: Bool = false) {
+        let viewModel = CheckInVenueViewModel(showNoResults)
         _viewModel = ObservedObject(wrappedValue: viewModel)
     }
 
@@ -42,7 +42,16 @@ struct CheckInVenueListView: View {
             }
             .listStyle(.inset)
             .navigationBarTitle(Text("Venues"))
-            .navigationBarItems(trailing: settingsButton)
+            .overlay {
+                if viewModel.noSearchResults {
+                    ContentUnavailableView.search
+                }
+            }
+            .toolbar {
+                ToolbarItemGroup {
+                    settingsButton
+                }
+            }
             .searchable(text: $searchText, placement: .automatic)
             .sheet(isPresented: $settingsShowing) {
                 SettingsView(showModal: $settingsShowing)
@@ -57,4 +66,8 @@ struct CheckInVenueListView: View {
 
 #Preview("CheckInVenueListView") {
     CheckInVenueListView()
+}
+
+#Preview("No Results") {
+    CheckInVenueListView(true)
 }
