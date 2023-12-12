@@ -22,20 +22,12 @@
 		4DC7CFD6235BF72C00E0ADA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DC7CFD5235BF72C00E0ADA6 /* Assets.xcassets */; };
 		4DC7CFD9235BF72C00E0ADA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DC7CFD8235BF72C00E0ADA6 /* Preview Assets.xcassets */; };
 		4DC7CFE7235BF72C00E0ADA6 /* CheckInPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFE6235BF72C00E0ADA6 /* CheckInPlusTests.swift */; };
-		4DC7CFF2235BF72C00E0ADA6 /* CheckInPlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFF1235BF72C00E0ADA6 /* CheckInPlusUITests.swift */; };
 		4DC91ED723BEE4CF00E99C81 /* CheckinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC91ED623BEE4CF00E99C81 /* CheckinView.swift */; };
 		4DCDE622291A8DD3005EFF8D /* CheckInPlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDE621291A8DD3005EFF8D /* CheckInPlusApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		4DC7CFE3235BF72C00E0ADA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DC7CFC8235BF72A00E0ADA6;
-			remoteInfo = CheckInPlus;
-		};
-		4DC7CFEE235BF72C00E0ADA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4DC7CFC1235BF72A00E0ADA6 /* Project object */;
 			proxyType = 1;
@@ -61,6 +53,7 @@
 		4D0B038B2912A73C00659DD6 /* FoursquareAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FoursquareAPI; sourceTree = "<group>"; };
 		4D1A7F69239F1D3E00ADFB14 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4D1D1B992912A4B60057CA83 /* NetworkLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkLayer; sourceTree = "<group>"; };
+		4D234D062B28E7920073254F /* CheckInPlusTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CheckInPlusTests.xctestplan; sourceTree = "<group>"; };
 		4D27CFB829E9921200DE2CB1 /* SmartSearchMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartSearchMatcher.swift; sourceTree = "<group>"; };
 		4D40B538291AA1E000B9E6B2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4D40B53A291AC1AD00B9E6B2 /* AppleSignInDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInDelegate.swift; sourceTree = "<group>"; };
@@ -78,9 +71,6 @@
 		4DC7CFE2235BF72C00E0ADA6 /* CheckInPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckInPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC7CFE6235BF72C00E0ADA6 /* CheckInPlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInPlusTests.swift; sourceTree = "<group>"; };
 		4DC7CFE8235BF72C00E0ADA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DC7CFED235BF72C00E0ADA6 /* CheckInPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckInPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DC7CFF1235BF72C00E0ADA6 /* CheckInPlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInPlusUITests.swift; sourceTree = "<group>"; };
-		4DC7CFF3235BF72C00E0ADA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DC91ED623BEE4CF00E99C81 /* CheckinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinView.swift; sourceTree = "<group>"; };
 		4DCDE621291A8DD3005EFF8D /* CheckInPlusApp.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = CheckInPlusApp.swift; sourceTree = "<group>"; tabWidth = 4; };
 /* End PBXFileReference section */
@@ -96,13 +86,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4DC7CFDF235BF72C00E0ADA6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DC7CFEA235BF72C00E0ADA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -169,7 +152,6 @@
 				4D1D1B992912A4B60057CA83 /* NetworkLayer */,
 				4DC7CFCB235BF72A00E0ADA6 /* CheckInPlus */,
 				4DC7CFE5235BF72C00E0ADA6 /* CheckInPlusTests */,
-				4DC7CFF0235BF72C00E0ADA6 /* CheckInPlusUITests */,
 				4DC7CFCA235BF72A00E0ADA6 /* Products */,
 			);
 			indentWidth = 4;
@@ -181,7 +163,6 @@
 			children = (
 				4DC7CFC9235BF72A00E0ADA6 /* CheckInPlus.app */,
 				4DC7CFE2235BF72C00E0ADA6 /* CheckInPlusTests.xctest */,
-				4DC7CFED235BF72C00E0ADA6 /* CheckInPlusUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,19 +191,11 @@
 		4DC7CFE5235BF72C00E0ADA6 /* CheckInPlusTests */ = {
 			isa = PBXGroup;
 			children = (
+				4D234D062B28E7920073254F /* CheckInPlusTests.xctestplan */,
 				4DC7CFE6235BF72C00E0ADA6 /* CheckInPlusTests.swift */,
 				4DC7CFE8235BF72C00E0ADA6 /* Info.plist */,
 			);
 			path = CheckInPlusTests;
-			sourceTree = "<group>";
-		};
-		4DC7CFF0235BF72C00E0ADA6 /* CheckInPlusUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4DC7CFF1235BF72C00E0ADA6 /* CheckInPlusUITests.swift */,
-				4DC7CFF3235BF72C00E0ADA6 /* Info.plist */,
-			);
-			path = CheckInPlusUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,24 +241,6 @@
 			productReference = 4DC7CFE2235BF72C00E0ADA6 /* CheckInPlusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4DC7CFEC235BF72C00E0ADA6 /* CheckInPlusUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4DC7CFFC235BF72C00E0ADA6 /* Build configuration list for PBXNativeTarget "CheckInPlusUITests" */;
-			buildPhases = (
-				4DC7CFE9235BF72C00E0ADA6 /* Sources */,
-				4DC7CFEA235BF72C00E0ADA6 /* Frameworks */,
-				4DC7CFEB235BF72C00E0ADA6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4DC7CFEF235BF72C00E0ADA6 /* PBXTargetDependency */,
-			);
-			name = CheckInPlusUITests;
-			productName = CheckInPlusUITests;
-			productReference = 4DC7CFED235BF72C00E0ADA6 /* CheckInPlusUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -301,10 +256,6 @@
 						CreatedOnToolsVersion = 11.1;
 					};
 					4DC7CFE1235BF72C00E0ADA6 = {
-						CreatedOnToolsVersion = 11.1;
-						TestTargetID = 4DC7CFC8235BF72A00E0ADA6;
-					};
-					4DC7CFEC235BF72C00E0ADA6 = {
 						CreatedOnToolsVersion = 11.1;
 						TestTargetID = 4DC7CFC8235BF72A00E0ADA6;
 					};
@@ -328,7 +279,6 @@
 			targets = (
 				4DC7CFC8235BF72A00E0ADA6 /* CheckInPlus */,
 				4DC7CFE1235BF72C00E0ADA6 /* CheckInPlusTests */,
-				4DC7CFEC235BF72C00E0ADA6 /* CheckInPlusUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -346,13 +296,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4DC7CFE0235BF72C00E0ADA6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DC7CFEB235BF72C00E0ADA6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -387,14 +330,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DC7CFE9235BF72C00E0ADA6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DC7CFF2235BF72C00E0ADA6 /* CheckInPlusUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -402,11 +337,6 @@
 			isa = PBXTargetDependency;
 			target = 4DC7CFC8235BF72A00E0ADA6 /* CheckInPlus */;
 			targetProxy = 4DC7CFE3235BF72C00E0ADA6 /* PBXContainerItemProxy */;
-		};
-		4DC7CFEF235BF72C00E0ADA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4DC7CFC8235BF72A00E0ADA6 /* CheckInPlus */;
-			targetProxy = 4DC7CFEE235BF72C00E0ADA6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -593,7 +523,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
 				INFOPLIST_FILE = CheckInPlusTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -615,7 +545,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55AT6EYVPW;
 				INFOPLIST_FILE = CheckInPlusTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -626,46 +556,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckInPlus.app/CheckInPlus";
-			};
-			name = Release;
-		};
-		4DC7CFFD235BF72C00E0ADA6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55AT6EYVPW;
-				INFOPLIST_FILE = CheckInPlusUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.CheckInPlusUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CheckInPlus;
-			};
-			name = Debug;
-		};
-		4DC7CFFE235BF72C00E0ADA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55AT6EYVPW;
-				INFOPLIST_FILE = CheckInPlusUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.townsend.CheckInPlusUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CheckInPlus;
 			};
 			name = Release;
 		};
@@ -695,15 +585,6 @@
 			buildConfigurations = (
 				4DC7CFFA235BF72C00E0ADA6 /* Debug */,
 				4DC7CFFB235BF72C00E0ADA6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4DC7CFFC235BF72C00E0ADA6 /* Build configuration list for PBXNativeTarget "CheckInPlusUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4DC7CFFD235BF72C00E0ADA6 /* Debug */,
-				4DC7CFFE235BF72C00E0ADA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

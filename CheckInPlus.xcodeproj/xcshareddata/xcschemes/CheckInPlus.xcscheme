@@ -27,6 +27,12 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:CheckInPlusTests/CheckInPlusTests.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -35,36 +41,6 @@
                BlueprintIdentifier = "4DC7CFE1235BF72C00E0ADA6"
                BuildableName = "CheckInPlusTests.xctest"
                BlueprintName = "CheckInPlusTests"
-               ReferencedContainer = "container:CheckInPlus.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4DC7CFEC235BF72C00E0ADA6"
-               BuildableName = "CheckInPlusUITests.xctest"
-               BlueprintName = "CheckInPlusUITests"
-               ReferencedContainer = "container:CheckInPlus.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4DC7D02E235C051600E0ADA6"
-               BuildableName = "YelpAPITests.xctest"
-               BlueprintName = "YelpAPITests"
-               ReferencedContainer = "container:CheckInPlus.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D0267882398419800B063DC"
-               BuildableName = "NetworkLayerTests.xctest"
-               BlueprintName = "NetworkLayerTests"
                ReferencedContainer = "container:CheckInPlus.xcodeproj">
             </BuildableReference>
          </TestableReference>

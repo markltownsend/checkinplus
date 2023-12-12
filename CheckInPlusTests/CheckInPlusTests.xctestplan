@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "3DED8490-B5BC-42AE-AEE5-03CD21B77C47",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:CheckInPlus.xcodeproj",
+      "identifier" : "4DC7CFC8235BF72A00E0ADA6",
+      "name" : "CheckInPlus"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CheckInPlus.xcodeproj",
+        "identifier" : "4DC7CFE1235BF72C00E0ADA6",
+        "name" : "CheckInPlusTests"
+      }
+    }
+  ],
+  "version" : 1
+}
