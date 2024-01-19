@@ -74,7 +74,6 @@ struct CheckinView: View {
         }
     }
 
-    @MainActor
     func checkIn() {
         guard viewModel.isCurrentlyLoggedIn
         else {
