@@ -9,59 +9,46 @@
 import AuthenticationServices
 import FoursquareAPI
 import KeychainAccess
+import os.log
+import SSOKit
 import SwiftUI
+
+extension FoursquareAPIManager: AuthenticationTokenGenerator {
+    func generateAuthToken(with url: URL) {
+        Task {
+            guard let authToken = try? await generateAuthToken(with: url, callbackURI: Constants.callbackURI) else { return }
+            saveAuthToken(authToken)
+        }
+    }
+}
 
 @main
 struct CheckInPlusApp: App {
     @State private var showLogin = false
-    let foursquareManager: FoursquareAPIManager
-
-    init() {
-        foursquareManager = FoursquareAPIManager()
-    }
+    @State private var appleSSOManager = AppleIdSSOManager()
+    let foursquareManager = FoursquareAPIManager()
 
     var body: some Scene {
         WindowGroup {
             CheckInVenueListView()
                 .onOpenURL { url in
-                    generateAuthToken(with: url)
+                    foursquareManager.generateAuthToken(with: url)
                 }
                 .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { userActivity in
                     guard let webpageUrl = userActivity.webpageURL else { return }
-                    generateAuthToken(with: webpageUrl)
+                    foursquareManager.generateAuthToken(with: webpageUrl)
                 }
-                .onAppear {
-                    tryShowAppleSSOLogin()
+                .task {
+                    do {
+                        showLogin = try await appleSSOManager.tryShowAppleSSOLogin()
+                    } catch {
+                        os_log("\(error.localizedDescription)")
+                    }
                 }
                 .sheet(isPresented: $showLogin) {
                     LoginView(showModal: $showLogin)
                 }
         }
+        .environment(appleSSOManager)
     }
-
-    private func generateAuthToken(with url: URL) {
-        Task {
-            guard let authToken = try? await foursquareManager.generateAuthToken(with: url, callbackURI: Constants.callbackURI) else { return }
-            await foursquareManager.saveAuthToken(authToken)
-        }
-    }
-
-    private func tryShowAppleSSOLogin() {
-        let appleIDProvider = ASAuthorizationAppleIDProvider()
-        appleIDProvider.getCredentialState(forUserID: Keychain.currentUserIdentifier ?? "") { credentialState, _ in
-            switch credentialState {
-            case .authorized:
-                // Apple ID valid
-                break
-            case .revoked:
-                fallthrough
-            case .notFound:
-                showLogin = true
-            default:
-                break
-
-            }
-        }
-    }
-    
 }

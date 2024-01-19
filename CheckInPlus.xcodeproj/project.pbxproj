@@ -15,6 +15,7 @@
 		4D4AC85B23A028300019866E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85A23A028300019866E /* Constants.swift */; };
 		4D4AC85E23A037400019866E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AC85D23A037400019866E /* SettingsView.swift */; };
 		4D4FAB342914011600AC262F /* FoursquareAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 4D4FAB332914011600AC262F /* FoursquareAPI */; };
+		4D525FC12B57346300CD3E05 /* SSOKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4D525FC02B57346300CD3E05 /* SSOKit */; };
 		4D9D354E239EC23E0052E728 /* CheckInVenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D354D239EC23E0052E728 /* CheckInVenueViewModel.swift */; };
 		4D9D3551239EC7F70052E728 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D3550239EC7F70052E728 /* LocationManager.swift */; };
 		4DBD6BC22912E23A008A2351 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 4DBD6BC12912E23A008A2351 /* KeychainAccess */; };
@@ -24,6 +25,7 @@
 		4DC7CFE7235BF72C00E0ADA6 /* CheckInPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFE6235BF72C00E0ADA6 /* CheckInPlusTests.swift */; };
 		4DC91ED723BEE4CF00E99C81 /* CheckinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC91ED623BEE4CF00E99C81 /* CheckinView.swift */; };
 		4DCDE622291A8DD3005EFF8D /* CheckInPlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDE621291A8DD3005EFF8D /* CheckInPlusApp.swift */; };
+		4DE270682B5088F000D13A0A /* AuthenticationTokenGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE270672B5088F000D13A0A /* AuthenticationTokenGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,7 @@
 		4D4AC85A23A028300019866E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4D4AC85D23A037400019866E /* SettingsView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		4D52393023A54A960070683C /* CheckInPlus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheckInPlus.entitlements; sourceTree = "<group>"; };
+		4D525FBE2B57174100CD3E05 /* SSOKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SSOKit; sourceTree = "<group>"; };
 		4D9D354D239EC23E0052E728 /* CheckInVenueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVenueViewModel.swift; sourceTree = "<group>"; };
 		4D9D3550239EC7F70052E728 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		4DC7CFC9235BF72A00E0ADA6 /* CheckInPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckInPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +76,7 @@
 		4DC7CFE8235BF72C00E0ADA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DC91ED623BEE4CF00E99C81 /* CheckinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinView.swift; sourceTree = "<group>"; };
 		4DCDE621291A8DD3005EFF8D /* CheckInPlusApp.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = CheckInPlusApp.swift; sourceTree = "<group>"; tabWidth = 4; };
+		4DE270672B5088F000D13A0A /* AuthenticationTokenGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTokenGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			files = (
 				4D4FAB342914011600AC262F /* FoursquareAPI in Frameworks */,
 				4DBD6BC22912E23A008A2351 /* KeychainAccess in Frameworks */,
+				4D525FC12B57346300CD3E05 /* SSOKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +118,23 @@
 				4DCDE621291A8DD3005EFF8D /* CheckInPlusApp.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		4D525FBD2B5716E200CD3E05 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				4D525FBE2B57174100CD3E05 /* SSOKit */,
+				4D0B038B2912A73C00659DD6 /* FoursquareAPI */,
+				4D1D1B992912A4B60057CA83 /* NetworkLayer */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		4D525FBF2B57346300CD3E05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4D9D354B239EC21C0052E728 /* ViewModels */ = {
@@ -148,11 +170,11 @@
 		4DC7CFC0235BF72A00E0ADA6 = {
 			isa = PBXGroup;
 			children = (
-				4D0B038B2912A73C00659DD6 /* FoursquareAPI */,
-				4D1D1B992912A4B60057CA83 /* NetworkLayer */,
+				4D525FBD2B5716E200CD3E05 /* Packages */,
 				4DC7CFCB235BF72A00E0ADA6 /* CheckInPlus */,
 				4DC7CFE5235BF72C00E0ADA6 /* CheckInPlusTests */,
 				4DC7CFCA235BF72A00E0ADA6 /* Products */,
+				4D525FBF2B57346300CD3E05 /* Frameworks */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -170,6 +192,7 @@
 		4DC7CFCB235BF72A00E0ADA6 /* CheckInPlus */ = {
 			isa = PBXGroup;
 			children = (
+				4DE270662B5088CE00D13A0A /* Protocols */,
 				4D4FAB352914022B00AC262F /* Application */,
 				4DC7CFD7235BF72C00E0ADA6 /* Preview Content */,
 				4D1A7F6B239F1D4E00ADFB14 /* Resources */,
@@ -198,6 +221,14 @@
 			path = CheckInPlusTests;
 			sourceTree = "<group>";
 		};
+		4DE270662B5088CE00D13A0A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4DE270672B5088F000D13A0A /* AuthenticationTokenGenerator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,6 +249,7 @@
 			packageProductDependencies = (
 				4DBD6BC12912E23A008A2351 /* KeychainAccess */,
 				4D4FAB332914011600AC262F /* FoursquareAPI */,
+				4D525FC02B57346300CD3E05 /* SSOKit */,
 			);
 			productName = CheckInPlus;
 			productReference = 4DC7CFC9235BF72A00E0ADA6 /* CheckInPlus.app */;
@@ -316,6 +348,7 @@
 				4D40B53B291AC1AD00B9E6B2 /* AppleSignInDelegate.swift in Sources */,
 				4D40B539291AA1E000B9E6B2 /* LoginView.swift in Sources */,
 				4DC7CFD4235BF72A00E0ADA6 /* CheckInVenueListView.swift in Sources */,
+				4DE270682B5088F000D13A0A /* AuthenticationTokenGenerator.swift in Sources */,
 				4DCDE622291A8DD3005EFF8D /* CheckInPlusApp.swift in Sources */,
 				4D9D354E239EC23E0052E728 /* CheckInVenueViewModel.swift in Sources */,
 				4D4AC85B23A028300019866E /* Constants.swift in Sources */,
@@ -606,6 +639,10 @@
 		4D4FAB332914011600AC262F /* FoursquareAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FoursquareAPI;
+		};
+		4D525FC02B57346300CD3E05 /* SSOKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SSOKit;
 		};
 		4DBD6BC12912E23A008A2351 /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;

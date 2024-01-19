@@ -12,6 +12,7 @@ import FSOAuth
 import KeychainAccess
 import NetworkLayer
 import os.log
+import SSOKit
 
 public enum AuthorizeUserError: Error {
     case foursquareOAuthNotSupported
@@ -22,9 +23,13 @@ public enum AuthorizeUserError: Error {
 
 @MainActor
 public struct FoursquareAPIManager: FoursquareAPI {
+    public static var serviceID: String {
+        "com.foursquare.service"
+    }
+    
     let router = Router<FoursquareApi>()
 
-    public init() {}
+    nonisolated public init() {}
 
     nonisolated public func authorizeUser(_ callBackURI: String) throws {
         let status = FSOAuth.authorizeUser(
@@ -118,23 +123,23 @@ public extension FoursquareAPIManager {
     }
 
     var currentFoursquareAuthToken: String? {
-        let keychain = Keychain(service: Keychain.serviceID)
+        let keychain = Keychain()
 
-        guard let userIdentifier = Keychain.currentUserIdentifier else { return nil }
+        let userIdentifier = Keychain.currentUserIdentifier()
 
         return keychain["\(userIdentifier)\(keychainAuthTokenSuffix)"]
     }
 
     func saveAuthToken(_ token: String) {
-        let keychain = Keychain(service: Keychain.serviceID)
-        guard let userIdentifier = Keychain.currentUserIdentifier else { return }
+        let keychain = Keychain()
+        let userIdentifier = Keychain.currentUserIdentifier()
         keychain["\(userIdentifier)\(keychainAuthTokenSuffix)"] = token
         NotificationCenter.default.post(name: .FoursquareDidSaveAuthTokenNotification, object: nil, userInfo: nil)
     }
 
     func removeToken() {
-        let keychain = Keychain(service: Keychain.serviceID)
-        guard let userIdentifier = Keychain.currentUserIdentifier else { return }
+        let keychain = Keychain()
+        let userIdentifier = Keychain.currentUserIdentifier()
         keychain["\(userIdentifier)\(keychainAuthTokenSuffix)"] = nil
     }
 }

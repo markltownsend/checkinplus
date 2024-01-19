@@ -16,16 +16,5 @@ public extension Keychain {
         "com.foursquare.service"
     }
 
-    static var userIdentifierKey: String {
-        "userIdentifier"
-    }
-
-    static var currentUserIdentifier: String? {
-        do {
-            return try Keychain(service: serviceID).get(userIdentifierKey)
-        } catch {
-            print("Error getting user identifier from keychain: \(error)")
-            return nil
-        }
-    }
+    
 }
