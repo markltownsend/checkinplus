@@ -43,9 +43,13 @@ struct CheckinView: View {
                             .stroke(Color.primary, lineWidth: 1)
                     )
 
-                Button(action: { self.checkIn() }) {
+                Button(action: checkIn) {
                     Text("Check In")
+                        .font(.caption)
+                        .padding(3)
                 }
+                .buttonBorderShape(.capsule)
+                .buttonStyle(.borderedProminent)
                 .padding()
 
                 HStack {
