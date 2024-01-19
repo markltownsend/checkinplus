@@ -22,6 +22,7 @@ let package = Package(
         .package(url: "https://github.com/markltownsend/foursquare-ios-oauth.git", exact: "1.2.2"),
         .package(path: "../NetworkLayer"),
         .package(name: "ArkanaKeys", path: "../ArkanaKeys/ArkanaKeys"),
+        .package(path: "../SSOKit")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -29,6 +30,7 @@ let package = Package(
         .target(
             name: "FoursquareAPI",
             dependencies: [
+                "SSOKit",
                 "NetworkLayer",
                 "KeychainAccess",
                 .product(name: "FSOAuth", package: "foursquare-ios-oauth"),
