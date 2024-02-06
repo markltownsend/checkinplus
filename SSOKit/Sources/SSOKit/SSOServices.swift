@@ -7,8 +7,20 @@
 
 import Foundation
 
-public enum SSOServices {
+public protocol SSOManager {
+    func tryShowSSOLogin() async throws -> Bool
+}
+
+public enum SSOServices: CaseIterable {
     case apple
     case google
     case facebook
+
+    public var ssoManager: SSOManager? {
+        switch self {
+        case .apple: AppleIdSSOManager()
+        case .facebook: nil
+        case .google: nil
+        }
+    }
 }

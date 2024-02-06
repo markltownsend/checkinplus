@@ -13,34 +13,40 @@ import os.log
 import SSOKit
 import SwiftUI
 
-extension FoursquareAPIManager: AuthenticationTokenGenerator {
-    func generateAuthToken(with url: URL) {
-        Task {
-            guard let authToken = try? await generateAuthToken(with: url, callbackURI: Constants.callbackURI) else { return }
-            saveAuthToken(authToken)
-        }
-    }
-}
-
 @main
 struct CheckInPlusApp: App {
+    @State private var showErrorAlert = false
     @State private var showLogin = false
-    @State private var appleSSOManager = AppleIdSSOManager()
-    let foursquareManager = FoursquareAPIManager()
+    let authTokenGenerator: AuthenticationTokenGenerator = FoursquareAPIManager()
 
     var body: some Scene {
         WindowGroup {
             CheckInVenueListView()
                 .onOpenURL { url in
-                    foursquareManager.generateAuthToken(with: url)
+                    Task {
+                        do {
+                            try await authTokenGenerator.generateAuthToken(with: url, callbackURI: Constants.callbackURI)
+                        } catch {
+                            showErrorAlert = true
+                        }
+                    }
                 }
                 .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { userActivity in
                     guard let webpageUrl = userActivity.webpageURL else { return }
-                    foursquareManager.generateAuthToken(with: webpageUrl)
+                    Task {
+                        do {
+                            try await authTokenGenerator.generateAuthToken(with: webpageUrl, callbackURI: Constants.callbackURI)
+                        } catch {
+                            showErrorAlert = true
+                        }
+                    }
                 }
                 .task {
                     do {
-                        showLogin = try await appleSSOManager.tryShowAppleSSOLogin()
+                        for ssoService in SSOServices.allCases {
+                            guard !showLogin, let ssoManager = ssoService.ssoManager else { return }
+                            showLogin = try await ssoManager.tryShowSSOLogin()
+                        }
                     } catch {
                         os_log("\(error.localizedDescription)")
                     }
@@ -49,6 +55,5 @@ struct CheckInPlusApp: App {
                     LoginView(showModal: $showLogin)
                 }
         }
-        .environment(appleSSOManager)
     }
 }

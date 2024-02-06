@@ -32,7 +32,7 @@ extension FoursquareApi: EndPointType {
     }
 
     private func urlParametersWithAuthToken(parameters: Parameters) -> Parameters {
-        let oauthToken = ["oauth_token": FoursquareAPIManager().currentFoursquareAuthToken ?? ""]
+        let oauthToken = ["oauth_token": FoursquareAPIManager().currentAuthToken ?? ""]
         return parameters.merging(oauthToken) { current, _ in current }.merging(version) { current, _ in current }
     }
 

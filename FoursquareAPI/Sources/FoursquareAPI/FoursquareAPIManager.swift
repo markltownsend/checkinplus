@@ -58,30 +58,6 @@ public struct FoursquareAPIManager: FoursquareAPI {
         }
     }
 
-    public func generateAuthToken(with url: URL, callbackURI: String) async throws -> String? {
-        var fsOAuthError: FSOAuthErrorCode = .none
-        if let accessCode = FSOAuth.accessCode(forFSOAuthURL: url, error: &fsOAuthError) {
-            return await withCheckedContinuation { continuation in
-                FSOAuth.requestAccessToken(
-                    forCode: accessCode,
-                    clientId: Keys.Global().foursquareClientID,
-                    callbackURIString: callbackURI,
-                    clientSecret: Keys.Global().foursquareClientSecret
-                ) { authToken, completed, errorCode in
-                    if completed {
-                        if errorCode == .none {
-                            continuation.resume(returning: authToken)
-                        } else {
-                            continuation.resume(returning: nil)
-                        }
-                    }
-                }
-            }
-        } else {
-            return nil
-        }
-    }
-
     public func getCheckInVenues(latitude: Double, longitude: Double) async throws -> [Venue]? {
         let (data, response) = try await router.request(.checkInSearch(latitude: latitude, longitude: longitude))
         guard let response = response as? HTTPURLResponse else { return nil }
@@ -117,27 +93,52 @@ public extension Notification.Name {
         Notification.Name("FoursquareDidSaveAuthTokenNotification")
 }
 
-public extension FoursquareAPIManager {
-    var keychainAuthTokenSuffix: String {
+extension FoursquareAPIManager: AuthenticationTokenGenerator {
+    public var keychainAuthTokenSuffix: String {
         "-FoursquareAuthToken"
     }
 
-    var currentFoursquareAuthToken: String? {
+    public var currentAuthToken: String? {
         let keychain = Keychain()
 
         let userIdentifier = Keychain.currentUserIdentifier()
 
         return keychain["\(userIdentifier)\(keychainAuthTokenSuffix)"]
     }
+    
+    public func generateAuthToken(with url: URL, callbackURI: String?) async throws -> String? {
+        var fsOAuthError: FSOAuthErrorCode = .none
+        guard let accessCode = FSOAuth.accessCode(forFSOAuthURL: url, error: &fsOAuthError),
+              let callbackURI
+        else { return nil }
 
-    func saveAuthToken(_ token: String) {
+        return await withCheckedContinuation { continuation in
+            FSOAuth.requestAccessToken(
+                forCode: accessCode,
+                clientId: Keys.Global().foursquareClientID,
+                callbackURIString: callbackURI,
+                clientSecret: Keys.Global().foursquareClientSecret
+            ) { authToken, completed, errorCode in
+                guard completed, errorCode == .none, let authToken
+                else {
+                    continuation.resume(returning: nil)
+                    return
+                }
+
+                saveAuthToken(authToken)
+                continuation.resume(returning: authToken)
+            }
+        }
+    }
+
+    public func saveAuthToken(_ token: String) {
         let keychain = Keychain()
         let userIdentifier = Keychain.currentUserIdentifier()
         keychain["\(userIdentifier)\(keychainAuthTokenSuffix)"] = token
         NotificationCenter.default.post(name: .FoursquareDidSaveAuthTokenNotification, object: nil, userInfo: nil)
     }
 
-    func removeToken() {
+    public func removeToken() {
         let keychain = Keychain()
         let userIdentifier = Keychain.currentUserIdentifier()
         keychain["\(userIdentifier)\(keychainAuthTokenSuffix)"] = nil

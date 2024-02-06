@@ -13,7 +13,7 @@ import os.log
 import SwiftUI
 
 @Observable
-public final class AppleIdSSOManager {
+public final class AppleIdSSOManager: SSOManager {
     private let userIdentifierKey = "userIdentifier"
 //    private let keychains: [Keychain]
     private let keychain = Keychain()
@@ -60,7 +60,7 @@ public final class AppleIdSSOManager {
 //            }
 //    }
 
-    public func tryShowAppleSSOLogin(serviceID: String? = nil) async throws -> Bool {
+    public func tryShowSSOLogin() async throws -> Bool {
         let appleIDProvider = ASAuthorizationAppleIDProvider()
         do {
             let credentialState = try await appleIDProvider.credentialState(forUserID: Keychain.currentUserIdentifier())

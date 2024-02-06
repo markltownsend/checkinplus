@@ -34,7 +34,7 @@ struct SettingsView: View {
             .navigationBarItems(trailing: Button(action: { self.showModal.toggle() }) {
                 Text(NSLocalizedString("Done", comment: ""))
             }).onAppear {
-                self.foursquareConnected = self.foursquareManager.currentFoursquareAuthToken != nil
+                self.foursquareConnected = self.foursquareManager.currentAuthToken != nil
             }.onReceive(tokenSavedPublisher) { _ in
                 self.foursquareConnected = true
             }

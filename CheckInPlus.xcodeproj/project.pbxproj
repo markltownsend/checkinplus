@@ -24,7 +24,6 @@
 		4DC7CFE7235BF72C00E0ADA6 /* CheckInPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7CFE6235BF72C00E0ADA6 /* CheckInPlusTests.swift */; };
 		4DC91ED723BEE4CF00E99C81 /* CheckinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC91ED623BEE4CF00E99C81 /* CheckinView.swift */; };
 		4DCDE622291A8DD3005EFF8D /* CheckInPlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDE621291A8DD3005EFF8D /* CheckInPlusApp.swift */; };
-		4DE270682B5088F000D13A0A /* AuthenticationTokenGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE270672B5088F000D13A0A /* AuthenticationTokenGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +73,6 @@
 		4DC7CFE8235BF72C00E0ADA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DC91ED623BEE4CF00E99C81 /* CheckinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinView.swift; sourceTree = "<group>"; };
 		4DCDE621291A8DD3005EFF8D /* CheckInPlusApp.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = CheckInPlusApp.swift; sourceTree = "<group>"; tabWidth = 4; };
-		4DE270672B5088F000D13A0A /* AuthenticationTokenGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTokenGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,7 +219,6 @@
 		4DE270662B5088CE00D13A0A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				4DE270672B5088F000D13A0A /* AuthenticationTokenGenerator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -344,7 +341,6 @@
 				4D40B53B291AC1AD00B9E6B2 /* AppleSignInDelegate.swift in Sources */,
 				4D40B539291AA1E000B9E6B2 /* LoginView.swift in Sources */,
 				4DC7CFD4235BF72A00E0ADA6 /* CheckInVenueListView.swift in Sources */,
-				4DE270682B5088F000D13A0A /* AuthenticationTokenGenerator.swift in Sources */,
 				4DCDE622291A8DD3005EFF8D /* CheckInPlusApp.swift in Sources */,
 				4D9D354E239EC23E0052E728 /* CheckInVenueViewModel.swift in Sources */,
 				4D4AC85B23A028300019866E /* Constants.swift in Sources */,
