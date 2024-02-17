@@ -9,13 +9,13 @@
 import SwiftUI
 
 struct CheckInVenueListView: View {
-    @ObservedObject private var viewModel: CheckInVenueViewModel
+    @StateObject private var viewModel: CheckInVenueViewModel
     @State private var settingsShowing = false
     @State private var searchText: String = ""
 
     init(_ showNoResults: Bool = false) {
         let viewModel = CheckInVenueViewModel(showNoResults)
-        _viewModel = ObservedObject(wrappedValue: viewModel)
+        _viewModel = StateObject(wrappedValue: viewModel)
     }
 
     var settingsButton: some View {
@@ -27,7 +27,7 @@ struct CheckInVenueListView: View {
 
     var body: some View {
         NavigationView {
-            List(viewModel.searchResults(searchText: searchText)) { venue in
+            List(viewModel.searchResults) { venue in
                 NavigationLink(destination: CheckinView(venueId: venue.id, venueName: venue.name)) {
                     HStack {
                         AsyncImage(url: venue.getPrimaryCategoryIconURL())
@@ -51,6 +51,9 @@ struct CheckInVenueListView: View {
                 ToolbarItemGroup {
                     settingsButton
                 }
+            }
+            .onChange(of: searchText) { _,_ in
+                viewModel.searchResults(searchText: searchText)
             }
             .searchable(text: $searchText, placement: .automatic)
             .sheet(isPresented: $settingsShowing) {

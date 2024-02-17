@@ -45,7 +45,9 @@ struct CheckInPlusApp: App {
                     do {
                         for ssoService in SSOServices.allCases {
                             guard !showLogin, let ssoManager = ssoService.ssoManager else { return }
+                            #if !targetEnvironment(simulator)
                             showLogin = try await ssoManager.tryShowSSOLogin()
+                            #endif
                         }
                     } catch {
                         os_log("\(error.localizedDescription)")
