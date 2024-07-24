@@ -26,7 +26,7 @@ struct CheckInVenueListView: View {
     }
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(viewModel.searchResults) { venue in
                 NavigationLink(destination: CheckinView(venueId: venue.id, venueName: venue.name)) {
                     HStack {
